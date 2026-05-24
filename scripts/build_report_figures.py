@@ -169,7 +169,7 @@ def plot_pipeline(out_path: Path) -> None:
     ax.set_ylim(0, 5)
     ax.axis("off")
     boxes = [
-        (0.3, 3.2, "Prompts\n(JSON / COCO)"),
+        (0.3, 3.2, "Prompts\n(JSON)"),
         (2.0, 3.2, "SD1.5 UNet\n+ LoRA (policy)"),
         (4.0, 3.2, "DDIM sample\nCFG=7.5"),
         (6.0, 3.2, "Trajectories\n(x_t, x_{t-1})"),
@@ -186,7 +186,7 @@ def plot_pipeline(out_path: Path) -> None:
               (9.5, 3.7, 10.0, 3.7), (11.5, 3.7, 12.0, 3.7), (4.75, 2.0, 4.75, 3.2), (10.75, 2.0, 10.75, 3.2)]
     for x1, y1, x2, y2 in arrows:
         ax.annotate("", xy=(x2, y2), xytext=(x1, y1), arrowprops=dict(arrowstyle="->", lw=1.5))
-    ax.set_title("DPOK + ImageReward pipeline (Diffusion Graphs)", fontsize=13, fontweight="bold")
+    ax.set_title("DPOK + ImageReward pipeline", fontsize=13, fontweight="bold")
     fig.tight_layout()
     fig.savefig(out_path, dpi=150, bbox_inches="tight")
     plt.close(fig)
@@ -197,64 +197,64 @@ def main() -> None:
     plot_pipeline(FIG / "pipeline_placeholder.png")
 
     plot_snapshots_curves(
-        ROOT / "eval-single-prompt/snapshots.csv",
+        ROOT / "results/single_prompt/snapshots.csv",
         FIG / "single_per_prompt_curves.png",
         "Single-prompt: ImageReward vs round",
     )
     plot_snapshots_curves(
-        ROOT / "eval-four-prompts/snapshots.csv",
+        ROOT / "results/four_prompts/snapshots.csv",
         FIG / "four_per_prompt_curves.png",
         "Four-prompt training: ImageReward vs round",
     )
     plot_snapshot_score_grid(
-        ROOT / "eval-single-prompt/snapshots.csv",
+        ROOT / "results/single_prompt/snapshots.csv",
         FIG / "single_snapshot_grid.png",
         "Single-prompt snapshots",
     )
     plot_snapshot_score_grid(
-        ROOT / "eval-four-prompts/snapshots.csv",
+        ROOT / "results/four_prompts/snapshots.csv",
         FIG / "four_snapshot_grid.png",
         "Four-prompt snapshots",
     )
 
     plot_score_distributions(
-        ROOT / "eval-single-prompt/trained_scores.csv",
-        ROOT / "eval-single-prompt/baseline_scores.csv",
+        ROOT / "results/single_prompt/trained_scores.csv",
+        ROOT / "results/single_prompt/baseline_scores.csv",
         FIG / "single_score_distributions.png",
         "Single-prompt eval — score distributions",
     )
     plot_score_distributions(
-        ROOT / "eval-four-prompts/train_prompts/trained_scores.csv",
-        ROOT / "eval-four-prompts/train_prompts/baseline_scores.csv",
+        ROOT / "results/four_prompts/train_prompts/trained_scores.csv",
+        ROOT / "results/four_prompts/train_prompts/baseline_scores.csv",
         FIG / "train_score_distributions.png",
         "Train prompts — score distributions",
     )
     plot_score_distributions(
-        ROOT / "eval-four-prompts/holdout_prompts/trained_scores.csv",
-        ROOT / "eval-four-prompts/holdout_prompts/baseline_scores.csv",
+        ROOT / "results/four_prompts/holdout_prompts/trained_scores.csv",
+        ROOT / "results/four_prompts/holdout_prompts/baseline_scores.csv",
         FIG / "holdout_score_distributions.png",
         "Holdout prompts — score distributions",
     )
 
     plot_radar_from_report(
-        ROOT / "eval-four-prompts/train_prompts/report.json",
+        ROOT / "results/four_prompts/train_prompts/report.json",
         FIG / "score_radar_train.png",
         "Metric radar — train prompts",
     )
     plot_radar_from_report(
-        ROOT / "eval-four-prompts/holdout_prompts/report.json",
+        ROOT / "results/four_prompts/holdout_prompts/report.json",
         FIG / "score_radar_holdout.png",
         "Metric radar — holdout prompts",
     )
     plot_radar_from_report(
-        ROOT / "eval-single-prompt/report.json",
+        ROOT / "results/single_prompt/report.json",
         FIG / "score_radar_single.png",
         "Metric radar — single prompt",
     )
 
     plot_delta_bars(
-        ROOT / "eval-four-prompts/train_prompts/per_prompt_breakdown.csv",
-        ROOT / "eval-four-prompts/holdout_prompts/per_prompt_breakdown.csv",
+        ROOT / "results/four_prompts/train_prompts/per_prompt_breakdown.csv",
+        ROOT / "results/four_prompts/holdout_prompts/per_prompt_breakdown.csv",
         FIG / "per_prompt_delta_bars.png",
     )
 

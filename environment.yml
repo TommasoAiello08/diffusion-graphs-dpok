@@ -1,8 +1,12 @@
-# Conda environment for DPOK training (GPU recommended)
+# Conda environment for DPOK + ImageReward training (GPU recommended).
 #   conda env create -f environment.yml
-#   conda activate dpok-diffusion-graphs
+#   conda activate dpok-imagereward
+#
+# For the multi-metric evaluation environment (CLIP / VQAScore / DSG / T2I-CompBench),
+# create a SEPARATE venv from scripts/setup_eval_env.sh — it pins different package
+# versions to satisfy t2v-metrics.
 
-name: dpok-diffusion-graphs
+name: dpok-imagereward
 channels:
   - pytorch
   - nvidia

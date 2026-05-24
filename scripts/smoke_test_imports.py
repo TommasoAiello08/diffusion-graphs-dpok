@@ -33,13 +33,15 @@ def main() -> None:
     except ImportError:
         print("  WARN ImageReward not installed — pip install image-reward")
 
-    print("Project modules...")
-    check("dpok_scene_reward", lambda: __import__("dpok_scene_reward"))
-    try:
-        __import__("dpok_eval_metrics")
-        print("  OK  dpok_eval_metrics")
-    except ImportError as e:
-        print(f"  WARN dpok_eval_metrics (install requirements-eval.txt for VQA): {e}")
+    print("Project modules (syntax check via py_compile)...")
+    import py_compile
+    for mod in ("src/dpok_imagereward.py", "src/eval_report.py", "src/dpok_eval_metrics.py"):
+        try:
+            py_compile.compile(mod, doraise=True)
+            print(f"  OK  {mod}")
+        except py_compile.PyCompileError as e:
+            print(f"  FAIL {mod}: {e}")
+            raise
 
     print("\nAll required imports passed.")
     print(f"CUDA available: {__import__('torch').cuda.is_available()}")

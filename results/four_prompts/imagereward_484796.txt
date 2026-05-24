@@ -1,0 +1,1429 @@
+========================================
+Job ID  : 484796
+Node    : gnode05
+Started : Tue Apr 28 09:57:58 PM CEST 2026
+========================================
+Tue Apr 28 21:58:00 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 580.95.05              Driver Version: 580.95.05      CUDA Version: 13.0     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA H100 NVL                On  |   00000000:8B:00.0 Off |                    0 |
+| N/A   61C    P0             67W /  400W |       0MiB /  95830MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+
+════════════════════════════════════════════════════════════════
+  ImageReward training — Tue Apr 28 09:58:00 PM CEST 2026
+════════════════════════════════════════════════════════════════
+Save dir: /home/3223837/dpok_outputs/imagereward_test/484796
+
+/home/3223837/.conda/envs/dpok/lib/python3.10/site-packages/transformers/utils/generic.py:441: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  _torch_pytree._register_pytree_node(
+/home/3223837/.conda/envs/dpok/lib/python3.10/site-packages/transformers/utils/generic.py:309: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  _torch_pytree._register_pytree_node(
+/home/3223837/.conda/envs/dpok/lib/python3.10/site-packages/transformers/utils/generic.py:309: FutureWarning: `torch.utils._pytree._register_pytree_node` is deprecated. Please use `torch.utils._pytree.register_pytree_node` instead.
+  _torch_pytree._register_pytree_node(
+Device: cuda  dtype: torch.float32
+GPU: NVIDIA H100 NVL
+wandb: Tracking run with wandb version 0.26.1
+wandb: W&B syncing is set to `offline` in this directory. Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+wandb: Run data is saved locally in /home/3223837/dpok_outputs/imagereward_test/484796/wandb/offline-run-20260428_220006-dmtpsf0h
+wandb: Detected [huggingface_hub.inference] in use.
+wandb: Use W&B Weave for improved LLM call tracing. Install Weave with `pip install weave` then add `import weave` to the top of your script.
+wandb: For more information, check out the docs at: https://weave-docs.wandb.ai
+wandb: WARNING URL not available in offline run
+W&B run: None
+Loading SD1.5 ...
+Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s]Loading pipeline components...:  17%|█▋        | 1/6 [00:03<00:19,  3.96s/it]Loading pipeline components...:  33%|███▎      | 2/6 [00:04<00:06,  1.70s/it]Loading pipeline components...:  50%|█████     | 3/6 [00:04<00:03,  1.21s/it]Loading pipeline components...:  67%|██████▋   | 4/6 [00:05<00:01,  1.07it/s]Loading pipeline components...:  83%|████████▎ | 5/6 [00:05<00:00,  1.48it/s]Loading pipeline components...: 100%|██████████| 6/6 [00:05<00:00,  1.86it/s]Loading pipeline components...: 100%|██████████| 6/6 [00:05<00:00,  1.05it/s]
+You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
+Models loaded.
+Loading prompts ...
+Loaded 4 prompts. Example: A green colored rabbit.
+trainable params: 797,184 || all params: 860,318,148 || trainable%: 0.09266153478840713
+Trainable params: 797,184
+Value network enabled. Params: 487,777  vf_lr=0.0001  vf_weight=0.5
+Loading ImageReward ...
+load checkpoint from /home/3223837/.cache/ImageReward/ImageReward.pt
+checkpoint loaded
+ImageReward ready. Blank-image baseline score: -2.2269
+
+DPOK-IR training: target 10000 online samples
+  m=10  K=5  n=8  eps=0.001
+  alpha=5.0  beta=0.01  lr=0.0001  grad_clip=1.0
+  guidance_scale=7.5  do_cfg_in_training=True
+------------------------------------------------------------
+[DIAG] lora_B grads — n_nonzero=128/128  min=1.05e-04 max=1.12e-02 mean=2.67e-03
+[round    1  samp    10/10000  upd     5]  mean_r=+0.193  pL=-3.950e-01  kL=+1.140e-06  ratio=+1.0000  clip=0/40
+[round    2  samp    20/10000  upd    10]  mean_r=+0.566  pL=-2.419e+00  kL=+3.818e-06  ratio=+1.0000  clip=0/40
+[round    3  samp    30/10000  upd    15]  mean_r=-0.321  pL=+2.461e+00  kL=+9.080e-07  ratio=+1.0000  clip=0/40
+[round    4  samp    40/10000  upd    20]  mean_r=-0.053  pL=+5.671e-01  kL=+6.676e-07  ratio=+1.0000  clip=0/40
+[round    5  samp    50/10000  upd    25]  mean_r=-0.408  pL=+2.547e-01  kL=+1.727e-06  ratio=+1.0000  clip=0/40
+[round    6  samp    60/10000  upd    30]  mean_r=+0.437  pL=-2.669e+00  kL=+7.920e-06  ratio=+1.0000  clip=0/40
+[round    7  samp    70/10000  upd    35]  mean_r=-0.108  pL=+9.135e-02  kL=+7.361e-06  ratio=+1.0000  clip=0/40
+[round    8  samp    80/10000  upd    40]  mean_r=+0.760  pL=-1.529e+00  kL=+1.736e-06  ratio=+1.0000  clip=0/40
+[round    9  samp    90/10000  upd    45]  mean_r=+0.099  pL=-3.631e-01  kL=+2.867e-06  ratio=+1.0000  clip=0/40
+[round   10  samp   100/10000  upd    50]  mean_r=+0.226  pL=-1.510e+00  kL=+2.089e-06  ratio=+1.0000  clip=0/40
+[round   11  samp   110/10000  upd    55]  mean_r=-0.614  pL=+2.283e+00  kL=+7.932e-07  ratio=+1.0000  clip=0/40
+[round   12  samp   120/10000  upd    60]  mean_r=+0.220  pL=+9.127e-01  kL=+2.385e-06  ratio=+1.0000  clip=0/40
+[round   13  samp   130/10000  upd    65]  mean_r=-0.446  pL=+4.627e-01  kL=+3.523e-06  ratio=+1.0000  clip=0/40
+[round   14  samp   140/10000  upd    70]  mean_r=+0.192  pL=+1.852e-01  kL=+9.236e-07  ratio=+1.0000  clip=0/40
+[round   15  samp   150/10000  upd    75]  mean_r=+0.237  pL=-5.832e-01  kL=+8.046e-06  ratio=+1.0000  clip=0/40
+[round   16  samp   160/10000  upd    80]  mean_r=+0.478  pL=-5.149e-01  kL=+5.085e-06  ratio=+1.0000  clip=0/40
+[round   17  samp   170/10000  upd    85]  mean_r=+0.165  pL=+7.687e-01  kL=+6.338e-06  ratio=+1.0000  clip=0/40
+[round   18  samp   180/10000  upd    90]  mean_r=-0.236  pL=+1.756e+00  kL=+1.703e-05  ratio=+1.0000  clip=1/40
+[round   19  samp   190/10000  upd    95]  mean_r=+0.144  pL=+2.240e+00  kL=+6.319e-06  ratio=+1.0000  clip=0/40
+[round   20  samp   200/10000  upd   100]  mean_r=+0.155  pL=-8.175e-01  kL=+7.861e-06  ratio=+1.0000  clip=0/40
+[round   21  samp   210/10000  upd   105]  mean_r=-0.292  pL=+1.556e+00  kL=+7.632e-06  ratio=+1.0000  clip=0/40
+[round   22  samp   220/10000  upd   110]  mean_r=-0.283  pL=-2.468e+00  kL=+1.712e-05  ratio=+1.0000  clip=0/40
+[round   23  samp   230/10000  upd   115]  mean_r=-0.046  pL=-8.948e-02  kL=+7.160e-06  ratio=+1.0000  clip=0/40
+[round   24  samp   240/10000  upd   120]  mean_r=-0.745  pL=+2.257e+00  kL=+1.171e-05  ratio=+1.0000  clip=0/40
+[round   25  samp   250/10000  upd   125]  mean_r=+0.208  pL=-2.894e+00  kL=+7.897e-06  ratio=+1.0000  clip=0/40
+[round   26  samp   260/10000  upd   130]  mean_r=-0.610  pL=+1.318e+00  kL=+1.626e-06  ratio=+1.0000  clip=0/40
+[round   27  samp   270/10000  upd   135]  mean_r=+0.337  pL=-1.930e+00  kL=+1.679e-05  ratio=+1.0000  clip=0/40
+[round   28  samp   280/10000  upd   140]  mean_r=-0.145  pL=+1.025e+00  kL=+7.408e-06  ratio=+1.0000  clip=0/40
+[round   29  samp   290/10000  upd   145]  mean_r=-0.599  pL=+1.775e+00  kL=+9.305e-06  ratio=+1.0000  clip=0/40
+[round   30  samp   300/10000  upd   150]  mean_r=+0.285  pL=-1.989e+00  kL=+1.577e-05  ratio=+1.0000  clip=0/40
+[round   31  samp   310/10000  upd   155]  mean_r=+0.054  pL=-1.028e+00  kL=+1.519e-05  ratio=+1.0000  clip=0/40
+[round   32  samp   320/10000  upd   160]  mean_r=+0.081  pL=-9.203e-02  kL=+1.164e-05  ratio=+1.0000  clip=0/40
+[round   33  samp   330/10000  upd   165]  mean_r=+0.216  pL=-3.307e-01  kL=+9.425e-06  ratio=+1.0000  clip=0/40
+[round   34  samp   340/10000  upd   170]  mean_r=+0.004  pL=-1.353e+00  kL=+2.277e-05  ratio=+1.0000  clip=0/40
+[round   35  samp   350/10000  upd   175]  mean_r=-0.104  pL=+1.852e+00  kL=+3.398e-05  ratio=+1.0000  clip=0/40
+[round   36  samp   360/10000  upd   180]  mean_r=+0.695  pL=-2.157e+00  kL=+1.191e-04  ratio=+1.0000  clip=0/40
+[round   37  samp   370/10000  upd   185]  mean_r=-0.336  pL=+1.694e+00  kL=+1.371e-05  ratio=+1.0000  clip=0/40
+[round   38  samp   380/10000  upd   190]  mean_r=+0.166  pL=-1.458e+00  kL=+7.133e-06  ratio=+1.0000  clip=0/40
+[round   39  samp   390/10000  upd   195]  mean_r=+0.080  pL=+5.332e-01  kL=+9.119e-06  ratio=+1.0000  clip=0/40
+[round   40  samp   400/10000  upd   200]  mean_r=+0.015  pL=+1.077e-01  kL=+1.113e-05  ratio=+1.0000  clip=0/40
+[round   41  samp   410/10000  upd   205]  mean_r=-0.129  pL=-1.044e+00  kL=+3.063e-05  ratio=+1.0000  clip=0/40
+[round   42  samp   420/10000  upd   210]  mean_r=+0.422  pL=-8.758e-02  kL=+7.396e-06  ratio=+1.0000  clip=0/40
+[round   43  samp   430/10000  upd   215]  mean_r=-0.180  pL=+5.677e-01  kL=+7.796e-06  ratio=+1.0000  clip=0/40
+[round   44  samp   440/10000  upd   220]  mean_r=+0.266  pL=-1.726e+00  kL=+3.538e-05  ratio=+1.0000  clip=0/40
+[round   45  samp   450/10000  upd   225]  mean_r=-0.163  pL=+2.322e+00  kL=+6.155e-06  ratio=+1.0000  clip=0/40
+[round   46  samp   460/10000  upd   230]  mean_r=-0.143  pL=-5.006e-01  kL=+3.100e-05  ratio=+1.0000  clip=0/40
+[round   47  samp   470/10000  upd   235]  mean_r=-0.635  pL=-5.576e-01  kL=+4.189e-05  ratio=+1.0000  clip=1/40
+[round   48  samp   480/10000  upd   240]  mean_r=-0.008  pL=+2.867e+00  kL=+1.868e-05  ratio=+1.0000  clip=0/40
+[round   49  samp   490/10000  upd   245]  mean_r=-0.418  pL=-2.505e+00  kL=+8.932e-06  ratio=+1.0000  clip=0/40
+[round   50  samp   500/10000  upd   250]  mean_r=-0.016  pL=+9.643e-01  kL=+7.988e-06  ratio=+1.0000  clip=0/40
+[round   51  samp   510/10000  upd   255]  mean_r=-0.025  pL=+3.057e-01  kL=+2.145e-05  ratio=+1.0000  clip=0/40
+[round   52  samp   520/10000  upd   260]  mean_r=-0.601  pL=+1.287e+00  kL=+1.222e-05  ratio=+1.0000  clip=0/40
+[round   53  samp   530/10000  upd   265]  mean_r=-0.022  pL=+7.872e-01  kL=+8.853e-06  ratio=+1.0000  clip=0/40
+[round   54  samp   540/10000  upd   270]  mean_r=+0.123  pL=-2.801e+00  kL=+9.037e-06  ratio=+1.0000  clip=0/40
+[round   55  samp   550/10000  upd   275]  mean_r=-0.021  pL=+3.840e-01  kL=+2.851e-05  ratio=+1.0000  clip=0/40
+[round   56  samp   560/10000  upd   280]  mean_r=-0.465  pL=+4.512e-01  kL=+2.312e-05  ratio=+1.0000  clip=0/40
+[round   57  samp   570/10000  upd   285]  mean_r=+0.098  pL=+2.074e-02  kL=+3.165e-05  ratio=+1.0000  clip=0/40
+[round   58  samp   580/10000  upd   290]  mean_r=+0.237  pL=-1.970e+00  kL=+2.272e-05  ratio=+1.0000  clip=0/40
+[round   59  samp   590/10000  upd   295]  mean_r=+0.221  pL=-6.225e-01  kL=+1.705e-06  ratio=+1.0000  clip=0/40
+[round   60  samp   600/10000  upd   300]  mean_r=+0.473  pL=-1.601e+00  kL=+9.536e-06  ratio=+1.0000  clip=0/40
+[round   61  samp   610/10000  upd   305]  mean_r=+0.060  pL=+2.416e-01  kL=+5.036e-05  ratio=+1.0000  clip=0/40
+[round   62  samp   620/10000  upd   310]  mean_r=+0.100  pL=-4.296e-01  kL=+1.219e-05  ratio=+1.0000  clip=0/40
+[round   63  samp   630/10000  upd   315]  mean_r=+0.119  pL=+1.712e+00  kL=+2.618e-05  ratio=+1.0000  clip=0/40
+[round   64  samp   640/10000  upd   320]  mean_r=-0.299  pL=+1.579e+00  kL=+2.880e-06  ratio=+1.0000  clip=0/40
+[round   65  samp   650/10000  upd   325]  mean_r=+0.016  pL=+3.355e-02  kL=+4.573e-05  ratio=+0.9999  clip=1/40
+[round   66  samp   660/10000  upd   330]  mean_r=+0.579  pL=-6.808e-01  kL=+8.117e-06  ratio=+1.0000  clip=0/40
+[round   67  samp   670/10000  upd   335]  mean_r=-0.407  pL=-1.521e+00  kL=+7.572e-06  ratio=+1.0000  clip=0/40
+[round   68  samp   680/10000  upd   340]  mean_r=-0.004  pL=-2.263e-01  kL=+4.247e-05  ratio=+1.0000  clip=0/40
+[round   69  samp   690/10000  upd   345]  mean_r=+0.640  pL=-1.848e+00  kL=+3.136e-06  ratio=+1.0000  clip=0/40
+[round   70  samp   700/10000  upd   350]  mean_r=-0.941  pL=+5.703e+00  kL=+1.309e-05  ratio=+1.0000  clip=0/40
+[round   71  samp   710/10000  upd   355]  mean_r=+0.010  pL=+8.195e-01  kL=+5.698e-05  ratio=+1.0000  clip=0/40
+[round   72  samp   720/10000  upd   360]  mean_r=-0.810  pL=+3.727e+00  kL=+1.585e-05  ratio=+1.0000  clip=0/40
+[round   73  samp   730/10000  upd   365]  mean_r=-0.379  pL=+2.827e+00  kL=+4.515e-05  ratio=+1.0000  clip=0/40
+[round   74  samp   740/10000  upd   370]  mean_r=-0.178  pL=-4.629e-01  kL=+8.887e-06  ratio=+1.0000  clip=0/40
+[round   75  samp   750/10000  upd   375]  mean_r=+0.563  pL=-3.373e+00  kL=+1.336e-05  ratio=+1.0000  clip=0/40
+[round   76  samp   760/10000  upd   380]  mean_r=+0.404  pL=+5.914e-01  kL=+3.172e-05  ratio=+1.0000  clip=0/40
+[round   77  samp   770/10000  upd   385]  mean_r=+0.800  pL=-3.480e+00  kL=+1.917e-06  ratio=+1.0000  clip=0/40
+[round   78  samp   780/10000  upd   390]  mean_r=-0.076  pL=-3.647e-02  kL=+2.711e-06  ratio=+1.0000  clip=0/40
+[round   79  samp   790/10000  upd   395]  mean_r=+0.134  pL=+2.478e-02  kL=+7.804e-06  ratio=+1.0000  clip=0/40
+[round   80  samp   800/10000  upd   400]  mean_r=+0.140  pL=-1.600e+00  kL=+7.039e-05  ratio=+1.0000  clip=0/40
+[round   81  samp   810/10000  upd   405]  mean_r=-0.092  pL=+6.096e-02  kL=+2.154e-05  ratio=+1.0000  clip=0/40
+[round   82  samp   820/10000  upd   410]  mean_r=+0.437  pL=+8.529e-02  kL=+3.653e-05  ratio=+1.0000  clip=0/40
+[round   83  samp   830/10000  upd   415]  mean_r=-0.083  pL=-4.910e-01  kL=+6.633e-06  ratio=+1.0000  clip=0/40
+[round   84  samp   840/10000  upd   420]  mean_r=+0.189  pL=-1.816e-01  kL=+5.862e-05  ratio=+1.0000  clip=0/40
+[round   85  samp   850/10000  upd   425]  mean_r=-0.313  pL=+9.269e-01  kL=+2.101e-05  ratio=+1.0000  clip=0/40
+[round   86  samp   860/10000  upd   430]  mean_r=+0.178  pL=+1.638e+00  kL=+1.766e-05  ratio=+1.0000  clip=0/40
+[round   87  samp   870/10000  upd   435]  mean_r=+0.322  pL=-1.981e+00  kL=+3.465e-05  ratio=+1.0000  clip=0/40
+[round   88  samp   880/10000  upd   440]  mean_r=+0.243  pL=-3.560e-03  kL=+2.050e-05  ratio=+1.0000  clip=0/40
+[round   89  samp   890/10000  upd   445]  mean_r=+0.616  pL=-9.527e-01  kL=+1.460e-05  ratio=+1.0000  clip=0/40
+[round   90  samp   900/10000  upd   450]  mean_r=+0.221  pL=+1.033e+00  kL=+9.433e-06  ratio=+1.0000  clip=0/40
+[round   91  samp   910/10000  upd   455]  mean_r=+0.425  pL=-1.219e+00  kL=+3.083e-05  ratio=+1.0000  clip=0/40
+[round   92  samp   920/10000  upd   460]  mean_r=-0.146  pL=+1.947e+00  kL=+1.929e-05  ratio=+1.0000  clip=0/40
+[round   93  samp   930/10000  upd   465]  mean_r=+0.116  pL=-3.360e-01  kL=+4.332e-05  ratio=+1.0000  clip=1/40
+[round   94  samp   940/10000  upd   470]  mean_r=+0.004  pL=-6.416e-01  kL=+7.806e-06  ratio=+1.0000  clip=0/40
+[round   95  samp   950/10000  upd   475]  mean_r=-0.079  pL=-1.906e+00  kL=+1.563e-05  ratio=+1.0000  clip=0/40
+[round   96  samp   960/10000  upd   480]  mean_r=+0.818  pL=-3.651e+00  kL=+7.939e-06  ratio=+1.0000  clip=0/40
+[round   97  samp   970/10000  upd   485]  mean_r=-0.385  pL=+1.187e+00  kL=+2.887e-05  ratio=+1.0000  clip=0/40
+[round   98  samp   980/10000  upd   490]  mean_r=-0.976  pL=+3.489e+00  kL=+1.965e-05  ratio=+1.0000  clip=0/40
+[round   99  samp   990/10000  upd   495]  mean_r=-0.013  pL=+6.614e-01  kL=+2.998e-05  ratio=+1.0000  clip=0/40
+[round  100  samp  1000/10000  upd   500]  mean_r=+0.155  pL=-6.074e-01  kL=+3.254e-05  ratio=+1.0000  clip=0/40
+  checkpoint: /home/3223837/dpok_outputs/imagereward_test/484796/checkpoints/round_00100
+[round  101  samp  1010/10000  upd   505]  mean_r=+0.686  pL=-8.058e-01  kL=+1.489e-05  ratio=+1.0000  clip=0/40
+[round  102  samp  1020/10000  upd   510]  mean_r=+0.115  pL=+9.571e-01  kL=+3.573e-06  ratio=+1.0000  clip=0/40
+[round  103  samp  1030/10000  upd   515]  mean_r=+0.213  pL=-4.765e-01  kL=+1.764e-05  ratio=+1.0000  clip=0/40
+[round  104  samp  1040/10000  upd   520]  mean_r=+0.017  pL=+4.638e-01  kL=+1.002e-05  ratio=+1.0000  clip=0/40
+[round  105  samp  1050/10000  upd   525]  mean_r=-0.323  pL=+3.101e+00  kL=+1.011e-05  ratio=+1.0000  clip=0/40
+[round  106  samp  1060/10000  upd   530]  mean_r=-0.404  pL=+2.290e+00  kL=+1.608e-05  ratio=+1.0000  clip=0/40
+[round  107  samp  1070/10000  upd   535]  mean_r=+0.050  pL=-1.596e-01  kL=+1.253e-05  ratio=+1.0000  clip=0/40
+[round  108  samp  1080/10000  upd   540]  mean_r=+0.667  pL=-1.050e+00  kL=+1.469e-05  ratio=+1.0000  clip=0/40
+[round  109  samp  1090/10000  upd   545]  mean_r=+0.381  pL=-4.113e-02  kL=+1.041e-05  ratio=+1.0000  clip=0/40
+[round  110  samp  1100/10000  upd   550]  mean_r=+0.265  pL=+5.321e-01  kL=+2.698e-05  ratio=+1.0000  clip=0/40
+[round  111  samp  1110/10000  upd   555]  mean_r=-0.129  pL=-3.758e-01  kL=+1.670e-05  ratio=+1.0000  clip=0/40
+[round  112  samp  1120/10000  upd   560]  mean_r=-0.617  pL=+1.625e-01  kL=+1.710e-05  ratio=+1.0000  clip=0/40
+[round  113  samp  1130/10000  upd   565]  mean_r=+0.487  pL=-3.286e+00  kL=+2.186e-05  ratio=+1.0000  clip=0/40
+[round  114  samp  1140/10000  upd   570]  mean_r=-0.091  pL=+6.015e-02  kL=+3.339e-05  ratio=+1.0000  clip=0/40
+[round  115  samp  1150/10000  upd   575]  mean_r=-0.033  pL=+3.230e+00  kL=+3.751e-05  ratio=+1.0000  clip=0/40
+[round  116  samp  1160/10000  upd   580]  mean_r=-0.091  pL=+5.388e-02  kL=+1.128e-05  ratio=+1.0000  clip=0/40
+[round  117  samp  1170/10000  upd   585]  mean_r=+0.387  pL=-2.107e+00  kL=+1.906e-05  ratio=+1.0000  clip=0/40
+[round  118  samp  1180/10000  upd   590]  mean_r=-0.069  pL=-1.611e+00  kL=+2.794e-05  ratio=+1.0000  clip=0/40
+[round  119  samp  1190/10000  upd   595]  mean_r=+0.165  pL=-6.278e-01  kL=+6.457e-06  ratio=+1.0000  clip=0/40
+[round  120  samp  1200/10000  upd   600]  mean_r=+0.915  pL=-1.111e+00  kL=+3.801e-05  ratio=+1.0000  clip=0/40
+[round  121  samp  1210/10000  upd   605]  mean_r=-0.437  pL=+2.436e+00  kL=+3.058e-05  ratio=+1.0000  clip=0/40
+[round  122  samp  1220/10000  upd   610]  mean_r=-0.797  pL=+2.314e+00  kL=+4.147e-05  ratio=+1.0000  clip=0/40
+[round  123  samp  1230/10000  upd   615]  mean_r=+0.129  pL=-1.418e+00  kL=+2.590e-05  ratio=+1.0000  clip=0/40
+[round  124  samp  1240/10000  upd   620]  mean_r=+0.075  pL=-2.667e+00  kL=+7.619e-06  ratio=+1.0000  clip=0/40
+[round  125  samp  1250/10000  upd   625]  mean_r=+0.363  pL=-2.107e+00  kL=+1.142e-04  ratio=+1.0000  clip=0/40
+[round  126  samp  1260/10000  upd   630]  mean_r=-0.609  pL=+3.521e+00  kL=+4.346e-06  ratio=+1.0000  clip=0/40
+[round  127  samp  1270/10000  upd   635]  mean_r=-0.003  pL=+5.070e-01  kL=+6.483e-06  ratio=+1.0000  clip=0/40
+[round  128  samp  1280/10000  upd   640]  mean_r=-0.151  pL=+1.960e+00  kL=+2.814e-05  ratio=+1.0000  clip=0/40
+[round  129  samp  1290/10000  upd   645]  mean_r=+0.423  pL=-4.811e-02  kL=+3.543e-05  ratio=+1.0000  clip=0/40
+[round  130  samp  1300/10000  upd   650]  mean_r=-0.341  pL=+1.667e+00  kL=+4.672e-05  ratio=+1.0000  clip=0/40
+[round  131  samp  1310/10000  upd   655]  mean_r=+0.504  pL=-8.187e-01  kL=+1.956e-05  ratio=+1.0000  clip=0/40
+[round  132  samp  1320/10000  upd   660]  mean_r=-0.132  pL=+1.404e+00  kL=+2.241e-05  ratio=+1.0000  clip=0/40
+[round  133  samp  1330/10000  upd   665]  mean_r=+0.157  pL=-2.061e+00  kL=+1.935e-05  ratio=+1.0000  clip=0/40
+[round  134  samp  1340/10000  upd   670]  mean_r=-0.137  pL=+1.155e+00  kL=+2.420e-05  ratio=+1.0000  clip=0/40
+[round  135  samp  1350/10000  upd   675]  mean_r=-0.422  pL=+5.389e-01  kL=+5.720e-05  ratio=+1.0000  clip=0/40
+[round  136  samp  1360/10000  upd   680]  mean_r=-0.448  pL=+1.421e+00  kL=+3.225e-05  ratio=+1.0000  clip=0/40
+[round  137  samp  1370/10000  upd   685]  mean_r=-0.038  pL=-3.162e-01  kL=+5.441e-05  ratio=+1.0000  clip=0/40
+[round  138  samp  1380/10000  upd   690]  mean_r=+0.137  pL=-7.637e-01  kL=+6.602e-05  ratio=+1.0000  clip=0/40
+[round  139  samp  1390/10000  upd   695]  mean_r=+0.112  pL=-3.000e-01  kL=+5.125e-05  ratio=+1.0000  clip=0/40
+[round  140  samp  1400/10000  upd   700]  mean_r=-0.253  pL=-2.652e+00  kL=+1.620e-05  ratio=+1.0000  clip=0/40
+[round  141  samp  1410/10000  upd   705]  mean_r=-0.444  pL=+2.220e-01  kL=+6.570e-05  ratio=+1.0000  clip=0/40
+[round  142  samp  1420/10000  upd   710]  mean_r=+0.587  pL=-2.809e+00  kL=+6.580e-06  ratio=+1.0000  clip=0/40
+[round  143  samp  1430/10000  upd   715]  mean_r=-0.310  pL=+2.061e-01  kL=+5.405e-05  ratio=+1.0000  clip=0/40
+[round  144  samp  1440/10000  upd   720]  mean_r=-0.125  pL=-2.460e+00  kL=+2.209e-05  ratio=+1.0000  clip=0/40
+[round  145  samp  1450/10000  upd   725]  mean_r=+0.200  pL=+1.894e-01  kL=+5.593e-05  ratio=+1.0000  clip=0/40
+[round  146  samp  1460/10000  upd   730]  mean_r=+0.175  pL=+9.544e-01  kL=+6.796e-05  ratio=+1.0000  clip=0/40
+[round  147  samp  1470/10000  upd   735]  mean_r=+0.287  pL=+4.491e-01  kL=+2.095e-05  ratio=+1.0000  clip=0/40
+[round  148  samp  1480/10000  upd   740]  mean_r=-0.623  pL=+2.914e+00  kL=+4.809e-05  ratio=+1.0000  clip=0/40
+[round  149  samp  1490/10000  upd   745]  mean_r=-0.043  pL=+5.255e-01  kL=+4.808e-05  ratio=+1.0000  clip=0/40
+[round  150  samp  1500/10000  upd   750]  mean_r=+0.429  pL=-2.088e+00  kL=+7.756e-05  ratio=+1.0000  clip=0/40
+[round  151  samp  1510/10000  upd   755]  mean_r=-0.447  pL=+2.558e-01  kL=+3.872e-05  ratio=+1.0000  clip=0/40
+[round  152  samp  1520/10000  upd   760]  mean_r=+0.495  pL=-3.039e+00  kL=+2.397e-05  ratio=+1.0000  clip=0/40
+[round  153  samp  1530/10000  upd   765]  mean_r=-0.251  pL=+4.032e-01  kL=+4.278e-05  ratio=+1.0000  clip=0/40
+[round  154  samp  1540/10000  upd   770]  mean_r=+0.053  pL=-1.576e+00  kL=+6.991e-05  ratio=+1.0000  clip=0/40
+[round  155  samp  1550/10000  upd   775]  mean_r=-0.517  pL=+3.774e+00  kL=+2.983e-05  ratio=+1.0000  clip=0/40
+[round  156  samp  1560/10000  upd   780]  mean_r=+0.269  pL=+5.080e-01  kL=+1.916e-05  ratio=+1.0000  clip=0/40
+[round  157  samp  1570/10000  upd   785]  mean_r=-0.142  pL=-1.308e+00  kL=+2.139e-05  ratio=+1.0000  clip=0/40
+[round  158  samp  1580/10000  upd   790]  mean_r=+0.082  pL=-1.964e+00  kL=+3.916e-06  ratio=+1.0000  clip=0/40
+[round  159  samp  1590/10000  upd   795]  mean_r=-0.100  pL=+1.644e+00  kL=+3.181e-05  ratio=+1.0000  clip=0/40
+[round  160  samp  1600/10000  upd   800]  mean_r=-0.363  pL=+3.133e+00  kL=+1.638e-05  ratio=+1.0000  clip=0/40
+[round  161  samp  1610/10000  upd   805]  mean_r=-0.317  pL=+9.174e-01  kL=+7.028e-05  ratio=+1.0000  clip=0/40
+[round  162  samp  1620/10000  upd   810]  mean_r=+0.179  pL=-2.242e-01  kL=+6.211e-05  ratio=+1.0000  clip=0/40
+[round  163  samp  1630/10000  upd   815]  mean_r=-0.402  pL=+1.824e+00  kL=+5.230e-05  ratio=+1.0000  clip=0/40
+[round  164  samp  1640/10000  upd   820]  mean_r=-0.435  pL=-7.222e-01  kL=+5.738e-05  ratio=+1.0000  clip=0/40
+[round  165  samp  1650/10000  upd   825]  mean_r=-0.401  pL=+5.386e-01  kL=+5.432e-05  ratio=+1.0000  clip=0/40
+[round  166  samp  1660/10000  upd   830]  mean_r=+0.827  pL=-3.913e+00  kL=+1.983e-05  ratio=+1.0000  clip=0/40
+[round  167  samp  1670/10000  upd   835]  mean_r=+0.467  pL=-1.813e-01  kL=+7.548e-06  ratio=+1.0000  clip=0/40
+[round  168  samp  1680/10000  upd   840]  mean_r=-0.430  pL=-3.453e-02  kL=+1.263e-05  ratio=+1.0000  clip=0/40
+[round  169  samp  1690/10000  upd   845]  mean_r=+0.361  pL=-1.380e-01  kL=+2.283e-05  ratio=+1.0000  clip=0/40
+[round  170  samp  1700/10000  upd   850]  mean_r=-0.212  pL=-5.662e-01  kL=+2.007e-05  ratio=+1.0000  clip=0/40
+[round  171  samp  1710/10000  upd   855]  mean_r=+0.510  pL=-2.386e+00  kL=+2.598e-05  ratio=+1.0000  clip=0/40
+[round  172  samp  1720/10000  upd   860]  mean_r=+0.197  pL=+3.947e-01  kL=+2.182e-05  ratio=+1.0000  clip=0/40
+[round  173  samp  1730/10000  upd   865]  mean_r=+0.493  pL=+9.083e-01  kL=+4.561e-05  ratio=+1.0000  clip=0/40
+[round  174  samp  1740/10000  upd   870]  mean_r=+0.009  pL=-9.545e-01  kL=+5.915e-06  ratio=+1.0000  clip=0/40
+[round  175  samp  1750/10000  upd   875]  mean_r=-0.362  pL=+4.564e+00  kL=+4.628e-05  ratio=+1.0000  clip=0/40
+[round  176  samp  1760/10000  upd   880]  mean_r=+0.667  pL=-2.338e-01  kL=+1.802e-05  ratio=+1.0000  clip=0/40
+[round  177  samp  1770/10000  upd   885]  mean_r=-0.003  pL=+4.084e-01  kL=+4.348e-05  ratio=+1.0000  clip=0/40
+[round  178  samp  1780/10000  upd   890]  mean_r=-0.064  pL=+4.427e-01  kL=+1.180e-05  ratio=+1.0000  clip=0/40
+[round  179  samp  1790/10000  upd   895]  mean_r=+0.220  pL=-1.205e-01  kL=+3.391e-05  ratio=+1.0000  clip=0/40
+[round  180  samp  1800/10000  upd   900]  mean_r=-0.583  pL=+2.000e+00  kL=+3.139e-05  ratio=+1.0000  clip=0/40
+[round  181  samp  1810/10000  upd   905]  mean_r=-0.386  pL=-2.041e-01  kL=+1.659e-05  ratio=+1.0000  clip=0/40
+[round  182  samp  1820/10000  upd   910]  mean_r=+0.097  pL=+5.957e-01  kL=+5.257e-05  ratio=+1.0000  clip=0/40
+[round  183  samp  1830/10000  upd   915]  mean_r=+0.228  pL=+4.434e-01  kL=+6.325e-05  ratio=+1.0000  clip=0/40
+[round  184  samp  1840/10000  upd   920]  mean_r=-0.181  pL=-1.563e+00  kL=+1.109e-04  ratio=+1.0000  clip=0/40
+[round  185  samp  1850/10000  upd   925]  mean_r=+0.238  pL=-1.364e+00  kL=+7.048e-05  ratio=+1.0000  clip=0/40
+[round  186  samp  1860/10000  upd   930]  mean_r=-0.080  pL=-6.302e-01  kL=+7.149e-05  ratio=+1.0000  clip=0/40
+[round  187  samp  1870/10000  upd   935]  mean_r=-0.530  pL=+2.370e+00  kL=+5.361e-05  ratio=+1.0000  clip=0/40
+[round  188  samp  1880/10000  upd   940]  mean_r=-0.143  pL=-1.594e-01  kL=+5.721e-05  ratio=+1.0000  clip=0/40
+[round  189  samp  1890/10000  upd   945]  mean_r=-0.378  pL=+2.420e+00  kL=+1.628e-05  ratio=+1.0000  clip=0/40
+[round  190  samp  1900/10000  upd   950]  mean_r=+0.001  pL=-2.188e+00  kL=+1.708e-05  ratio=+1.0000  clip=0/40
+[round  191  samp  1910/10000  upd   955]  mean_r=-0.467  pL=+1.138e+00  kL=+3.983e-05  ratio=+1.0000  clip=0/40
+[round  192  samp  1920/10000  upd   960]  mean_r=+0.095  pL=-1.969e+00  kL=+4.253e-05  ratio=+1.0000  clip=0/40
+[round  193  samp  1930/10000  upd   965]  mean_r=+0.233  pL=+8.086e-01  kL=+1.229e-05  ratio=+1.0000  clip=0/40
+[round  194  samp  1940/10000  upd   970]  mean_r=+0.026  pL=-8.830e-01  kL=+2.402e-05  ratio=+1.0000  clip=0/40
+[round  195  samp  1950/10000  upd   975]  mean_r=+0.426  pL=-2.512e+00  kL=+3.223e-05  ratio=+1.0000  clip=0/40
+[round  196  samp  1960/10000  upd   980]  mean_r=+0.183  pL=-1.413e+00  kL=+3.738e-05  ratio=+1.0000  clip=0/40
+[round  197  samp  1970/10000  upd   985]  mean_r=-0.083  pL=+1.222e+00  kL=+6.627e-05  ratio=+1.0000  clip=0/40
+[round  198  samp  1980/10000  upd   990]  mean_r=-0.670  pL=+3.055e+00  kL=+2.093e-05  ratio=+1.0000  clip=0/40
+[round  199  samp  1990/10000  upd   995]  mean_r=+0.440  pL=-1.725e+00  kL=+1.065e-05  ratio=+1.0000  clip=0/40
+[round  200  samp  2000/10000  upd  1000]  mean_r=-0.897  pL=+7.250e-01  kL=+4.717e-05  ratio=+1.0000  clip=0/40
+  checkpoint: /home/3223837/dpok_outputs/imagereward_test/484796/checkpoints/round_00200
+[round  201  samp  2010/10000  upd  1005]  mean_r=+0.259  pL=-2.050e-01  kL=+5.905e-05  ratio=+1.0000  clip=0/40
+[round  202  samp  2020/10000  upd  1010]  mean_r=+0.083  pL=-1.819e+00  kL=+1.510e-05  ratio=+1.0000  clip=0/40
+[round  203  samp  2030/10000  upd  1015]  mean_r=+0.148  pL=+7.281e-01  kL=+2.517e-05  ratio=+1.0000  clip=0/40
+[round  204  samp  2040/10000  upd  1020]  mean_r=-0.020  pL=+5.588e-01  kL=+3.793e-05  ratio=+1.0000  clip=0/40
+[round  205  samp  2050/10000  upd  1025]  mean_r=+0.441  pL=-9.417e-01  kL=+7.552e-05  ratio=+1.0000  clip=0/40
+[round  206  samp  2060/10000  upd  1030]  mean_r=-0.077  pL=-9.476e-01  kL=+6.118e-05  ratio=+1.0000  clip=0/40
+[round  207  samp  2070/10000  upd  1035]  mean_r=+0.091  pL=-2.001e-01  kL=+1.138e-05  ratio=+1.0000  clip=0/40
+[round  208  samp  2080/10000  upd  1040]  mean_r=-0.449  pL=+1.110e+00  kL=+4.012e-05  ratio=+1.0000  clip=0/40
+[round  209  samp  2090/10000  upd  1045]  mean_r=+0.069  pL=-7.610e-01  kL=+3.039e-05  ratio=+1.0000  clip=0/40
+[round  210  samp  2100/10000  upd  1050]  mean_r=-0.174  pL=+2.521e+00  kL=+8.796e-06  ratio=+1.0000  clip=0/40
+[round  211  samp  2110/10000  upd  1055]  mean_r=-0.278  pL=+3.103e-01  kL=+5.840e-05  ratio=+1.0000  clip=0/40
+[round  212  samp  2120/10000  upd  1060]  mean_r=-0.313  pL=+4.133e-01  kL=+3.575e-05  ratio=+1.0000  clip=0/40
+[round  213  samp  2130/10000  upd  1065]  mean_r=+0.070  pL=-3.592e-01  kL=+2.150e-05  ratio=+1.0000  clip=0/40
+[round  214  samp  2140/10000  upd  1070]  mean_r=-0.192  pL=+1.083e+00  kL=+8.585e-05  ratio=+1.0000  clip=0/40
+[round  215  samp  2150/10000  upd  1075]  mean_r=+0.311  pL=-3.354e-01  kL=+2.179e-05  ratio=+1.0000  clip=0/40
+[round  216  samp  2160/10000  upd  1080]  mean_r=-0.103  pL=+9.936e-01  kL=+8.155e-06  ratio=+1.0000  clip=0/40
+[round  217  samp  2170/10000  upd  1085]  mean_r=+0.534  pL=-1.695e+00  kL=+7.806e-05  ratio=+1.0000  clip=0/40
+[round  218  samp  2180/10000  upd  1090]  mean_r=+0.227  pL=-1.537e+00  kL=+5.504e-05  ratio=+1.0000  clip=0/40
+[round  219  samp  2190/10000  upd  1095]  mean_r=+0.315  pL=-1.439e+00  kL=+8.666e-05  ratio=+1.0000  clip=0/40
+[round  220  samp  2200/10000  upd  1100]  mean_r=+0.251  pL=-5.400e-01  kL=+1.475e-05  ratio=+1.0000  clip=0/40
+[round  221  samp  2210/10000  upd  1105]  mean_r=-0.530  pL=+2.945e+00  kL=+4.338e-05  ratio=+1.0000  clip=0/40
+[round  222  samp  2220/10000  upd  1110]  mean_r=+0.510  pL=-2.025e+00  kL=+4.824e-05  ratio=+1.0000  clip=0/40
+[round  223  samp  2230/10000  upd  1115]  mean_r=+0.158  pL=+3.138e-01  kL=+3.095e-05  ratio=+1.0000  clip=0/40
+[round  224  samp  2240/10000  upd  1120]  mean_r=+0.646  pL=-1.335e+00  kL=+1.544e-05  ratio=+1.0000  clip=0/40
+[round  225  samp  2250/10000  upd  1125]  mean_r=+0.112  pL=+6.350e-01  kL=+1.420e-05  ratio=+1.0000  clip=0/40
+[round  226  samp  2260/10000  upd  1130]  mean_r=+0.092  pL=+9.954e-01  kL=+3.823e-06  ratio=+1.0000  clip=0/40
+[round  227  samp  2270/10000  upd  1135]  mean_r=-0.268  pL=+1.306e+00  kL=+5.512e-05  ratio=+1.0000  clip=0/40
+[round  228  samp  2280/10000  upd  1140]  mean_r=-0.344  pL=+1.404e+00  kL=+4.654e-05  ratio=+1.0000  clip=0/40
+[round  229  samp  2290/10000  upd  1145]  mean_r=-0.050  pL=+6.968e-02  kL=+3.353e-05  ratio=+1.0000  clip=0/40
+[round  230  samp  2300/10000  upd  1150]  mean_r=-0.102  pL=-1.265e+00  kL=+3.049e-05  ratio=+1.0000  clip=0/40
+[round  231  samp  2310/10000  upd  1155]  mean_r=+0.378  pL=-1.991e+00  kL=+5.670e-05  ratio=+1.0000  clip=0/40
+[round  232  samp  2320/10000  upd  1160]  mean_r=+0.614  pL=-3.528e+00  kL=+4.671e-06  ratio=+1.0000  clip=0/40
+[round  233  samp  2330/10000  upd  1165]  mean_r=+0.110  pL=+1.153e+00  kL=+5.780e-05  ratio=+1.0000  clip=0/40
+[round  234  samp  2340/10000  upd  1170]  mean_r=-0.274  pL=+3.475e+00  kL=+1.759e-05  ratio=+1.0000  clip=0/40
+[round  235  samp  2350/10000  upd  1175]  mean_r=+0.111  pL=-1.026e+00  kL=+3.147e-05  ratio=+1.0000  clip=0/40
+[round  236  samp  2360/10000  upd  1180]  mean_r=-0.183  pL=+1.148e+00  kL=+7.268e-05  ratio=+1.0000  clip=0/40
+[round  237  samp  2370/10000  upd  1185]  mean_r=-0.719  pL=+4.671e+00  kL=+1.694e-05  ratio=+1.0000  clip=0/40
+[round  238  samp  2380/10000  upd  1190]  mean_r=-0.434  pL=+1.242e+00  kL=+3.772e-05  ratio=+1.0000  clip=0/40
+[round  239  samp  2390/10000  upd  1195]  mean_r=-0.301  pL=+2.652e+00  kL=+6.025e-05  ratio=+1.0000  clip=0/40
+[round  240  samp  2400/10000  upd  1200]  mean_r=+0.051  pL=+6.058e-01  kL=+3.120e-05  ratio=+1.0000  clip=0/40
+[round  241  samp  2410/10000  upd  1205]  mean_r=+0.114  pL=-2.149e+00  kL=+5.577e-05  ratio=+1.0000  clip=0/40
+[round  242  samp  2420/10000  upd  1210]  mean_r=+0.496  pL=-2.488e+00  kL=+1.285e-05  ratio=+1.0000  clip=0/40
+[round  243  samp  2430/10000  upd  1215]  mean_r=-0.352  pL=+7.749e-01  kL=+1.567e-05  ratio=+1.0000  clip=0/40
+[round  244  samp  2440/10000  upd  1220]  mean_r=+0.593  pL=-1.322e+00  kL=+4.030e-05  ratio=+1.0000  clip=0/40
+[round  245  samp  2450/10000  upd  1225]  mean_r=-0.485  pL=+2.899e-01  kL=+4.304e-05  ratio=+1.0000  clip=0/40
+[round  246  samp  2460/10000  upd  1230]  mean_r=+0.449  pL=-1.475e+00  kL=+4.123e-05  ratio=+1.0000  clip=0/40
+[round  247  samp  2470/10000  upd  1235]  mean_r=+0.012  pL=-1.190e+00  kL=+1.296e-04  ratio=+1.0000  clip=0/40
+[round  248  samp  2480/10000  upd  1240]  mean_r=-0.153  pL=-5.376e-01  kL=+1.772e-05  ratio=+1.0000  clip=0/40
+[round  249  samp  2490/10000  upd  1245]  mean_r=+0.189  pL=-6.636e-01  kL=+6.129e-05  ratio=+1.0000  clip=0/40
+[round  250  samp  2500/10000  upd  1250]  mean_r=-0.084  pL=+1.150e+00  kL=+3.912e-05  ratio=+1.0000  clip=0/40
+[round  251  samp  2510/10000  upd  1255]  mean_r=+0.315  pL=+6.936e-01  kL=+8.166e-06  ratio=+1.0000  clip=0/40
+[round  252  samp  2520/10000  upd  1260]  mean_r=+0.096  pL=+9.115e-01  kL=+4.861e-05  ratio=+1.0000  clip=0/40
+[round  253  samp  2530/10000  upd  1265]  mean_r=+0.212  pL=+9.763e-01  kL=+1.908e-05  ratio=+1.0000  clip=0/40
+[round  254  samp  2540/10000  upd  1270]  mean_r=-0.175  pL=+5.138e-01  kL=+3.419e-05  ratio=+1.0000  clip=0/40
+[round  255  samp  2550/10000  upd  1275]  mean_r=+0.638  pL=-1.499e+00  kL=+5.302e-05  ratio=+1.0000  clip=0/40
+[round  256  samp  2560/10000  upd  1280]  mean_r=-0.493  pL=+4.785e-01  kL=+2.268e-05  ratio=+1.0000  clip=0/40
+[round  257  samp  2570/10000  upd  1285]  mean_r=-0.295  pL=+9.594e-02  kL=+6.269e-05  ratio=+1.0000  clip=0/40
+[round  258  samp  2580/10000  upd  1290]  mean_r=-0.114  pL=-1.912e-01  kL=+2.742e-05  ratio=+1.0000  clip=0/40
+[round  259  samp  2590/10000  upd  1295]  mean_r=+0.462  pL=-1.921e+00  kL=+3.922e-05  ratio=+1.0000  clip=0/40
+[round  260  samp  2600/10000  upd  1300]  mean_r=+0.635  pL=+5.051e-01  kL=+8.382e-05  ratio=+1.0000  clip=0/40
+[round  261  samp  2610/10000  upd  1305]  mean_r=-0.202  pL=+2.033e+00  kL=+1.739e-05  ratio=+1.0000  clip=0/40
+[round  262  samp  2620/10000  upd  1310]  mean_r=+0.127  pL=-1.261e+00  kL=+1.957e-05  ratio=+1.0000  clip=0/40
+[round  263  samp  2630/10000  upd  1315]  mean_r=+0.509  pL=-2.407e+00  kL=+7.603e-05  ratio=+1.0000  clip=0/40
+[round  264  samp  2640/10000  upd  1320]  mean_r=-0.103  pL=+6.939e-01  kL=+8.042e-05  ratio=+1.0000  clip=0/40
+[round  265  samp  2650/10000  upd  1325]  mean_r=+0.028  pL=-7.656e-01  kL=+5.948e-05  ratio=+1.0000  clip=0/40
+[round  266  samp  2660/10000  upd  1330]  mean_r=+0.079  pL=-1.389e+00  kL=+7.353e-05  ratio=+1.0000  clip=0/40
+[round  267  samp  2670/10000  upd  1335]  mean_r=-0.125  pL=+9.334e-01  kL=+8.928e-06  ratio=+1.0000  clip=0/40
+[round  268  samp  2680/10000  upd  1340]  mean_r=+0.027  pL=+1.135e+00  kL=+2.684e-05  ratio=+1.0000  clip=0/40
+[round  269  samp  2690/10000  upd  1345]  mean_r=+0.682  pL=-2.823e+00  kL=+4.509e-05  ratio=+1.0000  clip=0/40
+[round  270  samp  2700/10000  upd  1350]  mean_r=-0.095  pL=+6.436e-01  kL=+6.096e-06  ratio=+1.0000  clip=0/40
+[round  271  samp  2710/10000  upd  1355]  mean_r=-0.480  pL=+3.960e-01  kL=+3.144e-05  ratio=+1.0000  clip=0/40
+[round  272  samp  2720/10000  upd  1360]  mean_r=+0.344  pL=+1.280e+00  kL=+1.986e-05  ratio=+1.0000  clip=0/40
+[round  273  samp  2730/10000  upd  1365]  mean_r=+0.277  pL=-1.012e+00  kL=+3.671e-05  ratio=+1.0000  clip=0/40
+[round  274  samp  2740/10000  upd  1370]  mean_r=+0.231  pL=-1.710e+00  kL=+9.475e-05  ratio=+1.0000  clip=0/40
+[round  275  samp  2750/10000  upd  1375]  mean_r=-0.122  pL=+2.954e+00  kL=+2.435e-05  ratio=+1.0000  clip=0/40
+[round  276  samp  2760/10000  upd  1380]  mean_r=+0.336  pL=-8.529e-01  kL=+3.887e-05  ratio=+1.0000  clip=0/40
+[round  277  samp  2770/10000  upd  1385]  mean_r=-0.129  pL=+5.209e-01  kL=+2.367e-05  ratio=+1.0000  clip=0/40
+[round  278  samp  2780/10000  upd  1390]  mean_r=+0.772  pL=-6.124e-01  kL=+6.675e-05  ratio=+1.0000  clip=0/40
+[round  279  samp  2790/10000  upd  1395]  mean_r=-0.255  pL=+7.327e-01  kL=+3.724e-05  ratio=+1.0000  clip=0/40
+[round  280  samp  2800/10000  upd  1400]  mean_r=-0.337  pL=+1.524e+00  kL=+6.243e-05  ratio=+1.0000  clip=0/40
+[round  281  samp  2810/10000  upd  1405]  mean_r=+0.504  pL=-1.830e+00  kL=+1.857e-05  ratio=+1.0000  clip=0/40
+[round  282  samp  2820/10000  upd  1410]  mean_r=+0.593  pL=-2.036e+00  kL=+8.675e-06  ratio=+1.0000  clip=0/40
+[round  283  samp  2830/10000  upd  1415]  mean_r=+0.201  pL=-3.740e+00  kL=+9.424e-05  ratio=+1.0000  clip=0/40
+[round  284  samp  2840/10000  upd  1420]  mean_r=+0.695  pL=-1.297e+00  kL=+6.857e-05  ratio=+1.0000  clip=0/40
+[round  285  samp  2850/10000  upd  1425]  mean_r=-0.437  pL=+3.152e+00  kL=+2.517e-05  ratio=+1.0000  clip=0/40
+[round  286  samp  2860/10000  upd  1430]  mean_r=-0.244  pL=+4.211e+00  kL=+7.566e-06  ratio=+1.0000  clip=0/40
+[round  287  samp  2870/10000  upd  1435]  mean_r=+0.519  pL=-1.345e+00  kL=+5.473e-05  ratio=+1.0000  clip=0/40
+[round  288  samp  2880/10000  upd  1440]  mean_r=-0.301  pL=+2.923e+00  kL=+9.947e-05  ratio=+1.0000  clip=0/40
+[round  289  samp  2890/10000  upd  1445]  mean_r=+0.082  pL=+2.742e+00  kL=+6.656e-05  ratio=+1.0000  clip=0/40
+[round  290  samp  2900/10000  upd  1450]  mean_r=+0.063  pL=+5.342e-01  kL=+2.864e-05  ratio=+1.0000  clip=0/40
+[round  291  samp  2910/10000  upd  1455]  mean_r=-0.011  pL=-4.266e-01  kL=+5.064e-06  ratio=+1.0000  clip=0/40
+[round  292  samp  2920/10000  upd  1460]  mean_r=+0.114  pL=-5.346e-01  kL=+2.848e-05  ratio=+1.0000  clip=0/40
+[round  293  samp  2930/10000  upd  1465]  mean_r=-0.490  pL=+2.943e+00  kL=+3.577e-05  ratio=+1.0000  clip=0/40
+[round  294  samp  2940/10000  upd  1470]  mean_r=-0.069  pL=+4.112e-01  kL=+2.980e-05  ratio=+1.0000  clip=0/40
+[round  295  samp  2950/10000  upd  1475]  mean_r=+0.384  pL=-4.280e-01  kL=+3.868e-05  ratio=+1.0000  clip=0/40
+[round  296  samp  2960/10000  upd  1480]  mean_r=+0.678  pL=-3.506e+00  kL=+5.543e-05  ratio=+1.0000  clip=0/40
+[round  297  samp  2970/10000  upd  1485]  mean_r=+0.066  pL=+1.804e+00  kL=+8.457e-05  ratio=+1.0000  clip=0/40
+[round  298  samp  2980/10000  upd  1490]  mean_r=-0.464  pL=+9.837e-01  kL=+8.583e-05  ratio=+1.0000  clip=0/40
+[round  299  samp  2990/10000  upd  1495]  mean_r=+0.401  pL=-2.128e+00  kL=+3.163e-05  ratio=+1.0000  clip=0/40
+[round  300  samp  3000/10000  upd  1500]  mean_r=+0.325  pL=-1.939e+00  kL=+6.667e-05  ratio=+1.0000  clip=0/40
+  checkpoint: /home/3223837/dpok_outputs/imagereward_test/484796/checkpoints/round_00300
+[round  301  samp  3010/10000  upd  1505]  mean_r=-0.678  pL=+1.736e+00  kL=+6.730e-05  ratio=+1.0000  clip=0/40
+[round  302  samp  3020/10000  upd  1510]  mean_r=-0.085  pL=+4.718e-01  kL=+1.023e-04  ratio=+1.0000  clip=0/40
+[round  303  samp  3030/10000  upd  1515]  mean_r=-0.071  pL=+2.036e+00  kL=+5.492e-05  ratio=+1.0000  clip=0/40
+[round  304  samp  3040/10000  upd  1520]  mean_r=-0.395  pL=+1.312e-01  kL=+4.829e-05  ratio=+1.0000  clip=0/40
+[round  305  samp  3050/10000  upd  1525]  mean_r=+0.303  pL=-4.369e-01  kL=+7.298e-05  ratio=+1.0000  clip=0/40
+[round  306  samp  3060/10000  upd  1530]  mean_r=+0.199  pL=-8.206e-02  kL=+3.834e-05  ratio=+1.0000  clip=0/40
+[round  307  samp  3070/10000  upd  1535]  mean_r=-0.077  pL=+1.772e+00  kL=+6.030e-06  ratio=+1.0000  clip=0/40
+[round  308  samp  3080/10000  upd  1540]  mean_r=-0.021  pL=+8.035e-01  kL=+1.945e-05  ratio=+1.0000  clip=0/40
+[round  309  samp  3090/10000  upd  1545]  mean_r=+0.091  pL=-4.980e-01  kL=+3.499e-05  ratio=+1.0000  clip=0/40
+[round  310  samp  3100/10000  upd  1550]  mean_r=+0.539  pL=-7.561e-01  kL=+1.351e-05  ratio=+1.0000  clip=0/40
+[round  311  samp  3110/10000  upd  1555]  mean_r=+0.103  pL=-5.575e-01  kL=+9.913e-06  ratio=+1.0000  clip=0/40
+[round  312  samp  3120/10000  upd  1560]  mean_r=-0.188  pL=-1.150e+00  kL=+3.183e-05  ratio=+1.0000  clip=0/40
+[round  313  samp  3130/10000  upd  1565]  mean_r=-0.042  pL=-6.992e-01  kL=+9.252e-05  ratio=+1.0000  clip=0/40
+[round  314  samp  3140/10000  upd  1570]  mean_r=+0.225  pL=+4.740e-01  kL=+4.492e-05  ratio=+1.0000  clip=0/40
+[round  315  samp  3150/10000  upd  1575]  mean_r=-0.118  pL=+5.253e-01  kL=+7.183e-05  ratio=+1.0000  clip=0/40
+[round  316  samp  3160/10000  upd  1580]  mean_r=-0.148  pL=+7.707e-01  kL=+8.032e-06  ratio=+1.0000  clip=0/40
+[round  317  samp  3170/10000  upd  1585]  mean_r=-0.318  pL=+2.494e+00  kL=+4.961e-05  ratio=+1.0000  clip=0/40
+[round  318  samp  3180/10000  upd  1590]  mean_r=+0.401  pL=-8.784e-01  kL=+4.778e-05  ratio=+1.0000  clip=1/40
+[round  319  samp  3190/10000  upd  1595]  mean_r=-0.154  pL=+7.249e-02  kL=+1.035e-04  ratio=+1.0000  clip=0/40
+[round  320  samp  3200/10000  upd  1600]  mean_r=-0.323  pL=-2.199e+00  kL=+1.191e-05  ratio=+1.0000  clip=0/40
+[round  321  samp  3210/10000  upd  1605]  mean_r=+0.128  pL=-1.589e-01  kL=+2.868e-05  ratio=+1.0000  clip=0/40
+[round  322  samp  3220/10000  upd  1610]  mean_r=+0.020  pL=-9.555e-01  kL=+2.402e-05  ratio=+1.0000  clip=0/40
+[round  323  samp  3230/10000  upd  1615]  mean_r=+0.024  pL=+1.165e+00  kL=+3.535e-05  ratio=+1.0000  clip=0/40
+[round  324  samp  3240/10000  upd  1620]  mean_r=+0.632  pL=-1.151e+00  kL=+4.871e-05  ratio=+1.0000  clip=0/40
+[round  325  samp  3250/10000  upd  1625]  mean_r=+0.749  pL=-1.386e+00  kL=+8.506e-05  ratio=+1.0000  clip=0/40
+[round  326  samp  3260/10000  upd  1630]  mean_r=-0.376  pL=+1.296e+00  kL=+3.726e-05  ratio=+1.0000  clip=0/40
+[round  327  samp  3270/10000  upd  1635]  mean_r=-0.286  pL=+1.550e-01  kL=+2.524e-04  ratio=+1.0000  clip=0/40
+[round  328  samp  3280/10000  upd  1640]  mean_r=-0.486  pL=+2.738e+00  kL=+1.684e-05  ratio=+1.0000  clip=0/40
+[round  329  samp  3290/10000  upd  1645]  mean_r=-0.110  pL=+5.814e-02  kL=+3.210e-05  ratio=+1.0000  clip=0/40
+[round  330  samp  3300/10000  upd  1650]  mean_r=+0.682  pL=-2.169e+00  kL=+2.708e-05  ratio=+1.0000  clip=0/40
+[round  331  samp  3310/10000  upd  1655]  mean_r=-0.099  pL=-1.269e+00  kL=+1.695e-05  ratio=+1.0000  clip=0/40
+[round  332  samp  3320/10000  upd  1660]  mean_r=+0.651  pL=-1.509e+00  kL=+3.528e-05  ratio=+1.0000  clip=0/40
+[round  333  samp  3330/10000  upd  1665]  mean_r=-0.157  pL=+1.303e+00  kL=+2.833e-05  ratio=+1.0000  clip=0/40
+[round  334  samp  3340/10000  upd  1670]  mean_r=+0.580  pL=+8.495e-02  kL=+4.121e-05  ratio=+1.0000  clip=0/40
+[round  335  samp  3350/10000  upd  1675]  mean_r=-0.124  pL=+4.049e-01  kL=+1.151e-05  ratio=+1.0000  clip=0/40
+[round  336  samp  3360/10000  upd  1680]  mean_r=-0.375  pL=+2.089e+00  kL=+2.112e-05  ratio=+1.0000  clip=0/40
+[round  337  samp  3370/10000  upd  1685]  mean_r=-0.261  pL=+2.264e+00  kL=+4.045e-05  ratio=+1.0000  clip=0/40
+[round  338  samp  3380/10000  upd  1690]  mean_r=+0.416  pL=-1.033e+00  kL=+3.904e-05  ratio=+1.0000  clip=0/40
+[round  339  samp  3390/10000  upd  1695]  mean_r=+0.929  pL=-4.174e+00  kL=+1.013e-04  ratio=+1.0000  clip=0/40
+[round  340  samp  3400/10000  upd  1700]  mean_r=+0.350  pL=-6.045e-01  kL=+1.041e-04  ratio=+1.0000  clip=0/40
+[round  341  samp  3410/10000  upd  1705]  mean_r=-0.470  pL=+2.374e+00  kL=+2.901e-05  ratio=+1.0000  clip=0/40
+[round  342  samp  3420/10000  upd  1710]  mean_r=+0.180  pL=+4.276e-01  kL=+9.934e-05  ratio=+1.0000  clip=1/40
+[round  343  samp  3430/10000  upd  1715]  mean_r=+0.197  pL=-1.460e+00  kL=+2.652e-05  ratio=+1.0000  clip=0/40
+[round  344  samp  3440/10000  upd  1720]  mean_r=-0.191  pL=+1.758e+00  kL=+5.789e-05  ratio=+1.0000  clip=0/40
+[round  345  samp  3450/10000  upd  1725]  mean_r=+0.161  pL=-2.390e+00  kL=+3.433e-05  ratio=+1.0000  clip=0/40
+[round  346  samp  3460/10000  upd  1730]  mean_r=-0.250  pL=+1.028e+00  kL=+2.561e-05  ratio=+1.0000  clip=0/40
+[round  347  samp  3470/10000  upd  1735]  mean_r=+0.101  pL=+2.372e-01  kL=+7.291e-05  ratio=+1.0000  clip=0/40
+[round  348  samp  3480/10000  upd  1740]  mean_r=+0.526  pL=-5.183e-01  kL=+4.505e-05  ratio=+1.0000  clip=0/40
+[round  349  samp  3490/10000  upd  1745]  mean_r=+0.063  pL=-1.223e+00  kL=+6.388e-05  ratio=+1.0000  clip=0/40
+[round  350  samp  3500/10000  upd  1750]  mean_r=+0.475  pL=-1.521e+00  kL=+2.950e-05  ratio=+1.0000  clip=0/40
+[round  351  samp  3510/10000  upd  1755]  mean_r=-0.239  pL=+1.832e+00  kL=+6.278e-05  ratio=+1.0000  clip=0/40
+[round  352  samp  3520/10000  upd  1760]  mean_r=-0.088  pL=+3.959e-01  kL=+3.856e-05  ratio=+1.0000  clip=0/40
+[round  353  samp  3530/10000  upd  1765]  mean_r=+0.751  pL=-3.330e+00  kL=+5.152e-05  ratio=+1.0000  clip=0/40
+[round  354  samp  3540/10000  upd  1770]  mean_r=-0.036  pL=-8.720e-01  kL=+2.329e-05  ratio=+1.0000  clip=0/40
+[round  355  samp  3550/10000  upd  1775]  mean_r=+0.221  pL=+1.393e+00  kL=+3.931e-05  ratio=+1.0000  clip=0/40
+[round  356  samp  3560/10000  upd  1780]  mean_r=+0.489  pL=-1.856e+00  kL=+6.307e-05  ratio=+1.0000  clip=0/40
+[round  357  samp  3570/10000  upd  1785]  mean_r=+0.307  pL=+1.798e-01  kL=+5.612e-05  ratio=+1.0000  clip=0/40
+[round  358  samp  3580/10000  upd  1790]  mean_r=+0.610  pL=-4.436e-01  kL=+9.965e-05  ratio=+1.0000  clip=0/40
+[round  359  samp  3590/10000  upd  1795]  mean_r=-0.489  pL=+2.565e+00  kL=+6.011e-05  ratio=+1.0000  clip=0/40
+[round  360  samp  3600/10000  upd  1800]  mean_r=-0.006  pL=-1.089e-01  kL=+3.299e-05  ratio=+1.0000  clip=0/40
+[round  361  samp  3610/10000  upd  1805]  mean_r=-0.266  pL=+2.096e+00  kL=+1.645e-05  ratio=+1.0000  clip=0/40
+[round  362  samp  3620/10000  upd  1810]  mean_r=-0.279  pL=+3.028e+00  kL=+1.040e-04  ratio=+1.0000  clip=0/40
+[round  363  samp  3630/10000  upd  1815]  mean_r=+0.262  pL=-1.445e+00  kL=+5.879e-05  ratio=+1.0000  clip=0/40
+[round  364  samp  3640/10000  upd  1820]  mean_r=+0.324  pL=-2.564e+00  kL=+3.231e-05  ratio=+1.0000  clip=0/40
+[round  365  samp  3650/10000  upd  1825]  mean_r=-0.288  pL=+8.822e-01  kL=+7.807e-05  ratio=+1.0000  clip=0/40
+[round  366  samp  3660/10000  upd  1830]  mean_r=-0.326  pL=+1.539e+00  kL=+1.775e-05  ratio=+1.0000  clip=0/40
+[round  367  samp  3670/10000  upd  1835]  mean_r=+0.096  pL=-1.322e+00  kL=+7.158e-06  ratio=+1.0000  clip=0/40
+[round  368  samp  3680/10000  upd  1840]  mean_r=+0.395  pL=-2.787e+00  kL=+2.827e-05  ratio=+1.0000  clip=0/40
+[round  369  samp  3690/10000  upd  1845]  mean_r=-0.056  pL=+2.622e-01  kL=+3.208e-04  ratio=+1.0000  clip=0/40
+[round  370  samp  3700/10000  upd  1850]  mean_r=+0.386  pL=+3.885e-01  kL=+3.159e-05  ratio=+1.0000  clip=0/40
+[round  371  samp  3710/10000  upd  1855]  mean_r=-0.488  pL=+3.829e+00  kL=+1.801e-05  ratio=+1.0000  clip=0/40
+[round  372  samp  3720/10000  upd  1860]  mean_r=+0.545  pL=-1.431e+00  kL=+9.247e-05  ratio=+1.0000  clip=0/40
+[round  373  samp  3730/10000  upd  1865]  mean_r=-0.030  pL=+1.357e+00  kL=+1.925e-05  ratio=+1.0000  clip=0/40
+[round  374  samp  3740/10000  upd  1870]  mean_r=-0.050  pL=+1.820e+00  kL=+8.349e-05  ratio=+1.0000  clip=0/40
+[round  375  samp  3750/10000  upd  1875]  mean_r=+0.281  pL=-1.993e+00  kL=+2.256e-05  ratio=+1.0000  clip=0/40
+[round  376  samp  3760/10000  upd  1880]  mean_r=+0.419  pL=-2.273e+00  kL=+1.740e-05  ratio=+1.0000  clip=0/40
+[round  377  samp  3770/10000  upd  1885]  mean_r=+0.883  pL=-2.745e+00  kL=+5.143e-05  ratio=+1.0000  clip=0/40
+[round  378  samp  3780/10000  upd  1890]  mean_r=+0.862  pL=-2.808e+00  kL=+7.956e-05  ratio=+1.0000  clip=0/40
+[round  379  samp  3790/10000  upd  1895]  mean_r=+0.571  pL=-7.835e-01  kL=+3.033e-05  ratio=+1.0000  clip=0/40
+[round  380  samp  3800/10000  upd  1900]  mean_r=+0.046  pL=+3.576e+00  kL=+4.371e-05  ratio=+1.0000  clip=0/40
+[round  381  samp  3810/10000  upd  1905]  mean_r=-0.334  pL=+3.823e+00  kL=+3.254e-05  ratio=+1.0000  clip=0/40
+[round  382  samp  3820/10000  upd  1910]  mean_r=-0.504  pL=+4.050e+00  kL=+4.426e-05  ratio=+1.0000  clip=0/40
+[round  383  samp  3830/10000  upd  1915]  mean_r=+0.356  pL=-2.612e-01  kL=+7.469e-05  ratio=+1.0000  clip=0/40
+[round  384  samp  3840/10000  upd  1920]  mean_r=+0.032  pL=-1.044e+00  kL=+4.477e-05  ratio=+1.0000  clip=0/40
+[round  385  samp  3850/10000  upd  1925]  mean_r=+0.131  pL=+7.561e-01  kL=+3.225e-05  ratio=+1.0000  clip=0/40
+[round  386  samp  3860/10000  upd  1930]  mean_r=-0.133  pL=+5.018e-01  kL=+3.386e-05  ratio=+1.0000  clip=0/40
+[round  387  samp  3870/10000  upd  1935]  mean_r=+0.164  pL=-1.396e+00  kL=+4.820e-05  ratio=+1.0000  clip=0/40
+[round  388  samp  3880/10000  upd  1940]  mean_r=-0.012  pL=-1.714e-01  kL=+4.316e-05  ratio=+1.0000  clip=0/40
+[round  389  samp  3890/10000  upd  1945]  mean_r=-0.024  pL=+8.323e-02  kL=+2.241e-05  ratio=+1.0000  clip=0/40
+[round  390  samp  3900/10000  upd  1950]  mean_r=+0.335  pL=-2.577e+00  kL=+8.389e-05  ratio=+1.0000  clip=1/40
+[round  391  samp  3910/10000  upd  1955]  mean_r=-0.064  pL=-4.447e-01  kL=+2.879e-05  ratio=+1.0000  clip=0/40
+[round  392  samp  3920/10000  upd  1960]  mean_r=+0.230  pL=+1.461e+00  kL=+3.131e-05  ratio=+1.0000  clip=0/40
+[round  393  samp  3930/10000  upd  1965]  mean_r=+0.233  pL=+1.025e+00  kL=+3.842e-05  ratio=+1.0000  clip=0/40
+[round  394  samp  3940/10000  upd  1970]  mean_r=+0.447  pL=+3.181e-01  kL=+6.305e-05  ratio=+1.0000  clip=0/40
+[round  395  samp  3950/10000  upd  1975]  mean_r=+0.151  pL=+1.333e+00  kL=+7.883e-05  ratio=+1.0000  clip=0/40
+[round  396  samp  3960/10000  upd  1980]  mean_r=+0.428  pL=+9.046e-01  kL=+2.498e-05  ratio=+1.0000  clip=0/40
+[round  397  samp  3970/10000  upd  1985]  mean_r=+0.445  pL=-1.552e+00  kL=+4.080e-05  ratio=+1.0000  clip=0/40
+[round  398  samp  3980/10000  upd  1990]  mean_r=-0.058  pL=+8.650e-01  kL=+7.173e-06  ratio=+1.0000  clip=0/40
+[round  399  samp  3990/10000  upd  1995]  mean_r=+0.259  pL=+7.197e-01  kL=+3.006e-05  ratio=+1.0000  clip=0/40
+[round  400  samp  4000/10000  upd  2000]  mean_r=+0.365  pL=-4.128e+00  kL=+3.468e-05  ratio=+1.0000  clip=0/40
+  checkpoint: /home/3223837/dpok_outputs/imagereward_test/484796/checkpoints/round_00400
+[round  401  samp  4010/10000  upd  2005]  mean_r=-0.144  pL=+2.623e+00  kL=+1.758e-05  ratio=+1.0000  clip=0/40
+[round  402  samp  4020/10000  upd  2010]  mean_r=+0.048  pL=-2.660e+00  kL=+4.071e-05  ratio=+1.0000  clip=0/40
+[round  403  samp  4030/10000  upd  2015]  mean_r=+0.286  pL=-5.987e-01  kL=+4.122e-05  ratio=+1.0000  clip=0/40
+[round  404  samp  4040/10000  upd  2020]  mean_r=-0.529  pL=+2.962e+00  kL=+6.869e-05  ratio=+1.0000  clip=0/40
+[round  405  samp  4050/10000  upd  2025]  mean_r=+0.408  pL=-1.027e+00  kL=+3.444e-05  ratio=+1.0000  clip=0/40
+[round  406  samp  4060/10000  upd  2030]  mean_r=+0.181  pL=+3.879e-01  kL=+1.964e-05  ratio=+1.0000  clip=0/40
+[round  407  samp  4070/10000  upd  2035]  mean_r=+0.306  pL=-1.318e+00  kL=+5.567e-05  ratio=+1.0000  clip=0/40
+[round  408  samp  4080/10000  upd  2040]  mean_r=-0.018  pL=-5.843e-01  kL=+9.858e-05  ratio=+1.0000  clip=0/40
+[round  409  samp  4090/10000  upd  2045]  mean_r=-0.581  pL=+1.625e+00  kL=+9.763e-05  ratio=+1.0000  clip=0/40
+[round  410  samp  4100/10000  upd  2050]  mean_r=-0.593  pL=+2.516e+00  kL=+5.831e-05  ratio=+1.0000  clip=0/40
+[round  411  samp  4110/10000  upd  2055]  mean_r=+0.056  pL=-3.393e-01  kL=+2.133e-05  ratio=+1.0000  clip=0/40
+[round  412  samp  4120/10000  upd  2060]  mean_r=+0.605  pL=-1.986e+00  kL=+2.242e-05  ratio=+1.0000  clip=0/40
+[round  413  samp  4130/10000  upd  2065]  mean_r=-0.111  pL=+1.148e-01  kL=+7.355e-05  ratio=+1.0000  clip=0/40
+[round  414  samp  4140/10000  upd  2070]  mean_r=-0.234  pL=+1.033e-01  kL=+2.909e-05  ratio=+1.0000  clip=0/40
+[round  415  samp  4150/10000  upd  2075]  mean_r=+0.302  pL=+7.618e-01  kL=+9.207e-05  ratio=+1.0000  clip=0/40
+[round  416  samp  4160/10000  upd  2080]  mean_r=+0.412  pL=-4.215e-01  kL=+3.658e-05  ratio=+1.0000  clip=0/40
+[round  417  samp  4170/10000  upd  2085]  mean_r=+0.142  pL=-8.462e-01  kL=+2.274e-05  ratio=+1.0000  clip=0/40
+[round  418  samp  4180/10000  upd  2090]  mean_r=-0.562  pL=+1.825e+00  kL=+4.913e-05  ratio=+1.0000  clip=0/40
+[round  419  samp  4190/10000  upd  2095]  mean_r=+0.294  pL=-1.077e+00  kL=+6.542e-06  ratio=+1.0000  clip=0/40
+[round  420  samp  4200/10000  upd  2100]  mean_r=+0.437  pL=+3.850e-01  kL=+1.664e-04  ratio=+1.0000  clip=0/40
+[round  421  samp  4210/10000  upd  2105]  mean_r=-0.554  pL=+2.962e+00  kL=+9.853e-05  ratio=+1.0000  clip=0/40
+[round  422  samp  4220/10000  upd  2110]  mean_r=+0.725  pL=-8.031e-01  kL=+3.052e-05  ratio=+1.0000  clip=0/40
+[round  423  samp  4230/10000  upd  2115]  mean_r=+0.088  pL=-3.003e-02  kL=+9.629e-05  ratio=+1.0000  clip=0/40
+[round  424  samp  4240/10000  upd  2120]  mean_r=+0.333  pL=-3.656e-01  kL=+2.929e-05  ratio=+1.0000  clip=0/40
+[round  425  samp  4250/10000  upd  2125]  mean_r=+0.684  pL=-2.066e+00  kL=+7.522e-05  ratio=+1.0000  clip=1/40
+[round  426  samp  4260/10000  upd  2130]  mean_r=-0.136  pL=+3.909e-01  kL=+1.956e-05  ratio=+1.0000  clip=0/40
+[round  427  samp  4270/10000  upd  2135]  mean_r=+0.622  pL=-4.447e-01  kL=+7.939e-05  ratio=+1.0000  clip=0/40
+[round  428  samp  4280/10000  upd  2140]  mean_r=-0.252  pL=+2.665e-01  kL=+4.517e-05  ratio=+1.0000  clip=0/40
+[round  429  samp  4290/10000  upd  2145]  mean_r=+0.319  pL=-6.240e-01  kL=+4.661e-05  ratio=+1.0000  clip=0/40
+[round  430  samp  4300/10000  upd  2150]  mean_r=+0.297  pL=+4.042e-01  kL=+5.065e-05  ratio=+1.0000  clip=0/40
+[round  431  samp  4310/10000  upd  2155]  mean_r=+0.845  pL=-9.649e-01  kL=+4.899e-05  ratio=+1.0000  clip=0/40
+[round  432  samp  4320/10000  upd  2160]  mean_r=+0.455  pL=-1.333e+00  kL=+8.292e-05  ratio=+1.0000  clip=0/40
+[round  433  samp  4330/10000  upd  2165]  mean_r=-0.316  pL=+2.814e+00  kL=+8.553e-06  ratio=+1.0000  clip=0/40
+[round  434  samp  4340/10000  upd  2170]  mean_r=-0.005  pL=-3.790e-01  kL=+4.060e-05  ratio=+1.0000  clip=0/40
+[round  435  samp  4350/10000  upd  2175]  mean_r=+0.230  pL=-2.521e-01  kL=+5.384e-05  ratio=+1.0000  clip=0/40
+[round  436  samp  4360/10000  upd  2180]  mean_r=+0.096  pL=+3.668e-01  kL=+2.872e-05  ratio=+1.0000  clip=0/40
+[round  437  samp  4370/10000  upd  2185]  mean_r=+0.273  pL=-5.132e-01  kL=+1.317e-05  ratio=+1.0000  clip=0/40
+[round  438  samp  4380/10000  upd  2190]  mean_r=+0.225  pL=-1.490e+00  kL=+5.153e-05  ratio=+1.0000  clip=0/40
+[round  439  samp  4390/10000  upd  2195]  mean_r=+0.057  pL=-5.664e-01  kL=+4.894e-05  ratio=+1.0000  clip=0/40
+[round  440  samp  4400/10000  upd  2200]  mean_r=-0.023  pL=+4.312e-01  kL=+2.797e-05  ratio=+1.0000  clip=0/40
+[round  441  samp  4410/10000  upd  2205]  mean_r=-0.098  pL=-2.011e-01  kL=+3.848e-05  ratio=+1.0000  clip=0/40
+[round  442  samp  4420/10000  upd  2210]  mean_r=+0.336  pL=-1.196e+00  kL=+4.333e-04  ratio=+1.0000  clip=1/40
+[round  443  samp  4430/10000  upd  2215]  mean_r=+0.671  pL=-1.266e+00  kL=+4.869e-05  ratio=+1.0000  clip=0/40
+[round  444  samp  4440/10000  upd  2220]  mean_r=-0.103  pL=+1.637e+00  kL=+1.714e-05  ratio=+1.0000  clip=0/40
+[round  445  samp  4450/10000  upd  2225]  mean_r=+0.621  pL=-4.911e-02  kL=+6.717e-05  ratio=+1.0000  clip=0/40
+[round  446  samp  4460/10000  upd  2230]  mean_r=+0.500  pL=+2.565e-01  kL=+1.068e-04  ratio=+1.0000  clip=0/40
+[round  447  samp  4470/10000  upd  2235]  mean_r=+0.090  pL=+1.058e+00  kL=+5.792e-05  ratio=+1.0000  clip=0/40
+[round  448  samp  4480/10000  upd  2240]  mean_r=+0.451  pL=+1.217e+00  kL=+2.258e-05  ratio=+1.0000  clip=0/40
+[round  449  samp  4490/10000  upd  2245]  mean_r=-0.011  pL=-2.502e-01  kL=+5.193e-05  ratio=+1.0000  clip=0/40
+[round  450  samp  4500/10000  upd  2250]  mean_r=+0.111  pL=-8.373e-01  kL=+1.403e-04  ratio=+1.0000  clip=0/40
+[round  451  samp  4510/10000  upd  2255]  mean_r=+0.118  pL=+1.718e+00  kL=+1.343e-04  ratio=+1.0000  clip=0/40
+[round  452  samp  4520/10000  upd  2260]  mean_r=-0.136  pL=+1.039e+00  kL=+1.519e-04  ratio=+1.0000  clip=0/40
+[round  453  samp  4530/10000  upd  2265]  mean_r=-0.389  pL=+1.894e+00  kL=+2.120e-05  ratio=+1.0000  clip=0/40
+[round  454  samp  4540/10000  upd  2270]  mean_r=+0.276  pL=+3.789e-01  kL=+4.664e-05  ratio=+1.0000  clip=0/40
+[round  455  samp  4550/10000  upd  2275]  mean_r=+0.155  pL=-2.601e-01  kL=+4.972e-05  ratio=+1.0000  clip=0/40
+[round  456  samp  4560/10000  upd  2280]  mean_r=+1.116  pL=-4.678e+00  kL=+1.709e-05  ratio=+1.0000  clip=0/40
+[round  457  samp  4570/10000  upd  2285]  mean_r=-0.115  pL=+2.178e-01  kL=+1.063e-04  ratio=+1.0000  clip=0/40
+[round  458  samp  4580/10000  upd  2290]  mean_r=+0.219  pL=-1.486e+00  kL=+1.013e-04  ratio=+1.0000  clip=0/40
+[round  459  samp  4590/10000  upd  2295]  mean_r=+0.734  pL=+1.653e-01  kL=+4.396e-05  ratio=+1.0000  clip=0/40
+[round  460  samp  4600/10000  upd  2300]  mean_r=-0.043  pL=+6.618e-01  kL=+9.408e-05  ratio=+1.0000  clip=0/40
+[round  461  samp  4610/10000  upd  2305]  mean_r=+0.283  pL=-1.639e-01  kL=+8.113e-05  ratio=+1.0000  clip=0/40
+[round  462  samp  4620/10000  upd  2310]  mean_r=-0.755  pL=+1.944e+00  kL=+1.061e-04  ratio=+1.0000  clip=0/40
+[round  463  samp  4630/10000  upd  2315]  mean_r=+0.601  pL=-2.710e+00  kL=+1.874e-05  ratio=+1.0000  clip=0/40
+[round  464  samp  4640/10000  upd  2320]  mean_r=+0.430  pL=-2.751e-01  kL=+3.397e-05  ratio=+1.0000  clip=0/40
+[round  465  samp  4650/10000  upd  2325]  mean_r=+0.123  pL=+9.270e-01  kL=+5.403e-05  ratio=+1.0000  clip=0/40
+[round  466  samp  4660/10000  upd  2330]  mean_r=+0.174  pL=-2.293e+00  kL=+3.505e-05  ratio=+1.0000  clip=0/40
+[round  467  samp  4670/10000  upd  2335]  mean_r=-0.058  pL=+3.283e+00  kL=+2.253e-05  ratio=+1.0000  clip=0/40
+[round  468  samp  4680/10000  upd  2340]  mean_r=-0.056  pL=-2.077e-01  kL=+1.470e-05  ratio=+1.0000  clip=0/40
+[round  469  samp  4690/10000  upd  2345]  mean_r=-0.457  pL=+1.435e+00  kL=+1.252e-05  ratio=+1.0000  clip=0/40
+[round  470  samp  4700/10000  upd  2350]  mean_r=+0.381  pL=-8.572e-01  kL=+5.519e-05  ratio=+1.0000  clip=0/40
+[round  471  samp  4710/10000  upd  2355]  mean_r=-0.044  pL=+7.206e-01  kL=+3.940e-05  ratio=+1.0000  clip=0/40
+[round  472  samp  4720/10000  upd  2360]  mean_r=-0.606  pL=+2.773e+00  kL=+1.311e-04  ratio=+1.0000  clip=0/40
+[round  473  samp  4730/10000  upd  2365]  mean_r=-0.251  pL=-4.135e-02  kL=+2.545e-05  ratio=+1.0000  clip=0/40
+[round  474  samp  4740/10000  upd  2370]  mean_r=+0.654  pL=-2.050e+00  kL=+3.757e-05  ratio=+1.0000  clip=0/40
+[round  475  samp  4750/10000  upd  2375]  mean_r=-0.185  pL=-1.743e+00  kL=+1.382e-04  ratio=+1.0000  clip=0/40
+[round  476  samp  4760/10000  upd  2380]  mean_r=-0.228  pL=-3.780e-01  kL=+1.664e-05  ratio=+1.0000  clip=0/40
+[round  477  samp  4770/10000  upd  2385]  mean_r=-0.442  pL=+7.856e-01  kL=+7.268e-05  ratio=+1.0000  clip=0/40
+[round  478  samp  4780/10000  upd  2390]  mean_r=+0.160  pL=+2.088e-01  kL=+3.158e-05  ratio=+1.0000  clip=0/40
+[round  479  samp  4790/10000  upd  2395]  mean_r=-0.334  pL=+1.453e+00  kL=+9.930e-05  ratio=+1.0000  clip=0/40
+[round  480  samp  4800/10000  upd  2400]  mean_r=+0.167  pL=-1.762e-02  kL=+3.867e-05  ratio=+1.0000  clip=0/40
+[round  481  samp  4810/10000  upd  2405]  mean_r=-0.248  pL=+4.646e-01  kL=+2.087e-05  ratio=+1.0000  clip=0/40
+[round  482  samp  4820/10000  upd  2410]  mean_r=+0.339  pL=-1.108e+00  kL=+8.857e-05  ratio=+1.0000  clip=0/40
+[round  483  samp  4830/10000  upd  2415]  mean_r=+0.066  pL=-1.414e+00  kL=+5.954e-05  ratio=+1.0000  clip=0/40
+[round  484  samp  4840/10000  upd  2420]  mean_r=+0.189  pL=-5.416e-01  kL=+3.539e-05  ratio=+1.0000  clip=0/40
+[round  485  samp  4850/10000  upd  2425]  mean_r=+0.488  pL=-3.727e+00  kL=+4.676e-05  ratio=+1.0000  clip=0/40
+[round  486  samp  4860/10000  upd  2430]  mean_r=-0.148  pL=+9.400e-01  kL=+4.551e-05  ratio=+1.0000  clip=0/40
+[round  487  samp  4870/10000  upd  2435]  mean_r=+0.318  pL=+1.414e-01  kL=+2.143e-05  ratio=+1.0000  clip=0/40
+[round  488  samp  4880/10000  upd  2440]  mean_r=+0.477  pL=-1.451e-01  kL=+1.182e-05  ratio=+1.0000  clip=0/40
+[round  489  samp  4890/10000  upd  2445]  mean_r=-0.395  pL=+2.312e+00  kL=+9.152e-05  ratio=+1.0000  clip=0/40
+[round  490  samp  4900/10000  upd  2450]  mean_r=+0.259  pL=+7.984e-01  kL=+4.655e-05  ratio=+1.0000  clip=0/40
+[round  491  samp  4910/10000  upd  2455]  mean_r=+0.249  pL=-9.548e-02  kL=+6.216e-05  ratio=+1.0000  clip=0/40
+[round  492  samp  4920/10000  upd  2460]  mean_r=-0.361  pL=+1.122e+00  kL=+5.451e-05  ratio=+1.0000  clip=0/40
+[round  493  samp  4930/10000  upd  2465]  mean_r=-0.136  pL=+1.729e+00  kL=+3.637e-05  ratio=+1.0000  clip=0/40
+[round  494  samp  4940/10000  upd  2470]  mean_r=+0.627  pL=-1.306e+00  kL=+3.970e-05  ratio=+1.0000  clip=0/40
+[round  495  samp  4950/10000  upd  2475]  mean_r=+0.365  pL=-8.933e-01  kL=+3.684e-05  ratio=+1.0000  clip=0/40
+[round  496  samp  4960/10000  upd  2480]  mean_r=+0.036  pL=-6.288e-01  kL=+2.590e-05  ratio=+1.0000  clip=0/40
+[round  497  samp  4970/10000  upd  2485]  mean_r=-0.283  pL=+2.709e+00  kL=+4.940e-05  ratio=+1.0000  clip=0/40
+[round  498  samp  4980/10000  upd  2490]  mean_r=-0.038  pL=-8.220e-01  kL=+1.957e-05  ratio=+1.0000  clip=0/40
+[round  499  samp  4990/10000  upd  2495]  mean_r=+0.487  pL=+1.328e+00  kL=+6.625e-05  ratio=+1.0000  clip=0/40
+[round  500  samp  5000/10000  upd  2500]  mean_r=+0.004  pL=+4.422e-01  kL=+5.517e-05  ratio=+1.0000  clip=0/40
+  checkpoint: /home/3223837/dpok_outputs/imagereward_test/484796/checkpoints/round_00500
+[round  501  samp  5010/10000  upd  2505]  mean_r=+0.248  pL=-2.291e+00  kL=+1.194e-05  ratio=+1.0000  clip=0/40
+[round  502  samp  5020/10000  upd  2510]  mean_r=+0.048  pL=+9.198e-02  kL=+8.960e-05  ratio=+1.0000  clip=0/40
+[round  503  samp  5030/10000  upd  2515]  mean_r=-0.242  pL=+7.664e-01  kL=+1.558e-04  ratio=+1.0000  clip=1/40
+[round  504  samp  5040/10000  upd  2520]  mean_r=+0.681  pL=-1.687e+00  kL=+7.385e-05  ratio=+1.0000  clip=0/40
+[round  505  samp  5050/10000  upd  2525]  mean_r=-0.134  pL=+1.418e+00  kL=+2.976e-05  ratio=+1.0000  clip=0/40
+[round  506  samp  5060/10000  upd  2530]  mean_r=+0.428  pL=-9.106e-01  kL=+2.164e-05  ratio=+1.0000  clip=0/40
+[round  507  samp  5070/10000  upd  2535]  mean_r=-0.539  pL=+5.389e-01  kL=+3.786e-05  ratio=+1.0000  clip=0/40
+[round  508  samp  5080/10000  upd  2540]  mean_r=+0.167  pL=-3.046e-01  kL=+2.398e-05  ratio=+1.0000  clip=0/40
+[round  509  samp  5090/10000  upd  2545]  mean_r=-0.033  pL=-2.362e-01  kL=+3.526e-05  ratio=+1.0000  clip=0/40
+[round  510  samp  5100/10000  upd  2550]  mean_r=+0.111  pL=-6.968e-01  kL=+2.081e-05  ratio=+1.0000  clip=0/40
+[round  511  samp  5110/10000  upd  2555]  mean_r=+0.342  pL=-1.568e+00  kL=+8.130e-05  ratio=+1.0000  clip=0/40
+[round  512  samp  5120/10000  upd  2560]  mean_r=-0.352  pL=+1.919e+00  kL=+4.721e-05  ratio=+1.0000  clip=0/40
+[round  513  samp  5130/10000  upd  2565]  mean_r=+0.809  pL=-1.247e+00  kL=+4.609e-05  ratio=+1.0000  clip=0/40
+[round  514  samp  5140/10000  upd  2570]  mean_r=+0.333  pL=+3.406e-01  kL=+7.985e-05  ratio=+1.0000  clip=0/40
+[round  515  samp  5150/10000  upd  2575]  mean_r=+0.214  pL=+1.462e+00  kL=+2.680e-04  ratio=+1.0000  clip=0/40
+[round  516  samp  5160/10000  upd  2580]  mean_r=+0.065  pL=+8.271e-01  kL=+2.263e-05  ratio=+1.0000  clip=0/40
+[round  517  samp  5170/10000  upd  2585]  mean_r=-0.499  pL=+2.177e+00  kL=+4.223e-05  ratio=+1.0000  clip=0/40
+[round  518  samp  5180/10000  upd  2590]  mean_r=+0.464  pL=+1.198e+00  kL=+8.122e-05  ratio=+1.0000  clip=0/40
+[round  519  samp  5190/10000  upd  2595]  mean_r=+0.109  pL=-3.065e+00  kL=+3.836e-05  ratio=+1.0000  clip=0/40
+[round  520  samp  5200/10000  upd  2600]  mean_r=+0.719  pL=-1.380e+00  kL=+5.833e-05  ratio=+1.0000  clip=0/40
+[round  521  samp  5210/10000  upd  2605]  mean_r=-0.230  pL=+3.175e+00  kL=+2.627e-05  ratio=+1.0000  clip=0/40
+[round  522  samp  5220/10000  upd  2610]  mean_r=-0.448  pL=+1.808e+00  kL=+6.491e-05  ratio=+1.0000  clip=0/40
+[round  523  samp  5230/10000  upd  2615]  mean_r=+0.176  pL=-1.214e+00  kL=+5.326e-05  ratio=+1.0000  clip=0/40
+[round  524  samp  5240/10000  upd  2620]  mean_r=-0.945  pL=-1.348e-01  kL=+7.698e-05  ratio=+1.0000  clip=0/40
+[round  525  samp  5250/10000  upd  2625]  mean_r=+0.230  pL=-1.206e+00  kL=+2.165e-05  ratio=+1.0000  clip=0/40
+[round  526  samp  5260/10000  upd  2630]  mean_r=-0.168  pL=-8.338e-01  kL=+7.767e-05  ratio=+1.0000  clip=0/40
+[round  527  samp  5270/10000  upd  2635]  mean_r=-0.094  pL=+1.377e+00  kL=+1.361e-04  ratio=+1.0000  clip=1/40
+[round  528  samp  5280/10000  upd  2640]  mean_r=-0.182  pL=-8.346e-01  kL=+5.325e-05  ratio=+1.0000  clip=0/40
+[round  529  samp  5290/10000  upd  2645]  mean_r=-0.284  pL=+4.353e-01  kL=+6.953e-05  ratio=+1.0000  clip=0/40
+[round  530  samp  5300/10000  upd  2650]  mean_r=+0.389  pL=-3.032e-01  kL=+3.673e-05  ratio=+1.0000  clip=0/40
+[round  531  samp  5310/10000  upd  2655]  mean_r=+0.158  pL=-6.187e-01  kL=+1.934e-05  ratio=+1.0000  clip=0/40
+[round  532  samp  5320/10000  upd  2660]  mean_r=+0.117  pL=+2.127e-01  kL=+8.542e-05  ratio=+1.0000  clip=0/40
+[round  533  samp  5330/10000  upd  2665]  mean_r=+0.313  pL=-3.297e-01  kL=+9.760e-05  ratio=+1.0000  clip=0/40
+[round  534  samp  5340/10000  upd  2670]  mean_r=+0.494  pL=-9.674e-01  kL=+3.261e-05  ratio=+1.0000  clip=0/40
+[round  535  samp  5350/10000  upd  2675]  mean_r=+0.313  pL=-6.725e-01  kL=+3.082e-05  ratio=+1.0000  clip=0/40
+[round  536  samp  5360/10000  upd  2680]  mean_r=+0.268  pL=+9.040e-01  kL=+1.088e-05  ratio=+1.0000  clip=0/40
+[round  537  samp  5370/10000  upd  2685]  mean_r=-0.145  pL=+1.441e+00  kL=+3.124e-05  ratio=+1.0000  clip=0/40
+[round  538  samp  5380/10000  upd  2690]  mean_r=+0.858  pL=+5.637e-01  kL=+6.723e-05  ratio=+1.0000  clip=0/40
+[round  539  samp  5390/10000  upd  2695]  mean_r=-0.392  pL=+2.387e+00  kL=+4.992e-05  ratio=+1.0000  clip=0/40
+[round  540  samp  5400/10000  upd  2700]  mean_r=+0.769  pL=-5.394e-01  kL=+2.867e-05  ratio=+1.0000  clip=0/40
+[round  541  samp  5410/10000  upd  2705]  mean_r=-0.167  pL=+1.892e+00  kL=+1.418e-04  ratio=+0.9999  clip=1/40
+[round  542  samp  5420/10000  upd  2710]  mean_r=+0.230  pL=-1.776e+00  kL=+5.797e-05  ratio=+1.0000  clip=0/40
+[round  543  samp  5430/10000  upd  2715]  mean_r=+0.138  pL=-3.525e-01  kL=+8.401e-05  ratio=+1.0000  clip=0/40
+[round  544  samp  5440/10000  upd  2720]  mean_r=+0.740  pL=-2.306e+00  kL=+1.628e-05  ratio=+1.0000  clip=0/40
+[round  545  samp  5450/10000  upd  2725]  mean_r=-0.160  pL=+6.593e-01  kL=+5.341e-05  ratio=+1.0000  clip=0/40
+[round  546  samp  5460/10000  upd  2730]  mean_r=+0.375  pL=-1.971e+00  kL=+5.109e-05  ratio=+1.0000  clip=0/40
+[round  547  samp  5470/10000  upd  2735]  mean_r=+0.373  pL=-9.138e-01  kL=+7.650e-06  ratio=+1.0000  clip=0/40
+[round  548  samp  5480/10000  upd  2740]  mean_r=-0.132  pL=+9.194e-03  kL=+4.532e-06  ratio=+1.0000  clip=0/40
+[round  549  samp  5490/10000  upd  2745]  mean_r=-0.300  pL=+4.633e-01  kL=+1.391e-04  ratio=+1.0000  clip=0/40
+[round  550  samp  5500/10000  upd  2750]  mean_r=-0.637  pL=+1.653e+00  kL=+8.814e-05  ratio=+1.0000  clip=0/40
+[round  551  samp  5510/10000  upd  2755]  mean_r=-0.171  pL=-5.856e-01  kL=+4.592e-05  ratio=+1.0000  clip=0/40
+[round  552  samp  5520/10000  upd  2760]  mean_r=-0.369  pL=-3.652e-01  kL=+8.551e-05  ratio=+1.0000  clip=1/40
+[round  553  samp  5530/10000  upd  2765]  mean_r=+0.134  pL=+6.668e-01  kL=+4.628e-05  ratio=+1.0000  clip=0/40
+[round  554  samp  5540/10000  upd  2770]  mean_r=+0.321  pL=+8.022e-01  kL=+6.759e-05  ratio=+1.0000  clip=0/40
+[round  555  samp  5550/10000  upd  2775]  mean_r=+0.316  pL=-1.723e+00  kL=+1.617e-04  ratio=+0.9999  clip=1/40
+[round  556  samp  5560/10000  upd  2780]  mean_r=+0.408  pL=-6.469e-01  kL=+5.564e-06  ratio=+1.0000  clip=0/40
+[round  557  samp  5570/10000  upd  2785]  mean_r=-0.016  pL=+1.816e+00  kL=+1.044e-04  ratio=+1.0000  clip=1/40
+[round  558  samp  5580/10000  upd  2790]  mean_r=+0.521  pL=+2.883e-02  kL=+2.169e-05  ratio=+1.0000  clip=0/40
+[round  559  samp  5590/10000  upd  2795]  mean_r=+0.456  pL=-1.071e+00  kL=+5.161e-05  ratio=+1.0000  clip=0/40
+[round  560  samp  5600/10000  upd  2800]  mean_r=+0.040  pL=+8.690e-01  kL=+1.040e-05  ratio=+1.0000  clip=0/40
+[round  561  samp  5610/10000  upd  2805]  mean_r=-0.161  pL=+4.794e-01  kL=+3.508e-05  ratio=+1.0000  clip=0/40
+[round  562  samp  5620/10000  upd  2810]  mean_r=-0.371  pL=+1.538e+00  kL=+1.292e-04  ratio=+1.0000  clip=0/40
+[round  563  samp  5630/10000  upd  2815]  mean_r=-0.303  pL=+8.462e-01  kL=+8.498e-05  ratio=+1.0000  clip=0/40
+[round  564  samp  5640/10000  upd  2820]  mean_r=-0.005  pL=+4.091e-01  kL=+3.795e-05  ratio=+1.0000  clip=0/40
+[round  565  samp  5650/10000  upd  2825]  mean_r=+0.413  pL=+2.024e-01  kL=+1.689e-04  ratio=+1.0000  clip=0/40
+[round  566  samp  5660/10000  upd  2830]  mean_r=+0.711  pL=-1.011e+00  kL=+4.323e-05  ratio=+1.0000  clip=0/40
+[round  567  samp  5670/10000  upd  2835]  mean_r=-0.027  pL=+5.990e-01  kL=+6.077e-05  ratio=+1.0000  clip=0/40
+[round  568  samp  5680/10000  upd  2840]  mean_r=+0.423  pL=-1.672e+00  kL=+1.921e-05  ratio=+1.0000  clip=0/40
+[round  569  samp  5690/10000  upd  2845]  mean_r=+0.463  pL=-9.884e-01  kL=+5.430e-05  ratio=+1.0000  clip=0/40
+[round  570  samp  5700/10000  upd  2850]  mean_r=-0.177  pL=+2.531e+00  kL=+1.156e-05  ratio=+1.0000  clip=0/40
+[round  571  samp  5710/10000  upd  2855]  mean_r=-0.623  pL=+1.944e+00  kL=+1.253e-04  ratio=+1.0000  clip=0/40
+[round  572  samp  5720/10000  upd  2860]  mean_r=-0.010  pL=+9.483e-01  kL=+4.337e-05  ratio=+1.0000  clip=0/40
+[round  573  samp  5730/10000  upd  2865]  mean_r=+0.101  pL=-1.081e+00  kL=+2.345e-05  ratio=+1.0000  clip=0/40
+[round  574  samp  5740/10000  upd  2870]  mean_r=-0.016  pL=-2.805e+00  kL=+9.234e-05  ratio=+1.0000  clip=0/40
+[round  575  samp  5750/10000  upd  2875]  mean_r=+0.936  pL=-4.283e+00  kL=+1.298e-05  ratio=+1.0000  clip=0/40
+[round  576  samp  5760/10000  upd  2880]  mean_r=+0.154  pL=-6.081e-02  kL=+2.018e-05  ratio=+1.0000  clip=0/40
+[round  577  samp  5770/10000  upd  2885]  mean_r=+0.106  pL=+6.377e-01  kL=+2.569e-05  ratio=+1.0000  clip=0/40
+[round  578  samp  5780/10000  upd  2890]  mean_r=-0.051  pL=+1.206e+00  kL=+5.411e-05  ratio=+1.0000  clip=0/40
+[round  579  samp  5790/10000  upd  2895]  mean_r=-0.188  pL=-1.046e-01  kL=+7.283e-05  ratio=+1.0000  clip=0/40
+[round  580  samp  5800/10000  upd  2900]  mean_r=+0.029  pL=-1.755e+00  kL=+4.886e-05  ratio=+1.0000  clip=0/40
+[round  581  samp  5810/10000  upd  2905]  mean_r=+0.409  pL=-9.460e-01  kL=+2.022e-05  ratio=+1.0000  clip=0/40
+[round  582  samp  5820/10000  upd  2910]  mean_r=-0.246  pL=+7.323e-01  kL=+1.292e-05  ratio=+1.0000  clip=0/40
+[round  583  samp  5830/10000  upd  2915]  mean_r=+0.501  pL=-2.013e+00  kL=+3.189e-05  ratio=+1.0000  clip=0/40
+[round  584  samp  5840/10000  upd  2920]  mean_r=+0.155  pL=+7.096e-01  kL=+4.120e-05  ratio=+1.0000  clip=0/40
+[round  585  samp  5850/10000  upd  2925]  mean_r=+0.070  pL=+5.490e-01  kL=+6.441e-05  ratio=+1.0000  clip=0/40
+[round  586  samp  5860/10000  upd  2930]  mean_r=+0.359  pL=+4.070e-01  kL=+1.866e-05  ratio=+1.0000  clip=0/40
+[round  587  samp  5870/10000  upd  2935]  mean_r=+0.659  pL=-3.210e+00  kL=+6.352e-05  ratio=+1.0000  clip=0/40
+[round  588  samp  5880/10000  upd  2940]  mean_r=+0.363  pL=-1.099e-01  kL=+5.393e-05  ratio=+1.0000  clip=0/40
+[round  589  samp  5890/10000  upd  2945]  mean_r=-0.307  pL=+2.604e+00  kL=+5.523e-05  ratio=+1.0000  clip=0/40
+[round  590  samp  5900/10000  upd  2950]  mean_r=+0.450  pL=+1.367e+00  kL=+1.970e-05  ratio=+1.0000  clip=0/40
+[round  591  samp  5910/10000  upd  2955]  mean_r=+0.003  pL=-1.066e+00  kL=+2.877e-05  ratio=+1.0000  clip=0/40
+[round  592  samp  5920/10000  upd  2960]  mean_r=+0.329  pL=-1.898e+00  kL=+6.605e-05  ratio=+1.0000  clip=0/40
+[round  593  samp  5930/10000  upd  2965]  mean_r=+0.598  pL=-8.685e-01  kL=+6.504e-05  ratio=+1.0000  clip=0/40
+[round  594  samp  5940/10000  upd  2970]  mean_r=+0.073  pL=+1.885e+00  kL=+5.788e-05  ratio=+1.0000  clip=0/40
+[round  595  samp  5950/10000  upd  2975]  mean_r=+0.313  pL=-1.299e-01  kL=+7.809e-06  ratio=+1.0000  clip=0/40
+[round  596  samp  5960/10000  upd  2980]  mean_r=+0.372  pL=+2.319e-01  kL=+4.200e-05  ratio=+1.0000  clip=0/40
+[round  597  samp  5970/10000  upd  2985]  mean_r=+0.131  pL=+6.960e-01  kL=+4.384e-05  ratio=+1.0000  clip=0/40
+[round  598  samp  5980/10000  upd  2990]  mean_r=-0.049  pL=+9.423e-01  kL=+6.359e-05  ratio=+1.0000  clip=0/40
+[round  599  samp  5990/10000  upd  2995]  mean_r=+1.055  pL=-2.829e+00  kL=+7.571e-06  ratio=+1.0000  clip=0/40
+[round  600  samp  6000/10000  upd  3000]  mean_r=+0.164  pL=-1.406e+00  kL=+2.590e-05  ratio=+1.0000  clip=0/40
+  checkpoint: /home/3223837/dpok_outputs/imagereward_test/484796/checkpoints/round_00600
+[round  601  samp  6010/10000  upd  3005]  mean_r=+0.489  pL=-1.348e+00  kL=+8.800e-05  ratio=+1.0000  clip=1/40
+[round  602  samp  6020/10000  upd  3010]  mean_r=-0.389  pL=+2.744e+00  kL=+4.605e-05  ratio=+1.0000  clip=0/40
+[round  603  samp  6030/10000  upd  3015]  mean_r=+0.055  pL=+1.318e+00  kL=+1.253e-04  ratio=+1.0000  clip=1/40
+[round  604  samp  6040/10000  upd  3020]  mean_r=+0.677  pL=-3.819e-01  kL=+5.477e-05  ratio=+1.0000  clip=0/40
+[round  605  samp  6050/10000  upd  3025]  mean_r=-0.350  pL=+1.708e+00  kL=+2.257e-05  ratio=+1.0000  clip=0/40
+[round  606  samp  6060/10000  upd  3030]  mean_r=-0.013  pL=+5.873e-02  kL=+1.437e-04  ratio=+1.0000  clip=0/40
+[round  607  samp  6070/10000  upd  3035]  mean_r=+0.681  pL=-2.915e+00  kL=+7.645e-05  ratio=+1.0000  clip=0/40
+[round  608  samp  6080/10000  upd  3040]  mean_r=-0.460  pL=-5.656e-01  kL=+6.714e-05  ratio=+1.0000  clip=0/40
+[round  609  samp  6090/10000  upd  3045]  mean_r=+0.301  pL=-3.047e+00  kL=+3.941e-05  ratio=+1.0000  clip=0/40
+[round  610  samp  6100/10000  upd  3050]  mean_r=-0.018  pL=+1.314e+00  kL=+3.147e-05  ratio=+1.0000  clip=0/40
+[round  611  samp  6110/10000  upd  3055]  mean_r=+0.131  pL=+1.918e+00  kL=+1.831e-05  ratio=+1.0000  clip=0/40
+[round  612  samp  6120/10000  upd  3060]  mean_r=-0.097  pL=+8.276e-01  kL=+5.687e-05  ratio=+1.0000  clip=0/40
+[round  613  samp  6130/10000  upd  3065]  mean_r=+0.142  pL=+1.481e+00  kL=+8.069e-05  ratio=+1.0000  clip=0/40
+[round  614  samp  6140/10000  upd  3070]  mean_r=-0.145  pL=+1.750e+00  kL=+2.356e-05  ratio=+1.0000  clip=0/40
+[round  615  samp  6150/10000  upd  3075]  mean_r=+0.358  pL=-2.117e+00  kL=+6.616e-05  ratio=+1.0000  clip=0/40
+[round  616  samp  6160/10000  upd  3080]  mean_r=+0.838  pL=-2.234e+00  kL=+4.759e-05  ratio=+1.0000  clip=0/40
+[round  617  samp  6170/10000  upd  3085]  mean_r=+0.417  pL=+2.886e-02  kL=+1.650e-05  ratio=+1.0000  clip=0/40
+[round  618  samp  6180/10000  upd  3090]  mean_r=+0.355  pL=+2.594e-01  kL=+9.146e-05  ratio=+1.0000  clip=0/40
+[round  619  samp  6190/10000  upd  3095]  mean_r=-0.036  pL=+3.408e-01  kL=+7.609e-05  ratio=+1.0000  clip=0/40
+[round  620  samp  6200/10000  upd  3100]  mean_r=+0.571  pL=+8.745e-01  kL=+5.208e-05  ratio=+1.0000  clip=0/40
+[round  621  samp  6210/10000  upd  3105]  mean_r=-0.428  pL=+8.289e-01  kL=+1.188e-04  ratio=+1.0000  clip=0/40
+[round  622  samp  6220/10000  upd  3110]  mean_r=-0.189  pL=+3.587e+00  kL=+1.361e-05  ratio=+1.0000  clip=0/40
+[round  623  samp  6230/10000  upd  3115]  mean_r=-0.259  pL=-3.253e-01  kL=+4.877e-05  ratio=+1.0000  clip=0/40
+[round  624  samp  6240/10000  upd  3120]  mean_r=+0.391  pL=-1.291e+00  kL=+5.750e-05  ratio=+1.0000  clip=0/40
+[round  625  samp  6250/10000  upd  3125]  mean_r=+0.139  pL=-6.258e-01  kL=+7.555e-05  ratio=+1.0000  clip=0/40
+[round  626  samp  6260/10000  upd  3130]  mean_r=-0.136  pL=+1.201e+00  kL=+2.008e-05  ratio=+1.0000  clip=0/40
+[round  627  samp  6270/10000  upd  3135]  mean_r=+0.583  pL=-2.782e+00  kL=+7.960e-05  ratio=+1.0000  clip=0/40
+[round  628  samp  6280/10000  upd  3140]  mean_r=+0.409  pL=-1.988e+00  kL=+2.180e-05  ratio=+1.0000  clip=0/40
+[round  629  samp  6290/10000  upd  3145]  mean_r=+0.201  pL=+1.846e+00  kL=+2.521e-05  ratio=+1.0000  clip=0/40
+[round  630  samp  6300/10000  upd  3150]  mean_r=+0.024  pL=+2.154e+00  kL=+4.613e-05  ratio=+1.0000  clip=0/40
+[round  631  samp  6310/10000  upd  3155]  mean_r=-0.591  pL=+3.247e+00  kL=+9.725e-05  ratio=+1.0000  clip=0/40
+[round  632  samp  6320/10000  upd  3160]  mean_r=+0.337  pL=+2.279e-01  kL=+2.404e-05  ratio=+1.0000  clip=0/40
+[round  633  samp  6330/10000  upd  3165]  mean_r=+0.246  pL=-1.627e+00  kL=+1.552e-05  ratio=+1.0000  clip=0/40
+[round  634  samp  6340/10000  upd  3170]  mean_r=+0.360  pL=-3.651e-01  kL=+4.166e-05  ratio=+1.0000  clip=0/40
+[round  635  samp  6350/10000  upd  3175]  mean_r=+0.327  pL=-5.467e-01  kL=+4.354e-05  ratio=+1.0000  clip=0/40
+[round  636  samp  6360/10000  upd  3180]  mean_r=-0.389  pL=+1.967e+00  kL=+5.326e-05  ratio=+1.0000  clip=0/40
+[round  637  samp  6370/10000  upd  3185]  mean_r=-0.258  pL=+1.537e+00  kL=+4.109e-05  ratio=+1.0000  clip=0/40
+[round  638  samp  6380/10000  upd  3190]  mean_r=+0.349  pL=+3.718e-01  kL=+6.229e-05  ratio=+1.0000  clip=0/40
+[round  639  samp  6390/10000  upd  3195]  mean_r=-0.164  pL=-9.525e-01  kL=+1.049e-04  ratio=+1.0000  clip=0/40
+[round  640  samp  6400/10000  upd  3200]  mean_r=-0.020  pL=-1.221e+00  kL=+4.189e-05  ratio=+1.0000  clip=0/40
+[round  641  samp  6410/10000  upd  3205]  mean_r=-0.645  pL=+1.032e+00  kL=+2.440e-05  ratio=+1.0000  clip=0/40
+[round  642  samp  6420/10000  upd  3210]  mean_r=+0.202  pL=-1.207e+00  kL=+7.974e-05  ratio=+1.0000  clip=0/40
+[round  643  samp  6430/10000  upd  3215]  mean_r=+0.087  pL=-3.217e-02  kL=+2.623e-05  ratio=+1.0000  clip=0/40
+[round  644  samp  6440/10000  upd  3220]  mean_r=+0.632  pL=-2.138e+00  kL=+1.012e-04  ratio=+1.0000  clip=0/40
+[round  645  samp  6450/10000  upd  3225]  mean_r=-0.032  pL=+6.023e-01  kL=+2.731e-05  ratio=+1.0000  clip=0/40
+[round  646  samp  6460/10000  upd  3230]  mean_r=+0.571  pL=-1.225e-01  kL=+9.219e-05  ratio=+1.0000  clip=0/40
+[round  647  samp  6470/10000  upd  3235]  mean_r=+0.370  pL=-3.216e-01  kL=+7.964e-05  ratio=+1.0000  clip=0/40
+[round  648  samp  6480/10000  upd  3240]  mean_r=-0.147  pL=+4.131e-01  kL=+6.460e-05  ratio=+1.0000  clip=0/40
+[round  649  samp  6490/10000  upd  3245]  mean_r=+0.627  pL=-3.170e+00  kL=+7.607e-06  ratio=+1.0000  clip=0/40
+[round  650  samp  6500/10000  upd  3250]  mean_r=+0.481  pL=+9.319e-01  kL=+5.787e-05  ratio=+1.0000  clip=0/40
+[round  651  samp  6510/10000  upd  3255]  mean_r=+0.602  pL=-1.513e+00  kL=+3.457e-05  ratio=+1.0000  clip=0/40
+[round  652  samp  6520/10000  upd  3260]  mean_r=-0.223  pL=+1.940e+00  kL=+6.174e-05  ratio=+1.0000  clip=0/40
+[round  653  samp  6530/10000  upd  3265]  mean_r=-0.281  pL=+1.949e+00  kL=+4.908e-05  ratio=+1.0000  clip=0/40
+[round  654  samp  6540/10000  upd  3270]  mean_r=+0.229  pL=-5.416e-01  kL=+5.950e-05  ratio=+1.0000  clip=0/40
+[round  655  samp  6550/10000  upd  3275]  mean_r=-0.031  pL=-8.274e-02  kL=+3.815e-05  ratio=+1.0000  clip=0/40
+[round  656  samp  6560/10000  upd  3280]  mean_r=-0.206  pL=+1.428e+00  kL=+3.725e-05  ratio=+1.0000  clip=0/40
+[round  657  samp  6570/10000  upd  3285]  mean_r=-0.056  pL=+1.416e+00  kL=+5.061e-05  ratio=+1.0000  clip=0/40
+[round  658  samp  6580/10000  upd  3290]  mean_r=-0.234  pL=+1.225e+00  kL=+3.949e-05  ratio=+1.0000  clip=0/40
+[round  659  samp  6590/10000  upd  3295]  mean_r=+0.273  pL=-1.088e+00  kL=+5.746e-06  ratio=+1.0000  clip=0/40
+[round  660  samp  6600/10000  upd  3300]  mean_r=-0.413  pL=+1.427e-01  kL=+7.034e-05  ratio=+1.0000  clip=0/40
+[round  661  samp  6610/10000  upd  3305]  mean_r=+0.081  pL=+6.686e-01  kL=+7.496e-05  ratio=+1.0000  clip=0/40
+[round  662  samp  6620/10000  upd  3310]  mean_r=-0.019  pL=-5.550e-01  kL=+4.910e-05  ratio=+1.0000  clip=0/40
+[round  663  samp  6630/10000  upd  3315]  mean_r=-0.000  pL=-1.246e-01  kL=+6.958e-05  ratio=+1.0000  clip=0/40
+[round  664  samp  6640/10000  upd  3320]  mean_r=-0.159  pL=+9.563e-01  kL=+1.072e-05  ratio=+1.0000  clip=0/40
+[round  665  samp  6650/10000  upd  3325]  mean_r=-0.298  pL=-2.802e-01  kL=+2.149e-05  ratio=+1.0000  clip=0/40
+[round  666  samp  6660/10000  upd  3330]  mean_r=+0.240  pL=+2.067e+00  kL=+5.269e-06  ratio=+1.0000  clip=0/40
+[round  667  samp  6670/10000  upd  3335]  mean_r=-0.760  pL=+2.344e+00  kL=+3.834e-05  ratio=+1.0000  clip=0/40
+[round  668  samp  6680/10000  upd  3340]  mean_r=+0.432  pL=-2.946e+00  kL=+2.929e-05  ratio=+1.0000  clip=0/40
+[round  669  samp  6690/10000  upd  3345]  mean_r=-0.028  pL=-1.387e+00  kL=+4.820e-05  ratio=+1.0000  clip=0/40
+[round  670  samp  6700/10000  upd  3350]  mean_r=+0.378  pL=-8.446e-01  kL=+5.584e-05  ratio=+1.0000  clip=1/40
+[round  671  samp  6710/10000  upd  3355]  mean_r=-0.304  pL=+2.699e+00  kL=+9.265e-06  ratio=+1.0000  clip=0/40
+[round  672  samp  6720/10000  upd  3360]  mean_r=-0.313  pL=-1.355e+00  kL=+5.575e-05  ratio=+1.0000  clip=0/40
+[round  673  samp  6730/10000  upd  3365]  mean_r=-0.072  pL=-2.737e-01  kL=+2.337e-05  ratio=+1.0000  clip=0/40
+[round  674  samp  6740/10000  upd  3370]  mean_r=-0.495  pL=+2.263e+00  kL=+4.587e-05  ratio=+1.0000  clip=0/40
+[round  675  samp  6750/10000  upd  3375]  mean_r=+0.157  pL=-1.405e+00  kL=+6.879e-06  ratio=+1.0000  clip=0/40
+[round  676  samp  6760/10000  upd  3380]  mean_r=-0.835  pL=+2.606e+00  kL=+6.223e-05  ratio=+1.0000  clip=0/40
+[round  677  samp  6770/10000  upd  3385]  mean_r=-0.300  pL=+4.519e-01  kL=+7.949e-05  ratio=+1.0000  clip=0/40
+[round  678  samp  6780/10000  upd  3390]  mean_r=-0.289  pL=+8.809e-01  kL=+6.440e-05  ratio=+1.0000  clip=0/40
+[round  679  samp  6790/10000  upd  3395]  mean_r=+0.507  pL=-2.663e+00  kL=+2.545e-05  ratio=+1.0000  clip=0/40
+[round  680  samp  6800/10000  upd  3400]  mean_r=+0.388  pL=-1.024e+00  kL=+3.558e-05  ratio=+1.0000  clip=0/40
+[round  681  samp  6810/10000  upd  3405]  mean_r=+0.361  pL=-3.911e-01  kL=+3.423e-05  ratio=+1.0000  clip=0/40
+[round  682  samp  6820/10000  upd  3410]  mean_r=+0.442  pL=-1.365e+00  kL=+4.864e-05  ratio=+1.0000  clip=0/40
+[round  683  samp  6830/10000  upd  3415]  mean_r=-0.073  pL=-2.184e+00  kL=+3.320e-05  ratio=+1.0000  clip=0/40
+[round  684  samp  6840/10000  upd  3420]  mean_r=+0.278  pL=-1.594e+00  kL=+8.426e-05  ratio=+1.0000  clip=0/40
+[round  685  samp  6850/10000  upd  3425]  mean_r=+0.534  pL=+1.646e-01  kL=+2.903e-05  ratio=+1.0000  clip=0/40
+[round  686  samp  6860/10000  upd  3430]  mean_r=+0.154  pL=+4.483e-01  kL=+1.794e-05  ratio=+1.0000  clip=0/40
+[round  687  samp  6870/10000  upd  3435]  mean_r=+0.493  pL=+7.578e-02  kL=+2.102e-05  ratio=+1.0000  clip=0/40
+[round  688  samp  6880/10000  upd  3440]  mean_r=+0.742  pL=-3.343e+00  kL=+2.903e-05  ratio=+1.0000  clip=0/40
+[round  689  samp  6890/10000  upd  3445]  mean_r=+0.342  pL=+1.633e+00  kL=+4.493e-06  ratio=+1.0000  clip=0/40
+[round  690  samp  6900/10000  upd  3450]  mean_r=+0.075  pL=+1.370e+00  kL=+4.494e-05  ratio=+1.0000  clip=0/40
+[round  691  samp  6910/10000  upd  3455]  mean_r=-0.062  pL=+1.338e+00  kL=+5.923e-05  ratio=+1.0000  clip=0/40
+[round  692  samp  6920/10000  upd  3460]  mean_r=+0.427  pL=-6.189e-01  kL=+2.593e-05  ratio=+1.0000  clip=0/40
+[round  693  samp  6930/10000  upd  3465]  mean_r=+0.673  pL=-1.530e+00  kL=+9.001e-06  ratio=+1.0000  clip=0/40
+[round  694  samp  6940/10000  upd  3470]  mean_r=+0.034  pL=-7.551e-01  kL=+4.308e-05  ratio=+1.0000  clip=0/40
+[round  695  samp  6950/10000  upd  3475]  mean_r=+0.735  pL=-2.595e+00  kL=+7.004e-06  ratio=+1.0000  clip=0/40
+[round  696  samp  6960/10000  upd  3480]  mean_r=+0.332  pL=-1.943e-02  kL=+9.357e-05  ratio=+1.0000  clip=0/40
+[round  697  samp  6970/10000  upd  3485]  mean_r=+0.227  pL=-1.664e+00  kL=+4.299e-05  ratio=+1.0000  clip=0/40
+[round  698  samp  6980/10000  upd  3490]  mean_r=+0.609  pL=+1.652e+00  kL=+1.887e-05  ratio=+1.0000  clip=0/40
+[round  699  samp  6990/10000  upd  3495]  mean_r=-0.078  pL=+1.771e+00  kL=+4.865e-05  ratio=+1.0000  clip=0/40
+[round  700  samp  7000/10000  upd  3500]  mean_r=+0.391  pL=+2.805e+00  kL=+2.715e-05  ratio=+1.0000  clip=0/40
+  checkpoint: /home/3223837/dpok_outputs/imagereward_test/484796/checkpoints/round_00700
+[round  701  samp  7010/10000  upd  3505]  mean_r=-0.232  pL=+4.671e+00  kL=+3.360e-05  ratio=+1.0000  clip=0/40
+[round  702  samp  7020/10000  upd  3510]  mean_r=+0.035  pL=+1.326e+00  kL=+3.445e-06  ratio=+1.0000  clip=0/40
+[round  703  samp  7030/10000  upd  3515]  mean_r=-0.340  pL=+1.798e+00  kL=+1.267e-05  ratio=+1.0000  clip=0/40
+[round  704  samp  7040/10000  upd  3520]  mean_r=-0.219  pL=+3.012e+00  kL=+3.745e-05  ratio=+1.0000  clip=0/40
+[round  705  samp  7050/10000  upd  3525]  mean_r=-0.100  pL=-2.696e+00  kL=+1.523e-04  ratio=+1.0000  clip=1/40
+[round  706  samp  7060/10000  upd  3530]  mean_r=+0.080  pL=-1.347e-01  kL=+2.511e-05  ratio=+1.0000  clip=0/40
+[round  707  samp  7070/10000  upd  3535]  mean_r=-0.676  pL=+2.225e+00  kL=+2.877e-05  ratio=+1.0000  clip=0/40
+[round  708  samp  7080/10000  upd  3540]  mean_r=+0.150  pL=+4.067e-01  kL=+3.487e-05  ratio=+1.0000  clip=0/40
+[round  709  samp  7090/10000  upd  3545]  mean_r=+0.413  pL=-2.287e-01  kL=+3.501e-05  ratio=+1.0000  clip=0/40
+[round  710  samp  7100/10000  upd  3550]  mean_r=-0.289  pL=+1.663e+00  kL=+4.713e-05  ratio=+1.0000  clip=0/40
+[round  711  samp  7110/10000  upd  3555]  mean_r=+0.273  pL=-1.689e+00  kL=+2.874e-05  ratio=+1.0000  clip=0/40
+[round  712  samp  7120/10000  upd  3560]  mean_r=-0.476  pL=-2.276e-01  kL=+2.891e-05  ratio=+1.0000  clip=0/40
+[round  713  samp  7130/10000  upd  3565]  mean_r=-0.161  pL=+1.550e+00  kL=+2.124e-05  ratio=+1.0000  clip=0/40
+[round  714  samp  7140/10000  upd  3570]  mean_r=+0.008  pL=-6.502e-01  kL=+2.518e-05  ratio=+1.0000  clip=0/40
+[round  715  samp  7150/10000  upd  3575]  mean_r=-0.362  pL=+1.765e-01  kL=+1.194e-04  ratio=+1.0000  clip=0/40
+[round  716  samp  7160/10000  upd  3580]  mean_r=-0.041  pL=+9.652e-01  kL=+7.947e-05  ratio=+1.0000  clip=0/40
+[round  717  samp  7170/10000  upd  3585]  mean_r=-0.050  pL=+6.474e-01  kL=+9.386e-05  ratio=+1.0000  clip=0/40
+[round  718  samp  7180/10000  upd  3590]  mean_r=-0.907  pL=+1.891e+00  kL=+1.228e-05  ratio=+1.0000  clip=0/40
+[round  719  samp  7190/10000  upd  3595]  mean_r=+0.053  pL=-2.088e+00  kL=+4.402e-05  ratio=+1.0000  clip=0/40
+[round  720  samp  7200/10000  upd  3600]  mean_r=+0.067  pL=-2.778e-01  kL=+5.634e-05  ratio=+1.0000  clip=0/40
+[round  721  samp  7210/10000  upd  3605]  mean_r=-0.004  pL=-3.759e+00  kL=+3.538e-05  ratio=+1.0000  clip=0/40
+[round  722  samp  7220/10000  upd  3610]  mean_r=+0.810  pL=-1.741e+00  kL=+2.256e-05  ratio=+1.0000  clip=0/40
+[round  723  samp  7230/10000  upd  3615]  mean_r=-0.012  pL=+1.749e-01  kL=+2.164e-05  ratio=+1.0000  clip=0/40
+[round  724  samp  7240/10000  upd  3620]  mean_r=+0.186  pL=-1.559e+00  kL=+4.038e-05  ratio=+1.0000  clip=0/40
+[round  725  samp  7250/10000  upd  3625]  mean_r=+0.177  pL=+9.165e-01  kL=+6.416e-05  ratio=+1.0000  clip=0/40
+[round  726  samp  7260/10000  upd  3630]  mean_r=+0.200  pL=-1.937e+00  kL=+7.506e-05  ratio=+1.0000  clip=0/40
+[round  727  samp  7270/10000  upd  3635]  mean_r=-0.010  pL=-6.502e-01  kL=+5.056e-05  ratio=+1.0000  clip=0/40
+[round  728  samp  7280/10000  upd  3640]  mean_r=+0.189  pL=+2.215e-01  kL=+3.019e-05  ratio=+1.0000  clip=0/40
+[round  729  samp  7290/10000  upd  3645]  mean_r=+0.373  pL=+1.167e+00  kL=+1.040e-04  ratio=+1.0000  clip=0/40
+[round  730  samp  7300/10000  upd  3650]  mean_r=-0.191  pL=-1.671e+00  kL=+1.004e-04  ratio=+1.0000  clip=0/40
+[round  731  samp  7310/10000  upd  3655]  mean_r=+0.322  pL=-1.883e+00  kL=+1.196e-04  ratio=+1.0000  clip=0/40
+[round  732  samp  7320/10000  upd  3660]  mean_r=+0.477  pL=+1.661e+00  kL=+6.893e-05  ratio=+1.0000  clip=0/40
+[round  733  samp  7330/10000  upd  3665]  mean_r=+0.420  pL=-8.868e-01  kL=+7.413e-05  ratio=+1.0000  clip=0/40
+[round  734  samp  7340/10000  upd  3670]  mean_r=+0.358  pL=-9.286e-01  kL=+5.887e-05  ratio=+1.0000  clip=0/40
+[round  735  samp  7350/10000  upd  3675]  mean_r=+0.572  pL=-4.171e-01  kL=+3.023e-05  ratio=+1.0000  clip=0/40
+[round  736  samp  7360/10000  upd  3680]  mean_r=+0.389  pL=-2.065e+00  kL=+8.902e-05  ratio=+1.0000  clip=0/40
+[round  737  samp  7370/10000  upd  3685]  mean_r=+0.614  pL=-2.416e-01  kL=+7.429e-06  ratio=+1.0000  clip=0/40
+[round  738  samp  7380/10000  upd  3690]  mean_r=+0.221  pL=+7.161e-01  kL=+3.938e-05  ratio=+1.0000  clip=0/40
+[round  739  samp  7390/10000  upd  3695]  mean_r=+0.107  pL=-1.122e+00  kL=+4.481e-05  ratio=+1.0000  clip=0/40
+[round  740  samp  7400/10000  upd  3700]  mean_r=-0.062  pL=+1.452e+00  kL=+4.312e-05  ratio=+1.0000  clip=0/40
+[round  741  samp  7410/10000  upd  3705]  mean_r=-0.116  pL=+1.440e+00  kL=+3.482e-05  ratio=+1.0000  clip=0/40
+[round  742  samp  7420/10000  upd  3710]  mean_r=+0.399  pL=-5.035e-01  kL=+8.363e-06  ratio=+1.0000  clip=0/40
+[round  743  samp  7430/10000  upd  3715]  mean_r=+0.779  pL=-2.431e+00  kL=+1.909e-05  ratio=+1.0000  clip=0/40
+[round  744  samp  7440/10000  upd  3720]  mean_r=+0.338  pL=-1.147e+00  kL=+4.018e-05  ratio=+1.0000  clip=0/40
+[round  745  samp  7450/10000  upd  3725]  mean_r=+0.827  pL=-1.620e+00  kL=+1.518e-04  ratio=+1.0000  clip=0/40
+[round  746  samp  7460/10000  upd  3730]  mean_r=+0.307  pL=-3.610e-01  kL=+1.035e-05  ratio=+1.0000  clip=0/40
+[round  747  samp  7470/10000  upd  3735]  mean_r=-0.108  pL=+3.086e+00  kL=+1.082e-05  ratio=+1.0000  clip=0/40
+[round  748  samp  7480/10000  upd  3740]  mean_r=-0.115  pL=+1.782e+00  kL=+6.135e-05  ratio=+1.0000  clip=0/40
+[round  749  samp  7490/10000  upd  3745]  mean_r=+0.500  pL=-2.151e-01  kL=+3.662e-05  ratio=+1.0000  clip=0/40
+[round  750  samp  7500/10000  upd  3750]  mean_r=-0.631  pL=+4.108e+00  kL=+6.242e-05  ratio=+1.0000  clip=0/40
+[round  751  samp  7510/10000  upd  3755]  mean_r=+0.129  pL=+1.534e+00  kL=+6.355e-05  ratio=+1.0000  clip=0/40
+[round  752  samp  7520/10000  upd  3760]  mean_r=+0.077  pL=+8.203e-01  kL=+3.009e-05  ratio=+1.0000  clip=0/40
+[round  753  samp  7530/10000  upd  3765]  mean_r=+0.318  pL=-1.168e+00  kL=+6.129e-05  ratio=+1.0000  clip=0/40
+[round  754  samp  7540/10000  upd  3770]  mean_r=+0.694  pL=-3.094e+00  kL=+7.466e-05  ratio=+1.0000  clip=0/40
+[round  755  samp  7550/10000  upd  3775]  mean_r=-0.044  pL=-1.639e-01  kL=+2.493e-05  ratio=+1.0000  clip=0/40
+[round  756  samp  7560/10000  upd  3780]  mean_r=+0.041  pL=+8.930e-01  kL=+5.205e-05  ratio=+1.0000  clip=0/40
+[round  757  samp  7570/10000  upd  3785]  mean_r=-0.127  pL=+2.303e+00  kL=+5.466e-05  ratio=+1.0000  clip=0/40
+[round  758  samp  7580/10000  upd  3790]  mean_r=+0.183  pL=-7.358e-01  kL=+5.010e-05  ratio=+1.0000  clip=0/40
+[round  759  samp  7590/10000  upd  3795]  mean_r=-0.128  pL=+2.154e+00  kL=+5.926e-05  ratio=+1.0000  clip=0/40
+[round  760  samp  7600/10000  upd  3800]  mean_r=-0.494  pL=+1.197e+00  kL=+2.925e-05  ratio=+1.0000  clip=0/40
+[round  761  samp  7610/10000  upd  3805]  mean_r=+0.035  pL=-1.619e+00  kL=+6.700e-06  ratio=+1.0000  clip=0/40
+[round  762  samp  7620/10000  upd  3810]  mean_r=-0.173  pL=+4.776e-01  kL=+1.547e-05  ratio=+1.0000  clip=0/40
+[round  763  samp  7630/10000  upd  3815]  mean_r=+0.275  pL=-1.571e+00  kL=+2.214e-05  ratio=+1.0000  clip=0/40
+[round  764  samp  7640/10000  upd  3820]  mean_r=+0.580  pL=-2.750e+00  kL=+8.081e-05  ratio=+1.0000  clip=0/40
+[round  765  samp  7650/10000  upd  3825]  mean_r=+0.285  pL=+4.915e-01  kL=+6.525e-05  ratio=+1.0000  clip=0/40
+[round  766  samp  7660/10000  upd  3830]  mean_r=+0.096  pL=+2.739e+00  kL=+5.669e-05  ratio=+1.0000  clip=0/40
+[round  767  samp  7670/10000  upd  3835]  mean_r=+0.753  pL=-7.815e-01  kL=+5.498e-06  ratio=+1.0000  clip=0/40
+[round  768  samp  7680/10000  upd  3840]  mean_r=+0.305  pL=+1.160e+00  kL=+6.780e-05  ratio=+1.0000  clip=0/40
+[round  769  samp  7690/10000  upd  3845]  mean_r=+0.315  pL=-1.372e+00  kL=+1.030e-05  ratio=+1.0000  clip=0/40
+[round  770  samp  7700/10000  upd  3850]  mean_r=+0.077  pL=-1.201e-01  kL=+6.164e-06  ratio=+1.0000  clip=0/40
+[round  771  samp  7710/10000  upd  3855]  mean_r=-0.429  pL=+2.527e+00  kL=+5.259e-05  ratio=+1.0000  clip=0/40
+[round  772  samp  7720/10000  upd  3860]  mean_r=-0.221  pL=+2.001e+00  kL=+3.229e-05  ratio=+1.0000  clip=0/40
+[round  773  samp  7730/10000  upd  3865]  mean_r=+0.115  pL=-1.929e-01  kL=+2.093e-05  ratio=+1.0000  clip=0/40
+[round  774  samp  7740/10000  upd  3870]  mean_r=-0.148  pL=-3.261e-01  kL=+3.193e-05  ratio=+1.0000  clip=0/40
+[round  775  samp  7750/10000  upd  3875]  mean_r=+0.084  pL=-5.045e-01  kL=+1.911e-05  ratio=+1.0000  clip=0/40
+[round  776  samp  7760/10000  upd  3880]  mean_r=-0.173  pL=-3.201e-01  kL=+5.898e-05  ratio=+1.0000  clip=0/40
+[round  777  samp  7770/10000  upd  3885]  mean_r=+0.431  pL=-3.050e-01  kL=+3.700e-05  ratio=+1.0000  clip=0/40
+[round  778  samp  7780/10000  upd  3890]  mean_r=+0.167  pL=-6.684e-02  kL=+2.092e-05  ratio=+1.0000  clip=0/40
+[round  779  samp  7790/10000  upd  3895]  mean_r=+0.284  pL=-1.001e+00  kL=+2.153e-05  ratio=+1.0000  clip=0/40
+[round  780  samp  7800/10000  upd  3900]  mean_r=+0.307  pL=-2.815e-01  kL=+7.971e-05  ratio=+1.0000  clip=0/40
+[round  781  samp  7810/10000  upd  3905]  mean_r=-0.172  pL=+4.268e-01  kL=+6.375e-05  ratio=+1.0000  clip=0/40
+[round  782  samp  7820/10000  upd  3910]  mean_r=+0.003  pL=+5.762e-01  kL=+3.584e-05  ratio=+1.0000  clip=0/40
+[round  783  samp  7830/10000  upd  3915]  mean_r=+0.285  pL=-6.247e-02  kL=+2.111e-05  ratio=+1.0000  clip=0/40
+[round  784  samp  7840/10000  upd  3920]  mean_r=+0.448  pL=+5.505e-01  kL=+8.369e-06  ratio=+1.0000  clip=0/40
+[round  785  samp  7850/10000  upd  3925]  mean_r=+0.257  pL=-8.775e-01  kL=+5.766e-05  ratio=+1.0000  clip=0/40
+[round  786  samp  7860/10000  upd  3930]  mean_r=+0.188  pL=-1.833e+00  kL=+2.549e-05  ratio=+1.0000  clip=0/40
+[round  787  samp  7870/10000  upd  3935]  mean_r=+0.632  pL=-1.892e+00  kL=+7.542e-05  ratio=+1.0000  clip=0/40
+[round  788  samp  7880/10000  upd  3940]  mean_r=-0.126  pL=+5.959e-01  kL=+1.955e-05  ratio=+1.0000  clip=0/40
+[round  789  samp  7890/10000  upd  3945]  mean_r=+0.115  pL=-9.933e-01  kL=+4.020e-05  ratio=+1.0000  clip=0/40
+[round  790  samp  7900/10000  upd  3950]  mean_r=+0.309  pL=+9.314e-02  kL=+5.443e-05  ratio=+1.0000  clip=0/40
+[round  791  samp  7910/10000  upd  3955]  mean_r=-0.212  pL=+3.641e-01  kL=+4.278e-05  ratio=+1.0000  clip=0/40
+[round  792  samp  7920/10000  upd  3960]  mean_r=+0.014  pL=-3.170e-01  kL=+3.820e-05  ratio=+1.0000  clip=0/40
+[round  793  samp  7930/10000  upd  3965]  mean_r=-0.120  pL=+2.302e+00  kL=+8.056e-05  ratio=+1.0000  clip=0/40
+[round  794  samp  7940/10000  upd  3970]  mean_r=+0.290  pL=-5.934e-02  kL=+7.644e-05  ratio=+1.0000  clip=0/40
+[round  795  samp  7950/10000  upd  3975]  mean_r=+0.274  pL=+3.998e-01  kL=+1.065e-05  ratio=+1.0000  clip=0/40
+[round  796  samp  7960/10000  upd  3980]  mean_r=+0.472  pL=-1.025e+00  kL=+2.285e-05  ratio=+1.0000  clip=0/40
+[round  797  samp  7970/10000  upd  3985]  mean_r=-0.312  pL=+5.317e-01  kL=+7.648e-06  ratio=+1.0000  clip=0/40
+[round  798  samp  7980/10000  upd  3990]  mean_r=-0.893  pL=+3.550e+00  kL=+8.342e-05  ratio=+1.0000  clip=0/40
+[round  799  samp  7990/10000  upd  3995]  mean_r=-0.039  pL=+6.382e-01  kL=+2.479e-05  ratio=+1.0000  clip=0/40
+[round  800  samp  8000/10000  upd  4000]  mean_r=+0.389  pL=-8.798e-02  kL=+5.901e-05  ratio=+1.0000  clip=0/40
+  checkpoint: /home/3223837/dpok_outputs/imagereward_test/484796/checkpoints/round_00800
+[round  801  samp  8010/10000  upd  4005]  mean_r=+0.672  pL=-2.193e-01  kL=+1.044e-04  ratio=+1.0000  clip=0/40
+[round  802  samp  8020/10000  upd  4010]  mean_r=-0.138  pL=+2.708e+00  kL=+3.832e-05  ratio=+1.0000  clip=0/40
+[round  803  samp  8030/10000  upd  4015]  mean_r=+0.101  pL=+5.916e-01  kL=+2.260e-05  ratio=+1.0000  clip=0/40
+[round  804  samp  8040/10000  upd  4020]  mean_r=-0.181  pL=+7.274e-01  kL=+6.621e-05  ratio=+1.0000  clip=0/40
+[round  805  samp  8050/10000  upd  4025]  mean_r=+0.165  pL=-5.903e-01  kL=+2.845e-05  ratio=+1.0000  clip=0/40
+[round  806  samp  8060/10000  upd  4030]  mean_r=-0.558  pL=+1.264e+00  kL=+5.884e-05  ratio=+1.0000  clip=0/40
+[round  807  samp  8070/10000  upd  4035]  mean_r=+0.529  pL=-2.628e+00  kL=+3.489e-05  ratio=+1.0000  clip=0/40
+[round  808  samp  8080/10000  upd  4040]  mean_r=-0.137  pL=-2.479e-01  kL=+1.043e-04  ratio=+1.0000  clip=0/40
+[round  809  samp  8090/10000  upd  4045]  mean_r=-0.434  pL=+2.587e+00  kL=+2.041e-05  ratio=+1.0000  clip=0/40
+[round  810  samp  8100/10000  upd  4050]  mean_r=+0.186  pL=-2.740e+00  kL=+6.882e-05  ratio=+1.0000  clip=0/40
+[round  811  samp  8110/10000  upd  4055]  mean_r=+0.045  pL=-2.144e+00  kL=+3.967e-05  ratio=+1.0000  clip=0/40
+[round  812  samp  8120/10000  upd  4060]  mean_r=-0.108  pL=+1.013e+00  kL=+5.170e-05  ratio=+1.0000  clip=0/40
+[round  813  samp  8130/10000  upd  4065]  mean_r=-0.175  pL=+1.116e+00  kL=+6.125e-05  ratio=+1.0000  clip=0/40
+[round  814  samp  8140/10000  upd  4070]  mean_r=+0.642  pL=-3.389e+00  kL=+2.866e-05  ratio=+1.0000  clip=0/40
+[round  815  samp  8150/10000  upd  4075]  mean_r=-0.098  pL=+5.359e-01  kL=+4.504e-05  ratio=+1.0000  clip=0/40
+[round  816  samp  8160/10000  upd  4080]  mean_r=-0.044  pL=+1.044e+00  kL=+3.870e-05  ratio=+1.0000  clip=0/40
+[round  817  samp  8170/10000  upd  4085]  mean_r=-0.079  pL=-5.680e-02  kL=+6.060e-05  ratio=+1.0000  clip=0/40
+[round  818  samp  8180/10000  upd  4090]  mean_r=+0.202  pL=-3.435e-01  kL=+5.412e-05  ratio=+1.0000  clip=0/40
+[round  819  samp  8190/10000  upd  4095]  mean_r=-0.091  pL=+2.179e+00  kL=+5.482e-05  ratio=+1.0000  clip=0/40
+[round  820  samp  8200/10000  upd  4100]  mean_r=-0.300  pL=+1.959e+00  kL=+2.503e-05  ratio=+1.0000  clip=0/40
+[round  821  samp  8210/10000  upd  4105]  mean_r=+0.117  pL=-5.829e-01  kL=+2.111e-05  ratio=+1.0000  clip=0/40
+[round  822  samp  8220/10000  upd  4110]  mean_r=+0.094  pL=-6.895e-01  kL=+1.024e-04  ratio=+1.0000  clip=0/40
+[round  823  samp  8230/10000  upd  4115]  mean_r=+0.390  pL=-1.105e-01  kL=+5.429e-05  ratio=+1.0000  clip=0/40
+[round  824  samp  8240/10000  upd  4120]  mean_r=-0.066  pL=-5.516e-02  kL=+4.361e-05  ratio=+1.0000  clip=0/40
+[round  825  samp  8250/10000  upd  4125]  mean_r=+0.044  pL=-1.236e+00  kL=+1.570e-05  ratio=+1.0000  clip=0/40
+[round  826  samp  8260/10000  upd  4130]  mean_r=-0.504  pL=+2.603e+00  kL=+1.484e-05  ratio=+1.0000  clip=0/40
+[round  827  samp  8270/10000  upd  4135]  mean_r=+0.667  pL=-4.305e+00  kL=+1.689e-05  ratio=+1.0000  clip=0/40
+[round  828  samp  8280/10000  upd  4140]  mean_r=+0.351  pL=-4.787e-01  kL=+1.774e-05  ratio=+1.0000  clip=0/40
+[round  829  samp  8290/10000  upd  4145]  mean_r=+0.150  pL=-5.531e-01  kL=+3.643e-05  ratio=+1.0000  clip=0/40
+[round  830  samp  8300/10000  upd  4150]  mean_r=+0.784  pL=-1.369e+00  kL=+8.840e-05  ratio=+1.0000  clip=0/40
+[round  831  samp  8310/10000  upd  4155]  mean_r=+0.174  pL=+7.766e-01  kL=+2.021e-05  ratio=+1.0000  clip=0/40
+[round  832  samp  8320/10000  upd  4160]  mean_r=+0.444  pL=+3.374e-01  kL=+8.363e-06  ratio=+1.0000  clip=0/40
+[round  833  samp  8330/10000  upd  4165]  mean_r=-0.214  pL=-1.721e-01  kL=+3.842e-05  ratio=+1.0000  clip=0/40
+[round  834  samp  8340/10000  upd  4170]  mean_r=+0.460  pL=+3.478e-01  kL=+6.176e-05  ratio=+1.0000  clip=0/40
+[round  835  samp  8350/10000  upd  4175]  mean_r=-0.101  pL=+2.332e+00  kL=+2.148e-05  ratio=+1.0000  clip=0/40
+[round  836  samp  8360/10000  upd  4180]  mean_r=+0.492  pL=+1.951e-01  kL=+5.483e-05  ratio=+1.0000  clip=0/40
+[round  837  samp  8370/10000  upd  4185]  mean_r=-0.020  pL=+1.781e-01  kL=+4.021e-05  ratio=+1.0000  clip=0/40
+[round  838  samp  8380/10000  upd  4190]  mean_r=+0.050  pL=+1.272e+00  kL=+2.209e-05  ratio=+1.0000  clip=0/40
+[round  839  samp  8390/10000  upd  4195]  mean_r=+0.369  pL=-1.418e+00  kL=+4.924e-05  ratio=+1.0000  clip=0/40
+[round  840  samp  8400/10000  upd  4200]  mean_r=-0.273  pL=+1.562e+00  kL=+3.595e-05  ratio=+1.0000  clip=0/40
+[round  841  samp  8410/10000  upd  4205]  mean_r=+0.241  pL=+5.529e-01  kL=+2.708e-05  ratio=+1.0000  clip=0/40
+[round  842  samp  8420/10000  upd  4210]  mean_r=+0.101  pL=-1.096e+00  kL=+1.511e-05  ratio=+1.0000  clip=0/40
+[round  843  samp  8430/10000  upd  4215]  mean_r=+0.314  pL=-1.600e+00  kL=+6.168e-05  ratio=+1.0000  clip=0/40
+[round  844  samp  8440/10000  upd  4220]  mean_r=-0.236  pL=+4.013e-01  kL=+1.826e-05  ratio=+1.0000  clip=0/40
+[round  845  samp  8450/10000  upd  4225]  mean_r=+0.798  pL=-2.047e+00  kL=+4.138e-05  ratio=+1.0000  clip=0/40
+[round  846  samp  8460/10000  upd  4230]  mean_r=-0.083  pL=+2.323e+00  kL=+2.166e-05  ratio=+1.0000  clip=0/40
+[round  847  samp  8470/10000  upd  4235]  mean_r=-0.561  pL=+1.595e+00  kL=+4.338e-05  ratio=+1.0000  clip=0/40
+[round  848  samp  8480/10000  upd  4240]  mean_r=+0.445  pL=-2.358e+00  kL=+1.925e-05  ratio=+1.0000  clip=0/40
+[round  849  samp  8490/10000  upd  4245]  mean_r=+0.049  pL=-5.961e-01  kL=+7.239e-05  ratio=+1.0000  clip=0/40
+[round  850  samp  8500/10000  upd  4250]  mean_r=+0.078  pL=-1.474e+00  kL=+1.463e-05  ratio=+1.0000  clip=0/40
+[round  851  samp  8510/10000  upd  4255]  mean_r=-0.419  pL=+1.295e+00  kL=+2.451e-05  ratio=+1.0000  clip=0/40
+[round  852  samp  8520/10000  upd  4260]  mean_r=-0.118  pL=+1.707e+00  kL=+2.904e-05  ratio=+1.0000  clip=0/40
+[round  853  samp  8530/10000  upd  4265]  mean_r=+0.162  pL=+4.058e-01  kL=+2.981e-05  ratio=+1.0000  clip=0/40
+[round  854  samp  8540/10000  upd  4270]  mean_r=+0.044  pL=-7.756e-01  kL=+3.513e-05  ratio=+1.0000  clip=0/40
+[round  855  samp  8550/10000  upd  4275]  mean_r=-0.237  pL=+6.446e-01  kL=+4.235e-05  ratio=+1.0000  clip=0/40
+[round  856  samp  8560/10000  upd  4280]  mean_r=+0.316  pL=-2.078e+00  kL=+6.709e-05  ratio=+1.0000  clip=0/40
+[round  857  samp  8570/10000  upd  4285]  mean_r=-0.013  pL=+6.025e-01  kL=+8.117e-05  ratio=+1.0000  clip=0/40
+[round  858  samp  8580/10000  upd  4290]  mean_r=+0.302  pL=+1.900e+00  kL=+3.501e-05  ratio=+1.0000  clip=0/40
+[round  859  samp  8590/10000  upd  4295]  mean_r=+0.068  pL=+1.102e+00  kL=+5.538e-05  ratio=+1.0000  clip=0/40
+[round  860  samp  8600/10000  upd  4300]  mean_r=+0.322  pL=-1.773e+00  kL=+1.021e-05  ratio=+1.0000  clip=0/40
+[round  861  samp  8610/10000  upd  4305]  mean_r=-0.119  pL=+1.429e-01  kL=+1.950e-05  ratio=+1.0000  clip=0/40
+[round  862  samp  8620/10000  upd  4310]  mean_r=+0.199  pL=+2.825e-01  kL=+1.036e-04  ratio=+1.0000  clip=0/40
+[round  863  samp  8630/10000  upd  4315]  mean_r=+0.216  pL=-2.961e+00  kL=+2.895e-05  ratio=+1.0000  clip=0/40
+[round  864  samp  8640/10000  upd  4320]  mean_r=+1.191  pL=-3.108e+00  kL=+3.480e-05  ratio=+1.0000  clip=0/40
+[round  865  samp  8650/10000  upd  4325]  mean_r=+0.497  pL=-1.137e+00  kL=+3.748e-05  ratio=+1.0000  clip=0/40
+[round  866  samp  8660/10000  upd  4330]  mean_r=+1.007  pL=-2.710e+00  kL=+9.417e-05  ratio=+1.0000  clip=0/40
+[round  867  samp  8670/10000  upd  4335]  mean_r=+0.213  pL=+4.313e-01  kL=+3.492e-05  ratio=+1.0000  clip=0/40
+[round  868  samp  8680/10000  upd  4340]  mean_r=+0.330  pL=+5.945e-01  kL=+9.796e-06  ratio=+1.0000  clip=0/40
+[round  869  samp  8690/10000  upd  4345]  mean_r=-0.024  pL=+1.824e+00  kL=+1.554e-04  ratio=+1.0000  clip=1/40
+[round  870  samp  8700/10000  upd  4350]  mean_r=+0.467  pL=+1.858e+00  kL=+7.370e-05  ratio=+1.0000  clip=0/40
+[round  871  samp  8710/10000  upd  4355]  mean_r=-0.201  pL=+3.142e-01  kL=+2.536e-05  ratio=+1.0000  clip=0/40
+[round  872  samp  8720/10000  upd  4360]  mean_r=+0.318  pL=-1.841e+00  kL=+5.880e-05  ratio=+1.0000  clip=0/40
+[round  873  samp  8730/10000  upd  4365]  mean_r=+0.003  pL=-2.405e-01  kL=+1.741e-04  ratio=+1.0000  clip=0/40
+[round  874  samp  8740/10000  upd  4370]  mean_r=-0.140  pL=+6.673e-01  kL=+6.928e-05  ratio=+1.0000  clip=0/40
+[round  875  samp  8750/10000  upd  4375]  mean_r=+0.084  pL=+1.044e+00  kL=+4.792e-05  ratio=+1.0000  clip=0/40
+[round  876  samp  8760/10000  upd  4380]  mean_r=+0.435  pL=-1.124e+00  kL=+5.387e-05  ratio=+1.0000  clip=0/40
+[round  877  samp  8770/10000  upd  4385]  mean_r=-0.106  pL=-3.465e-01  kL=+4.143e-05  ratio=+1.0000  clip=0/40
+[round  878  samp  8780/10000  upd  4390]  mean_r=+0.458  pL=-2.239e-01  kL=+7.068e-05  ratio=+1.0000  clip=0/40
+[round  879  samp  8790/10000  upd  4395]  mean_r=-0.296  pL=+2.670e+00  kL=+4.964e-05  ratio=+1.0000  clip=0/40
+[round  880  samp  8800/10000  upd  4400]  mean_r=-0.233  pL=+3.209e+00  kL=+3.815e-05  ratio=+1.0000  clip=0/40
+[round  881  samp  8810/10000  upd  4405]  mean_r=+0.329  pL=+6.879e-01  kL=+1.928e-05  ratio=+1.0000  clip=0/40
+[round  882  samp  8820/10000  upd  4410]  mean_r=-0.229  pL=+1.938e+00  kL=+4.941e-05  ratio=+1.0000  clip=0/40
+[round  883  samp  8830/10000  upd  4415]  mean_r=-0.122  pL=-1.945e+00  kL=+4.406e-05  ratio=+1.0000  clip=0/40
+[round  884  samp  8840/10000  upd  4420]  mean_r=+0.314  pL=-1.875e+00  kL=+1.452e-04  ratio=+1.0000  clip=0/40
+[round  885  samp  8850/10000  upd  4425]  mean_r=+0.707  pL=-2.798e+00  kL=+5.088e-05  ratio=+1.0000  clip=0/40
+[round  886  samp  8860/10000  upd  4430]  mean_r=-0.123  pL=-9.681e-01  kL=+6.502e-05  ratio=+1.0000  clip=0/40
+[round  887  samp  8870/10000  upd  4435]  mean_r=+0.027  pL=+6.350e-01  kL=+1.564e-04  ratio=+1.0000  clip=0/40
+[round  888  samp  8880/10000  upd  4440]  mean_r=+0.565  pL=-1.010e+00  kL=+2.833e-05  ratio=+1.0000  clip=0/40
+[round  889  samp  8890/10000  upd  4445]  mean_r=-0.005  pL=+2.513e+00  kL=+9.097e-05  ratio=+1.0000  clip=1/40
+[round  890  samp  8900/10000  upd  4450]  mean_r=+0.424  pL=-9.497e-01  kL=+7.906e-06  ratio=+1.0000  clip=0/40
+[round  891  samp  8910/10000  upd  4455]  mean_r=+0.992  pL=-2.404e+00  kL=+3.047e-05  ratio=+1.0000  clip=0/40
+[round  892  samp  8920/10000  upd  4460]  mean_r=+0.853  pL=-1.843e+00  kL=+4.306e-05  ratio=+1.0000  clip=0/40
+[round  893  samp  8930/10000  upd  4465]  mean_r=-0.442  pL=+1.094e+00  kL=+7.913e-05  ratio=+1.0000  clip=0/40
+[round  894  samp  8940/10000  upd  4470]  mean_r=+0.302  pL=+1.059e+00  kL=+3.968e-05  ratio=+1.0000  clip=0/40
+[round  895  samp  8950/10000  upd  4475]  mean_r=+0.682  pL=-8.735e-01  kL=+4.705e-05  ratio=+1.0000  clip=0/40
+[round  896  samp  8960/10000  upd  4480]  mean_r=-0.089  pL=-1.114e-01  kL=+3.522e-05  ratio=+1.0000  clip=0/40
+[round  897  samp  8970/10000  upd  4485]  mean_r=+0.377  pL=+6.633e-01  kL=+8.096e-05  ratio=+1.0000  clip=0/40
+[round  898  samp  8980/10000  upd  4490]  mean_r=+0.527  pL=-8.984e-01  kL=+7.845e-06  ratio=+1.0000  clip=0/40
+[round  899  samp  8990/10000  upd  4495]  mean_r=+0.515  pL=-4.509e-02  kL=+2.880e-05  ratio=+1.0000  clip=0/40
+[round  900  samp  9000/10000  upd  4500]  mean_r=+0.618  pL=-2.605e-01  kL=+1.061e-04  ratio=+1.0000  clip=0/40
+  checkpoint: /home/3223837/dpok_outputs/imagereward_test/484796/checkpoints/round_00900
+[round  901  samp  9010/10000  upd  4505]  mean_r=+0.510  pL=-2.343e+00  kL=+3.214e-05  ratio=+1.0000  clip=0/40
+[round  902  samp  9020/10000  upd  4510]  mean_r=-0.218  pL=+2.442e+00  kL=+5.516e-05  ratio=+1.0000  clip=0/40
+[round  903  samp  9030/10000  upd  4515]  mean_r=+0.238  pL=-3.856e-01  kL=+7.600e-05  ratio=+1.0000  clip=0/40
+[round  904  samp  9040/10000  upd  4520]  mean_r=-0.201  pL=+8.101e-01  kL=+3.555e-05  ratio=+1.0000  clip=0/40
+[round  905  samp  9050/10000  upd  4525]  mean_r=-0.282  pL=+1.919e+00  kL=+1.178e-04  ratio=+1.0000  clip=0/40
+[round  906  samp  9060/10000  upd  4530]  mean_r=+0.803  pL=-1.896e+00  kL=+1.585e-04  ratio=+1.0000  clip=0/40
+[round  907  samp  9070/10000  upd  4535]  mean_r=+0.450  pL=-3.003e-02  kL=+1.006e-04  ratio=+1.0000  clip=0/40
+[round  908  samp  9080/10000  upd  4540]  mean_r=+0.717  pL=-1.889e+00  kL=+1.048e-04  ratio=+1.0000  clip=0/40
+[round  909  samp  9090/10000  upd  4545]  mean_r=+0.042  pL=+3.865e-01  kL=+3.554e-05  ratio=+1.0000  clip=0/40
+[round  910  samp  9100/10000  upd  4550]  mean_r=-0.433  pL=+2.484e+00  kL=+3.237e-05  ratio=+1.0000  clip=0/40
+[round  911  samp  9110/10000  upd  4555]  mean_r=+0.544  pL=-8.849e-01  kL=+2.561e-05  ratio=+1.0000  clip=0/40
+[round  912  samp  9120/10000  upd  4560]  mean_r=+0.415  pL=-5.309e-01  kL=+7.764e-05  ratio=+1.0000  clip=0/40
+[round  913  samp  9130/10000  upd  4565]  mean_r=+0.736  pL=-1.121e+00  kL=+1.221e-05  ratio=+1.0000  clip=0/40
+[round  914  samp  9140/10000  upd  4570]  mean_r=+0.341  pL=+1.391e+00  kL=+4.466e-05  ratio=+1.0000  clip=0/40
+[round  915  samp  9150/10000  upd  4575]  mean_r=+0.532  pL=+1.324e-02  kL=+1.691e-05  ratio=+1.0000  clip=0/40
+[round  916  samp  9160/10000  upd  4580]  mean_r=+0.017  pL=+2.769e+00  kL=+5.185e-05  ratio=+1.0000  clip=0/40
+[round  917  samp  9170/10000  upd  4585]  mean_r=+0.110  pL=+2.054e-01  kL=+4.704e-05  ratio=+1.0000  clip=0/40
+[round  918  samp  9180/10000  upd  4590]  mean_r=+0.312  pL=-2.510e+00  kL=+1.885e-05  ratio=+1.0000  clip=0/40
+[round  919  samp  9190/10000  upd  4595]  mean_r=-0.412  pL=+4.584e+00  kL=+1.066e-04  ratio=+1.0000  clip=0/40
+[round  920  samp  9200/10000  upd  4600]  mean_r=-0.198  pL=+1.560e+00  kL=+5.789e-05  ratio=+1.0000  clip=0/40
+[round  921  samp  9210/10000  upd  4605]  mean_r=+0.288  pL=-1.018e+00  kL=+1.192e-04  ratio=+1.0000  clip=0/40
+[round  922  samp  9220/10000  upd  4610]  mean_r=+0.078  pL=+3.535e-01  kL=+4.296e-05  ratio=+1.0000  clip=0/40
+[round  923  samp  9230/10000  upd  4615]  mean_r=+0.646  pL=-1.217e+00  kL=+1.944e-05  ratio=+1.0000  clip=0/40
+[round  924  samp  9240/10000  upd  4620]  mean_r=-0.702  pL=+2.642e+00  kL=+7.541e-05  ratio=+1.0000  clip=0/40
+[round  925  samp  9250/10000  upd  4625]  mean_r=+0.053  pL=+2.832e-01  kL=+1.471e-05  ratio=+1.0000  clip=0/40
+[round  926  samp  9260/10000  upd  4630]  mean_r=+0.767  pL=-1.590e+00  kL=+8.015e-05  ratio=+1.0000  clip=0/40
+[round  927  samp  9270/10000  upd  4635]  mean_r=-0.348  pL=+1.149e+00  kL=+3.409e-05  ratio=+1.0000  clip=0/40
+[round  928  samp  9280/10000  upd  4640]  mean_r=+0.188  pL=+1.760e+00  kL=+6.628e-05  ratio=+1.0000  clip=0/40
+[round  929  samp  9290/10000  upd  4645]  mean_r=+0.054  pL=-7.277e-01  kL=+1.645e-04  ratio=+0.9999  clip=1/40
+[round  930  samp  9300/10000  upd  4650]  mean_r=+0.106  pL=+7.582e-01  kL=+8.886e-05  ratio=+1.0000  clip=0/40
+[round  931  samp  9310/10000  upd  4655]  mean_r=+0.494  pL=-1.589e-01  kL=+9.834e-05  ratio=+1.0000  clip=0/40
+[round  932  samp  9320/10000  upd  4660]  mean_r=+0.041  pL=+1.988e+00  kL=+7.082e-05  ratio=+1.0000  clip=0/40
+[round  933  samp  9330/10000  upd  4665]  mean_r=-0.213  pL=+1.473e+00  kL=+6.486e-05  ratio=+1.0000  clip=0/40
+[round  934  samp  9340/10000  upd  4670]  mean_r=+0.417  pL=-2.090e+00  kL=+8.197e-05  ratio=+1.0000  clip=0/40
+[round  935  samp  9350/10000  upd  4675]  mean_r=+0.672  pL=+1.079e+00  kL=+3.486e-05  ratio=+1.0000  clip=0/40
+[round  936  samp  9360/10000  upd  4680]  mean_r=+0.439  pL=-1.486e+00  kL=+6.985e-05  ratio=+1.0000  clip=0/40
+[round  937  samp  9370/10000  upd  4685]  mean_r=+0.533  pL=-1.827e+00  kL=+3.936e-05  ratio=+1.0000  clip=0/40
+[round  938  samp  9380/10000  upd  4690]  mean_r=+0.015  pL=+1.078e+00  kL=+5.170e-05  ratio=+1.0000  clip=0/40
+[round  939  samp  9390/10000  upd  4695]  mean_r=+0.298  pL=-2.766e-01  kL=+4.182e-05  ratio=+1.0000  clip=0/40
+[round  940  samp  9400/10000  upd  4700]  mean_r=+0.809  pL=-1.850e-02  kL=+4.065e-05  ratio=+1.0000  clip=0/40
+[round  941  samp  9410/10000  upd  4705]  mean_r=-0.696  pL=+8.487e-01  kL=+5.770e-05  ratio=+1.0000  clip=0/40
+[round  942  samp  9420/10000  upd  4710]  mean_r=+0.792  pL=+1.473e-01  kL=+4.730e-05  ratio=+1.0000  clip=0/40
+[round  943  samp  9430/10000  upd  4715]  mean_r=+0.255  pL=+6.634e-01  kL=+1.523e-05  ratio=+1.0000  clip=0/40
+[round  944  samp  9440/10000  upd  4720]  mean_r=+0.041  pL=+1.521e+00  kL=+6.951e-05  ratio=+1.0000  clip=0/40
+[round  945  samp  9450/10000  upd  4725]  mean_r=+0.711  pL=-1.029e+00  kL=+3.562e-05  ratio=+1.0000  clip=0/40
+[round  946  samp  9460/10000  upd  4730]  mean_r=-0.602  pL=+2.518e+00  kL=+1.110e-04  ratio=+1.0000  clip=0/40
+[round  947  samp  9470/10000  upd  4735]  mean_r=+0.624  pL=-1.547e+00  kL=+6.606e-05  ratio=+1.0000  clip=0/40
+[round  948  samp  9480/10000  upd  4740]  mean_r=+0.571  pL=+2.313e-01  kL=+3.308e-05  ratio=+1.0000  clip=0/40
+[round  949  samp  9490/10000  upd  4745]  mean_r=+0.320  pL=-4.184e-02  kL=+8.149e-05  ratio=+1.0000  clip=0/40
+[round  950  samp  9500/10000  upd  4750]  mean_r=+0.506  pL=-7.313e-01  kL=+4.918e-05  ratio=+1.0000  clip=0/40
+[round  951  samp  9510/10000  upd  4755]  mean_r=-0.559  pL=+2.118e+00  kL=+2.458e-05  ratio=+1.0000  clip=0/40
+[round  952  samp  9520/10000  upd  4760]  mean_r=-0.260  pL=-2.252e-01  kL=+2.911e-05  ratio=+1.0000  clip=0/40
+[round  953  samp  9530/10000  upd  4765]  mean_r=+0.100  pL=+2.262e+00  kL=+4.833e-05  ratio=+1.0000  clip=0/40
+[round  954  samp  9540/10000  upd  4770]  mean_r=-0.293  pL=+3.689e-01  kL=+5.457e-05  ratio=+1.0000  clip=0/40
+[round  955  samp  9550/10000  upd  4775]  mean_r=+0.370  pL=-4.805e-01  kL=+6.359e-05  ratio=+1.0000  clip=0/40
+[round  956  samp  9560/10000  upd  4780]  mean_r=+0.446  pL=-2.096e+00  kL=+6.090e-05  ratio=+1.0000  clip=0/40
+[round  957  samp  9570/10000  upd  4785]  mean_r=+0.588  pL=-5.165e-01  kL=+4.189e-05  ratio=+1.0000  clip=0/40
+[round  958  samp  9580/10000  upd  4790]  mean_r=+0.255  pL=-1.003e+00  kL=+5.501e-05  ratio=+1.0000  clip=0/40
+[round  959  samp  9590/10000  upd  4795]  mean_r=+0.131  pL=-7.178e-01  kL=+5.391e-05  ratio=+1.0000  clip=0/40
+[round  960  samp  9600/10000  upd  4800]  mean_r=+0.562  pL=-8.047e-01  kL=+2.109e-05  ratio=+1.0000  clip=0/40
+[round  961  samp  9610/10000  upd  4805]  mean_r=+0.337  pL=+8.192e-01  kL=+9.758e-05  ratio=+1.0000  clip=0/40
+[round  962  samp  9620/10000  upd  4810]  mean_r=-0.025  pL=+1.652e+00  kL=+1.465e-04  ratio=+1.0000  clip=0/40
+[round  963  samp  9630/10000  upd  4815]  mean_r=+0.389  pL=-1.049e+00  kL=+8.318e-05  ratio=+1.0000  clip=0/40
+[round  964  samp  9640/10000  upd  4820]  mean_r=+0.671  pL=-6.752e-01  kL=+5.946e-05  ratio=+1.0000  clip=0/40
+[round  965  samp  9650/10000  upd  4825]  mean_r=+0.407  pL=+1.433e+00  kL=+3.879e-05  ratio=+1.0000  clip=0/40
+[round  966  samp  9660/10000  upd  4830]  mean_r=+0.453  pL=-5.355e-01  kL=+5.345e-05  ratio=+1.0000  clip=0/40
+[round  967  samp  9670/10000  upd  4835]  mean_r=+0.451  pL=+2.884e-01  kL=+5.455e-05  ratio=+1.0001  clip=2/40
+[round  968  samp  9680/10000  upd  4840]  mean_r=-0.161  pL=+2.616e+00  kL=+1.842e-05  ratio=+1.0000  clip=0/40
+[round  969  samp  9690/10000  upd  4845]  mean_r=+0.109  pL=+1.208e+00  kL=+9.490e-05  ratio=+1.0000  clip=0/40
+[round  970  samp  9700/10000  upd  4850]  mean_r=+0.019  pL=+2.474e+00  kL=+8.081e-05  ratio=+1.0000  clip=0/40
+[round  971  samp  9710/10000  upd  4855]  mean_r=+0.349  pL=-8.835e-01  kL=+6.628e-05  ratio=+1.0000  clip=0/40
+[round  972  samp  9720/10000  upd  4860]  mean_r=+0.009  pL=+3.173e-01  kL=+5.083e-05  ratio=+1.0000  clip=0/40
+[round  973  samp  9730/10000  upd  4865]  mean_r=+0.453  pL=-4.406e-01  kL=+5.462e-05  ratio=+1.0000  clip=0/40
+[round  974  samp  9740/10000  upd  4870]  mean_r=+0.988  pL=-1.929e+00  kL=+8.828e-05  ratio=+1.0000  clip=0/40
+[round  975  samp  9750/10000  upd  4875]  mean_r=+0.446  pL=+7.205e-01  kL=+9.084e-05  ratio=+1.0000  clip=0/40
+[round  976  samp  9760/10000  upd  4880]  mean_r=+0.463  pL=-9.412e-01  kL=+8.500e-05  ratio=+1.0000  clip=0/40
+[round  977  samp  9770/10000  upd  4885]  mean_r=+0.327  pL=+1.187e+00  kL=+7.516e-05  ratio=+1.0000  clip=0/40
+[round  978  samp  9780/10000  upd  4890]  mean_r=+0.763  pL=-1.952e+00  kL=+2.246e-05  ratio=+1.0000  clip=0/40
+[round  979  samp  9790/10000  upd  4895]  mean_r=+0.302  pL=-1.004e+00  kL=+1.917e-05  ratio=+1.0000  clip=0/40
+[round  980  samp  9800/10000  upd  4900]  mean_r=+0.275  pL=+1.626e-02  kL=+6.480e-05  ratio=+1.0000  clip=0/40
+[round  981  samp  9810/10000  upd  4905]  mean_r=+0.078  pL=+6.270e-01  kL=+2.225e-05  ratio=+1.0000  clip=0/40
+[round  982  samp  9820/10000  upd  4910]  mean_r=+0.199  pL=-2.136e-01  kL=+6.191e-05  ratio=+1.0000  clip=0/40
+[round  983  samp  9830/10000  upd  4915]  mean_r=+1.331  pL=-1.146e+00  kL=+5.154e-05  ratio=+1.0000  clip=0/40
+[round  984  samp  9840/10000  upd  4920]  mean_r=-0.492  pL=+2.729e+00  kL=+2.915e-05  ratio=+1.0000  clip=0/40
+[round  985  samp  9850/10000  upd  4925]  mean_r=+0.873  pL=-1.509e+00  kL=+6.941e-05  ratio=+1.0000  clip=0/40
+[round  986  samp  9860/10000  upd  4930]  mean_r=+0.599  pL=-2.132e-01  kL=+2.949e-05  ratio=+1.0000  clip=0/40
+[round  987  samp  9870/10000  upd  4935]  mean_r=+0.700  pL=-1.021e+00  kL=+5.327e-05  ratio=+1.0000  clip=0/40
+[round  988  samp  9880/10000  upd  4940]  mean_r=+0.781  pL=-3.071e+00  kL=+6.679e-05  ratio=+1.0000  clip=0/40
+[round  989  samp  9890/10000  upd  4945]  mean_r=+0.198  pL=+9.821e-01  kL=+7.056e-05  ratio=+1.0000  clip=0/40
+[round  990  samp  9900/10000  upd  4950]  mean_r=+0.442  pL=-1.605e+00  kL=+6.075e-05  ratio=+1.0000  clip=0/40
+[round  991  samp  9910/10000  upd  4955]  mean_r=+1.221  pL=-1.750e+00  kL=+2.742e-05  ratio=+1.0000  clip=0/40
+[round  992  samp  9920/10000  upd  4960]  mean_r=+0.326  pL=+3.217e+00  kL=+2.302e-05  ratio=+1.0000  clip=0/40
+[round  993  samp  9930/10000  upd  4965]  mean_r=+0.382  pL=+2.206e+00  kL=+1.546e-04  ratio=+1.0000  clip=1/40
+[round  994  samp  9940/10000  upd  4970]  mean_r=+0.715  pL=-1.987e-01  kL=+2.165e-05  ratio=+1.0000  clip=0/40
+[round  995  samp  9950/10000  upd  4975]  mean_r=+0.118  pL=+4.188e-01  kL=+7.116e-05  ratio=+1.0000  clip=0/40
+[round  996  samp  9960/10000  upd  4980]  mean_r=+0.523  pL=-6.292e-01  kL=+9.460e-06  ratio=+1.0000  clip=0/40
+[round  997  samp  9970/10000  upd  4985]  mean_r=-0.163  pL=+1.086e+00  kL=+9.558e-06  ratio=+1.0000  clip=0/40
+[round  998  samp  9980/10000  upd  4990]  mean_r=+0.455  pL=-1.280e+00  kL=+8.719e-05  ratio=+1.0000  clip=0/40
+[round  999  samp  9990/10000  upd  4995]  mean_r=+0.376  pL=+5.586e-01  kL=+3.882e-05  ratio=+1.0000  clip=0/40
+[round 1000  samp 10000/10000  upd  5000]  mean_r=-0.317  pL=+2.851e+00  kL=+1.102e-04  ratio=+1.0000  clip=0/40
+  checkpoint: /home/3223837/dpok_outputs/imagereward_test/484796/checkpoints/round_01000
+
+Training complete. Saving final LoRA ...
+Saved: /home/3223837/dpok_outputs/imagereward_test/484796/lora_unet_final
+Saved value net: /home/3223837/dpok_outputs/imagereward_test/484796/value_net_final.pt
+Learning curve: /home/3223837/dpok_outputs/imagereward_test/484796/reward_curve.png
+Snapshots CSV: /home/3223837/dpok_outputs/imagereward_test/484796/snapshots.csv
+Per-prompt curves: /home/3223837/dpok_outputs/imagereward_test/484796/per_prompt_curves.png
+Snapshot grid: /home/3223837/dpok_outputs/imagereward_test/484796/snapshot_grid.png
+wandb: 
+wandb: Run history:
+wandb:    gpu/mem_alloc_gb ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb: gpu/mem_reserved_gb █████████████▁█▁███████▁████▁█▁█▁▁██▁▁██
+wandb:    is/clip_hit_rate ▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁█▁▁▁▁█▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:        is/ratio_max ▁▁▁▁▁▁▁▁▁▁▁▁▁█▂▂▁▁▁▁▁▂▂▁▁▁▁▁▁▂▄▁▂▁▁▁▁▁▁▁
+wandb:       is/ratio_mean ▃▂▃▂▃▃▂▂▁▃▃▃▁▃▃▂▃█▄▃▃▃▂▃▃▂▂▃▂▂▂▄▃▄▃▃▄▂▂▃
+wandb:        is/ratio_min ███▇▁▅▅█▅▂▆▇▂▅▅█▃▆▅█▅▅▆▆▇▄▆▁▆▄▇▄█▃▆▄▇▄▄█
+wandb:             loss/kl ▃▂▂▃▃▄▂▂▂▂▅▁▇▂▄▃▄▁▃▃▂▆▅▂▃▂▄▅█▄▂▇▆▅█▂▄▄▇▅
+wandb:         loss/policy ▁█▅█▃▅▇▂▅▅▄▃▅▆▅▄▆▄▄▄▃▅▃▄▃▄▂▄▇▆▆▅▅▄▄▆▅▅▁▃
+wandb:          loss/total ▃▃▄▄█▄▇▅▅▄▃▁▃▇▃▆▅▄▅▅▃▄▃▆▃▄▃▄▃▂▅▃▅▃▄▄▄▂▃▆
+wandb:         round/max_r ▆▅█▇▄▇▅▇▂▇██▆▃▆▁▅▆█▄▅▃▆▄▆▅▃▇▆▇▄▆▅▆▆▃▇▆▇▅
+wandb:                 +14 ...
+wandb: 
+wandb: Run summary:
+wandb:    gpu/mem_alloc_gb 9.62149
+wandb: gpu/mem_reserved_gb 35.48801
+wandb:    is/clip_hit_rate 0
+wandb:        is/ratio_max 1.00004
+wandb:       is/ratio_mean 1.0
+wandb:        is/ratio_min 0.99985
+wandb:             loss/kl 0.00011
+wandb:         loss/policy 2.85126
+wandb:          loss/total 2.85137
+wandb:         round/max_r 1.19703
+wandb:                 +14 ...
+wandb: 
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync /home/3223837/dpok_outputs/imagereward_test/484796/wandb/offline-run-20260428_220006-dmtpsf0h
+wandb: Find logs at: /home/3223837/dpok_outputs/imagereward_test/484796/wandb/offline-run-20260428_220006-dmtpsf0h/logs
+Done.
+
+════════════════════════════════════════════════════════════════
+  Eval pass 1: TRAINING prompts — Wed Apr 29 01:52:22 AM CEST 2026
+════════════════════════════════════════════════════════════════
+============================================================
+  EVAL REPORT — DPOK on TRAINING prompts
+  Metrics: clip, imagereward, vqa, dsg
+  Device:  cuda
+============================================================
+  Prompts: 120
+
+  Generating 120 trained images...
+/home/3223837/.conda/envs/dpok-eval/lib/python3.10/site-packages/transformers/utils/hub.py:127: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+
+  Loading SD1.5 (runwayml/stable-diffusion-v1-5)...
+Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s]Loading pipeline components...:  33%|███▎      | 2/6 [00:00<00:00,  6.97it/s]Loading pipeline components...:  50%|█████     | 3/6 [00:00<00:00,  3.97it/s]Loading pipeline components...:  67%|██████▋   | 4/6 [00:01<00:00,  3.64it/s]/home/3223837/.conda/envs/dpok-eval/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+Loading pipeline components...:  83%|████████▎ | 5/6 [00:01<00:00,  3.13it/s]Loading pipeline components...: 100%|██████████| 6/6 [00:01<00:00,  3.60it/s]Loading pipeline components...: 100%|██████████| 6/6 [00:01<00:00,  3.75it/s]
+You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
+  Loading LoRA from /home/3223837/dpok_outputs/imagereward_test/484796/lora_unet_final
+  LoRA merged into base UNet
+    [trained] 10/120 images
+    [trained] 20/120 images
+    [trained] 30/120 images
+    [trained] 40/120 images
+    [trained] 50/120 images
+    [trained] 60/120 images
+    [trained] 70/120 images
+    [trained] 80/120 images
+    [trained] 90/120 images
+    [trained] 100/120 images
+    [trained] 110/120 images
+    [trained] 120/120 images
+
+  Generating 120 baseline images...
+
+  Loading SD1.5 (runwayml/stable-diffusion-v1-5)...
+Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s]Loading pipeline components...:  33%|███▎      | 2/6 [00:00<00:00, 17.26it/s]Loading pipeline components...:  67%|██████▋   | 4/6 [00:00<00:00,  5.11it/s]/home/3223837/.conda/envs/dpok-eval/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+Loading pipeline components...:  83%|████████▎ | 5/6 [00:00<00:00,  5.63it/s]Loading pipeline components...: 100%|██████████| 6/6 [00:00<00:00,  7.00it/s]
+You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
+    [baseline] 10/120 images
+    [baseline] 20/120 images
+    [baseline] 30/120 images
+    [baseline] 40/120 images
+    [baseline] 50/120 images
+    [baseline] 60/120 images
+    [baseline] 70/120 images
+    [baseline] 80/120 images
+    [baseline] 90/120 images
+    [baseline] 100/120 images
+    [baseline] 110/120 images
+    [baseline] 120/120 images
+
+  Scoring trained images...
+  Scoring: CLIPScore...
+Loading CLIP (ViT-L-14/openai) for CLIPScore ...
+INFO:root:Parsing model identifier. Schema: None, Identifier: ViT-L-14
+INFO:root:Loaded built-in ViT-L-14 model config.
+INFO:root:Instantiating model architecture: CLIP
+INFO:root:Loading full pretrained weights from: /scratch/3223837/.cache/huggingface/hub/models--timm--vit_large_patch14_clip_224.openai/snapshots/18d0535469bb561bf468d76c1d73aa35156c922b/open_clip_model.safetensors
+INFO:root:Final image preprocessing configuration set: {'size': (224, 224), 'mode': 'RGB', 'mean': (0.48145466, 0.4578275, 0.40821073), 'std': (0.26862954, 0.26130258, 0.27577711), 'interpolation': 'bicubic', 'resize_mode': 'shortest', 'fill_color': 0}
+INFO:root:Model ViT-L-14 creation process complete.
+INFO:root:Parsing tokenizer identifier. Schema: None, Identifier: ViT-L-14
+INFO:root:Attempting to load config from built-in: ViT-L-14
+INFO:root:Using default SimpleTokenizer.
+CLIP scorer ready.
+  Scoring: ImageReward...
+Loading ImageReward (ImageReward-v1.0) ...
+load checkpoint from /home/3223837/.cache/ImageReward/ImageReward.pt
+checkpoint loaded
+ImageReward scorer ready.
+  Scoring: VQAScore...
+Loading VQA model (clip-flant5-xl) ...
+VQA scorer ready.
+  Scoring: DSGScore...
+
+  Scoring baseline images...
+  Scoring: CLIPScore...
+Loading CLIP (ViT-L-14/openai) for CLIPScore ...
+INFO:root:Parsing model identifier. Schema: None, Identifier: ViT-L-14
+INFO:root:Loaded built-in ViT-L-14 model config.
+INFO:root:Instantiating model architecture: CLIP
+INFO:root:Loading full pretrained weights from: /scratch/3223837/.cache/huggingface/hub/models--timm--vit_large_patch14_clip_224.openai/snapshots/18d0535469bb561bf468d76c1d73aa35156c922b/open_clip_model.safetensors
+INFO:root:Final image preprocessing configuration set: {'size': (224, 224), 'mode': 'RGB', 'mean': (0.48145466, 0.4578275, 0.40821073), 'std': (0.26862954, 0.26130258, 0.27577711), 'interpolation': 'bicubic', 'resize_mode': 'shortest', 'fill_color': 0}
+INFO:root:Model ViT-L-14 creation process complete.
+INFO:root:Parsing tokenizer identifier. Schema: None, Identifier: ViT-L-14
+INFO:root:Attempting to load config from built-in: ViT-L-14
+INFO:root:Using default SimpleTokenizer.
+CLIP scorer ready.
+  Scoring: ImageReward...
+Loading ImageReward (ImageReward-v1.0) ...
+load checkpoint from /home/3223837/.cache/ImageReward/ImageReward.pt
+checkpoint loaded
+ImageReward scorer ready.
+  Scoring: VQAScore...
+Loading VQA model (clip-flant5-xl) ...
+VQA scorer ready.
+  Scoring: DSGScore...
+
+==============================================================================
+  DPOK + ImageReward — EVALUATION REPORT
+  Run: DPOK on TRAINING prompts
+==============================================================================
+
+  Metric             Trained   (std)  Baseline   (std)     Delta       %
+  ──────────────────────────────────────────────────────────────────────────
+  CLIPScore           0.2589 (0.0367)    0.2565 (0.0375)   +0.0024   +0.9%
+  ImageReward         0.1900 (1.1649)    0.0041 (1.1828)   +0.1859  +4534.1%
+  VQAScore            0.6498 (0.3031)    0.6051 (0.3026)   +0.0447   +7.4%
+  DSGScore            0.7064 (0.2971)    0.6906 (0.3081)   +0.0158   +2.3%
+  ──────────────────────────────────────────────────────────────────────────
+  N images: 120 trained, 120 baseline
+  Time: 530s
+==============================================================================
+
+  Saved: report.txt
+  Saved: report.tex
+  Saved: report.json
+
+====================================================================================================
+  PER-PROMPT BREAKDOWN  (mean over `seeds_per_prompt` seeds)
+====================================================================================================
+  Prompt                                                       clip imagereward       vqa       dsg    Δclip
+----------------------------------------------------------------------------------------------------
+  A green colored rabbit.                                   +0.2917   +0.1643   +0.8136   +0.9239    +0.0037
+  A cat and a dog.                                          +0.2207   +0.2655   +0.6202   +0.6207    +0.0039
+  Four wolves in the park.                                  +0.2693   +1.2150   +0.7422   +0.8389    +0.0012
+  A dog on the moon.                                        +0.2537   -0.8848   +0.4233   +0.4420    +0.0008
+----------------------------------------------------------------------------------------------------
+  baselines:
+  A green colored rabbit.                                   +0.2880   -0.3827   +0.7255   +0.9343 
+  A cat and a dog.                                          +0.2168   +0.0455   +0.5490   +0.5506 
+  Four wolves in the park.                                  +0.2681   +1.1948   +0.7325   +0.8353 
+  A dog on the moon.                                        +0.2529   -0.8413   +0.4134   +0.4421 
+====================================================================================================
+  Saved: per_prompt_breakdown.txt, per_prompt_breakdown.csv
+  Saved: baseline_vs_trained_grid.png
+  Saved: trained_scores.csv
+  Saved: baseline_scores.csv
+
+  Generating plots...
+  Saved: score_distributions.png
+  Saved: score_radar.png
+
+  All outputs in: /home/3223837/dpok_outputs/imagereward_test/484796/eval/train_prompts/
+============================================================
+
+════════════════════════════════════════════════════════════════
+  Eval pass 2: HELD-OUT prompts — Wed Apr 29 02:01:46 AM CEST 2026
+════════════════════════════════════════════════════════════════
+============================================================
+  EVAL REPORT — DPOK on HELD-OUT prompts
+  Metrics: clip, imagereward, vqa, dsg
+  Device:  cuda
+============================================================
+  Prompts: 120
+
+  Generating 120 trained images...
+/home/3223837/.conda/envs/dpok-eval/lib/python3.10/site-packages/transformers/utils/hub.py:127: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+
+  Loading SD1.5 (runwayml/stable-diffusion-v1-5)...
+Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s]Loading pipeline components...:  50%|█████     | 3/6 [00:00<00:00,  9.26it/s]/home/3223837/.conda/envs/dpok-eval/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+Loading pipeline components...:  67%|██████▋   | 4/6 [00:00<00:00,  7.87it/s]Loading pipeline components...:  83%|████████▎ | 5/6 [00:00<00:00,  8.35it/s]Loading pipeline components...: 100%|██████████| 6/6 [00:00<00:00,  4.83it/s]Loading pipeline components...: 100%|██████████| 6/6 [00:00<00:00,  6.02it/s]
+You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
+  Loading LoRA from /home/3223837/dpok_outputs/imagereward_test/484796/lora_unet_final
+  LoRA merged into base UNet
+    [trained] 10/120 images
+    [trained] 20/120 images
+    [trained] 30/120 images
+    [trained] 40/120 images
+    [trained] 50/120 images
+    [trained] 60/120 images
+    [trained] 70/120 images
+    [trained] 80/120 images
+    [trained] 90/120 images
+    [trained] 100/120 images
+    [trained] 110/120 images
+    [trained] 120/120 images
+
+  Generating 120 baseline images...
+
+  Loading SD1.5 (runwayml/stable-diffusion-v1-5)...
+Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s]Loading pipeline components...:  50%|█████     | 3/6 [00:00<00:00, 12.70it/s]/home/3223837/.conda/envs/dpok-eval/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+Loading pipeline components...:  83%|████████▎ | 5/6 [00:00<00:00, 10.92it/s]Loading pipeline components...: 100%|██████████| 6/6 [00:00<00:00,  7.73it/s]
+You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
+    [baseline] 10/120 images
+    [baseline] 20/120 images
+    [baseline] 30/120 images
+    [baseline] 40/120 images
+    [baseline] 50/120 images
+    [baseline] 60/120 images
+    [baseline] 70/120 images
+    [baseline] 80/120 images
+    [baseline] 90/120 images
+    [baseline] 100/120 images
+    [baseline] 110/120 images
+    [baseline] 120/120 images
+
+  Scoring trained images...
+  Scoring: CLIPScore...
+Loading CLIP (ViT-L-14/openai) for CLIPScore ...
+INFO:root:Parsing model identifier. Schema: None, Identifier: ViT-L-14
+INFO:root:Loaded built-in ViT-L-14 model config.
+INFO:root:Instantiating model architecture: CLIP
+INFO:root:Loading full pretrained weights from: /scratch/3223837/.cache/huggingface/hub/models--timm--vit_large_patch14_clip_224.openai/snapshots/18d0535469bb561bf468d76c1d73aa35156c922b/open_clip_model.safetensors
+INFO:root:Final image preprocessing configuration set: {'size': (224, 224), 'mode': 'RGB', 'mean': (0.48145466, 0.4578275, 0.40821073), 'std': (0.26862954, 0.26130258, 0.27577711), 'interpolation': 'bicubic', 'resize_mode': 'shortest', 'fill_color': 0}
+INFO:root:Model ViT-L-14 creation process complete.
+INFO:root:Parsing tokenizer identifier. Schema: None, Identifier: ViT-L-14
+INFO:root:Attempting to load config from built-in: ViT-L-14
+INFO:root:Using default SimpleTokenizer.
+CLIP scorer ready.
+  Scoring: ImageReward...
+Loading ImageReward (ImageReward-v1.0) ...
+load checkpoint from /home/3223837/.cache/ImageReward/ImageReward.pt
+checkpoint loaded
+ImageReward scorer ready.
+  Scoring: VQAScore...
+Loading VQA model (clip-flant5-xl) ...
+VQA scorer ready.
+  Scoring: DSGScore...
+
+  Scoring baseline images...
+  Scoring: CLIPScore...
+Loading CLIP (ViT-L-14/openai) for CLIPScore ...
+INFO:root:Parsing model identifier. Schema: None, Identifier: ViT-L-14
+INFO:root:Loaded built-in ViT-L-14 model config.
+INFO:root:Instantiating model architecture: CLIP
+INFO:root:Loading full pretrained weights from: /scratch/3223837/.cache/huggingface/hub/models--timm--vit_large_patch14_clip_224.openai/snapshots/18d0535469bb561bf468d76c1d73aa35156c922b/open_clip_model.safetensors
+INFO:root:Final image preprocessing configuration set: {'size': (224, 224), 'mode': 'RGB', 'mean': (0.48145466, 0.4578275, 0.40821073), 'std': (0.26862954, 0.26130258, 0.27577711), 'interpolation': 'bicubic', 'resize_mode': 'shortest', 'fill_color': 0}
+INFO:root:Model ViT-L-14 creation process complete.
+INFO:root:Parsing tokenizer identifier. Schema: None, Identifier: ViT-L-14
+INFO:root:Attempting to load config from built-in: ViT-L-14
+INFO:root:Using default SimpleTokenizer.
+CLIP scorer ready.
+  Scoring: ImageReward...
+Loading ImageReward (ImageReward-v1.0) ...
+load checkpoint from /home/3223837/.cache/ImageReward/ImageReward.pt
+checkpoint loaded
+ImageReward scorer ready.
+  Scoring: VQAScore...
+Loading VQA model (clip-flant5-xl) ...
+VQA scorer ready.
+  Scoring: DSGScore...
+
+==============================================================================
+  DPOK + ImageReward — EVALUATION REPORT
+  Run: DPOK on HELD-OUT prompts
+==============================================================================
+
+  Metric             Trained   (std)  Baseline   (std)     Delta       %
+  ──────────────────────────────────────────────────────────────────────────
+  CLIPScore           0.2769 (0.0294)    0.2773 (0.0282)   -0.0004   -0.1%
+  ImageReward         0.6336 (0.8105)    0.6688 (0.7555)   -0.0352   -5.3%
+  VQAScore            0.8278 (0.2221)    0.8488 (0.2168)   -0.0210   -2.5%
+  DSGScore            0.8594 (0.1664)    0.8846 (0.1410)   -0.0252   -2.8%
+  ──────────────────────────────────────────────────────────────────────────
+  N images: 120 trained, 120 baseline
+  Time: 391s
+==============================================================================
+
+  Saved: report.txt
+  Saved: report.tex
+  Saved: report.json
+
+====================================================================================================
+  PER-PROMPT BREAKDOWN  (mean over `seeds_per_prompt` seeds)
+====================================================================================================
+  Prompt                                                       clip imagereward       vqa       dsg    Δclip
+----------------------------------------------------------------------------------------------------
+  A purple colored elephant.                                +0.3115   +0.5758   +0.9697   +0.9433    +0.0023
+  A horse and a sheep.                                      +0.2679   +0.6746   +0.7992   +0.8022    -0.0025
+  Five birds in the sky.                                    +0.2512   +0.0107   +0.5732   +0.7358    -0.0020
+  A penguin on the beach.                                   +0.2771   +1.2731   +0.9690   +0.9560    +0.0008
+----------------------------------------------------------------------------------------------------
+  baselines:
+  A purple colored elephant.                                +0.3092   +0.6347   +0.9705   +0.9488 
+  A horse and a sheep.                                      +0.2704   +0.8335   +0.8940   +0.8927 
+  Five birds in the sky.                                    +0.2532   -0.0166   +0.5599   +0.7338 
+  A penguin on the beach.                                   +0.2763   +1.2233   +0.9708   +0.9631 
+====================================================================================================
+  Saved: per_prompt_breakdown.txt, per_prompt_breakdown.csv
+  Saved: baseline_vs_trained_grid.png
+  Saved: trained_scores.csv
+  Saved: baseline_scores.csv
+
+  Generating plots...
+  Saved: score_distributions.png
+  Saved: score_radar.png
+
+  All outputs in: /home/3223837/dpok_outputs/imagereward_test/484796/eval/holdout_prompts/
+============================================================
+
+========================================
+Finished : Wed Apr 29 02:08:23 AM CEST 2026
+Train    : OK
+Eval     : OK (train) + OK (holdout)
+Outputs  : /home/3223837/dpok_outputs/imagereward_test/484796
+  /home/3223837/dpok_outputs/imagereward_test/484796/eval/train_prompts/report.txt
+  /home/3223837/dpok_outputs/imagereward_test/484796/eval/train_prompts/per_prompt_breakdown.txt
+  /home/3223837/dpok_outputs/imagereward_test/484796/eval/holdout_prompts/report.txt
+  /home/3223837/dpok_outputs/imagereward_test/484796/eval/holdout_prompts/per_prompt_breakdown.txt
+  /home/3223837/dpok_outputs/imagereward_test/484796/snapshot_grid.png  (per-prompt evolution)
+  /home/3223837/dpok_outputs/imagereward_test/484796/per_prompt_curves.png
+
+Next:
+  wandb sync /scratch/3223837/.cache/wandb/offline-run-*
+  scp -r 3223837@login.hpc.unibocconi.it:/home/3223837/dpok_outputs/imagereward_test/484796 ./
+========================================
