@@ -64,6 +64,7 @@ from matplotlib.patches import FancyBboxPatch
 # ---------------------------------------------------------------------------
 
 def parse_args():
+    """Parse CLI arguments for the evaluation report."""
     p = argparse.ArgumentParser(
         description="Pretty evaluation report for Diffusion Graphs",
         formatter_class=argparse.RawDescriptionHelpFormatter,
@@ -107,6 +108,7 @@ def generate_images(
     seed: int,
     label: str = "model",
 ) -> List[Path]:
+    """Load SD1.5 (+ optional LoRA), render ``prompts``, and save PNGs under ``save_dir``."""
     from diffusers import StableDiffusionPipeline
 
     device = "cuda" if torch.cuda.is_available() else "cpu"
@@ -163,6 +165,7 @@ def score_all(
     clip_model:  str,
     device:      str,
 ) -> List[Dict]:
+    """Score each image–prompt pair with the requested metrics (CLIP, IR, VQA, …)."""
     records = [{"idx": i, "file": p.name, "prompt": prompts[i]}
                for i, p in enumerate(image_paths)]
     images  = [Image.open(p).convert("RGB") for p in image_paths]
@@ -258,6 +261,7 @@ METRIC_KEYS = [
 ]
 
 def agg(records: List[Dict], key: str) -> Optional[Dict]:
+    """Aggregate mean/std/median/min/max for metric ``key`` across ``records``."""
     vals = [r[key] for r in records if key in r and r[key] is not None]
     if not vals:
         return None
@@ -282,6 +286,7 @@ def format_report(
     metrics:   List[str],
     elapsed:   float,
 ) -> str:
+    """Build a human-readable ASCII table comparing trained vs baseline metrics."""
     lines = []
     W = 78
 
@@ -427,6 +432,7 @@ def format_latex(
 # ---------------------------------------------------------------------------
 
 def plot_distributions(trained, baseline, save_dir):
+    """Save overlaid histograms of per-image metric scores to ``score_distributions.png``."""
     recs = trained or baseline
     available = [(l, k) for l, k in METRIC_KEYS
                  if any(k in r and r[k] is not None for r in recs)]
@@ -504,6 +510,7 @@ def plot_radar(trained, baseline, save_dir):
 
 
 def save_csv(records, save_path):
+    """Write per-image metric records to a CSV file."""
     if not records:
         return
     keys = list(records[0].keys())

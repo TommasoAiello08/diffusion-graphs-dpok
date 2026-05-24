@@ -23,6 +23,7 @@ METRIC_KEYS = [
 
 
 def plot_snapshots_curves(csv_path: Path, out_path: Path, title: str) -> None:
+    """Plot ImageReward vs training round from a snapshots CSV."""
     rows = list(csv.DictReader(csv_path.open(encoding="utf-8")))
     by_prompt: dict[int, list] = {}
     for r in rows:
@@ -45,6 +46,7 @@ def plot_snapshots_curves(csv_path: Path, out_path: Path, title: str) -> None:
 
 
 def plot_score_distributions(trained_csv: Path, baseline_csv: Path, out_path: Path, title: str) -> None:
+    """Overlay trained vs baseline metric histograms from per-image score CSVs."""
     def load(path: Path) -> dict[str, list[float]]:
         data: dict[str, list[float]] = {k: [] for _, k in METRIC_KEYS}
         with path.open(encoding="utf-8") as f:

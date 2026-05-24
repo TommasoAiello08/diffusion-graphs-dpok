@@ -161,6 +161,7 @@ device = "cuda" if torch.cuda.is_available() else "cpu"
 
 
 def choose_dtype(name: str) -> torch.dtype:
+    """Map CLI dtype name to a torch dtype; fall back to fp32 on CPU."""
     if device != "cuda":
         return torch.float32
     if name == "fp32": return torch.float32
@@ -177,10 +178,12 @@ if device == "cuda":
 
 
 def is_finite_tensor(x: torch.Tensor) -> bool:
+    """Return True if every element of ``x`` is finite (no NaN/Inf)."""
     return bool(torch.isfinite(x).all().item())
 
 
 def zero_loss() -> torch.Tensor:
+    """Scalar zero loss with ``requires_grad=True`` for skipped gradient steps."""
     return torch.zeros((), device=device, dtype=torch.float32, requires_grad=True)
 
 
@@ -314,6 +317,8 @@ print(f"Trainable params: {sum(p.numel() for p in trainable_params):,}")
 # Advantage = (r - V.detach()) replaces r in the policy loss → variance reduction
 # without biasing the gradient (V's grad path is severed via .detach()).
 class ValueNetwork(torch.nn.Module):
+    """Paper Appendix A.5 baseline V(x_t, t, z) for variance reduction."""
+
     def __init__(self, latent_ch: int = 4, time_dim: int = 128,
                  prompt_dim: int = 768, hidden: int = 256):
         super().__init__()
@@ -415,6 +420,7 @@ for i, t_val in enumerate(timestep_list):
 
 @torch.no_grad()
 def get_sigma_sq(t_val: int) -> torch.Tensor:
+    """DDIM reverse-process variance σ²_t used in the Gaussian policy log-prob."""
     next_t = next_denoising_step[t_val]
     ac_t = scheduler.alphas_cumprod[t_val].float().to(device)
     ac_next = scheduler.alphas_cumprod[next_t].float().to(device) if next_t >= 0 else torch.tensor(1.0, device=device)
@@ -441,6 +447,7 @@ def noise_pred_to_mu(x_t: torch.Tensor, noise_pred: torch.Tensor, t_val: int) ->
 # -----------------------------------------------------------------------------
 @torch.no_grad()
 def decode_latents_to_pil(latents: torch.Tensor) -> Image.Image:
+    """VAE-decode SD latents to a PIL RGB image; raises on collapse or non-finite values."""
     latents_fp32 = latents.to(device=device, dtype=torch.float32)
     if not is_finite_tensor(latents_fp32):
         raise FloatingPointError("Non-finite latents before VAE decode")
@@ -514,6 +521,7 @@ def sample_trajectory(prompt_embeds: torch.Tensor, uncond_embeds: torch.Tensor):
 def safe_inference_image(prompt: str, num_inference_steps: int = 50,
                          guidance_scale: float = 7.5,
                          generator: torch.Generator = None) -> Image.Image:
+    """Run the current pipeline on ``prompt`` and return a decoded PIL image."""
     out = pipe(prompt, num_inference_steps=num_inference_steps,
                guidance_scale=guidance_scale, output_type="latent",
                generator=generator)
