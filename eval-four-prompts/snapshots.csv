@@ -1,0 +1,41 @@
+round,prompt_idx,prompt_text,ir_score,img_path
+100,0,A green colored rabbit.,-1.6849381923675537,/home/3223837/dpok_outputs/imagereward_test/484796/inference/round_00100/prompt_00.png
+200,0,A green colored rabbit.,-1.421975016593933,/home/3223837/dpok_outputs/imagereward_test/484796/inference/round_00200/prompt_00.png
+300,0,A green colored rabbit.,-1.630357027053833,/home/3223837/dpok_outputs/imagereward_test/484796/inference/round_00300/prompt_00.png
+400,0,A green colored rabbit.,-1.51734459400177,/home/3223837/dpok_outputs/imagereward_test/484796/inference/round_00400/prompt_00.png
+500,0,A green colored rabbit.,-1.487874150276184,/home/3223837/dpok_outputs/imagereward_test/484796/inference/round_00500/prompt_00.png
+600,0,A green colored rabbit.,-1.5936062335968018,/home/3223837/dpok_outputs/imagereward_test/484796/inference/round_00600/prompt_00.png
+700,0,A green colored rabbit.,-1.5173616409301758,/home/3223837/dpok_outputs/imagereward_test/484796/inference/round_00700/prompt_00.png
+800,0,A green colored rabbit.,-1.487962007522583,/home/3223837/dpok_outputs/imagereward_test/484796/inference/round_00800/prompt_00.png
+900,0,A green colored rabbit.,-1.0183616876602173,/home/3223837/dpok_outputs/imagereward_test/484796/inference/round_00900/prompt_00.png
+1000,0,A green colored rabbit.,-0.5976972579956055,/home/3223837/dpok_outputs/imagereward_test/484796/inference/round_01000/prompt_00.png
+100,1,A cat and a dog.,1.124993920326233,/home/3223837/dpok_outputs/imagereward_test/484796/inference/round_00100/prompt_01.png
+200,1,A cat and a dog.,1.3320051431655884,/home/3223837/dpok_outputs/imagereward_test/484796/inference/round_00200/prompt_01.png
+300,1,A cat and a dog.,1.289414882659912,/home/3223837/dpok_outputs/imagereward_test/484796/inference/round_00300/prompt_01.png
+400,1,A cat and a dog.,1.326412558555603,/home/3223837/dpok_outputs/imagereward_test/484796/inference/round_00400/prompt_01.png
+500,1,A cat and a dog.,1.3519338369369507,/home/3223837/dpok_outputs/imagereward_test/484796/inference/round_00500/prompt_01.png
+600,1,A cat and a dog.,1.26345956325531,/home/3223837/dpok_outputs/imagereward_test/484796/inference/round_00600/prompt_01.png
+700,1,A cat and a dog.,1.2432342767715454,/home/3223837/dpok_outputs/imagereward_test/484796/inference/round_00700/prompt_01.png
+800,1,A cat and a dog.,1.1653928756713867,/home/3223837/dpok_outputs/imagereward_test/484796/inference/round_00800/prompt_01.png
+900,1,A cat and a dog.,1.0904121398925781,/home/3223837/dpok_outputs/imagereward_test/484796/inference/round_00900/prompt_01.png
+1000,1,A cat and a dog.,1.302444338798523,/home/3223837/dpok_outputs/imagereward_test/484796/inference/round_01000/prompt_01.png
+100,2,Four wolves in the park.,0.4633517861366272,/home/3223837/dpok_outputs/imagereward_test/484796/inference/round_00100/prompt_02.png
+200,2,Four wolves in the park.,0.40326178073883057,/home/3223837/dpok_outputs/imagereward_test/484796/inference/round_00200/prompt_02.png
+300,2,Four wolves in the park.,0.5278011560440063,/home/3223837/dpok_outputs/imagereward_test/484796/inference/round_00300/prompt_02.png
+400,2,Four wolves in the park.,0.41990426182746887,/home/3223837/dpok_outputs/imagereward_test/484796/inference/round_00400/prompt_02.png
+500,2,Four wolves in the park.,0.5271905064582825,/home/3223837/dpok_outputs/imagereward_test/484796/inference/round_00500/prompt_02.png
+600,2,Four wolves in the park.,0.46091318130493164,/home/3223837/dpok_outputs/imagereward_test/484796/inference/round_00600/prompt_02.png
+700,2,Four wolves in the park.,0.55262690782547,/home/3223837/dpok_outputs/imagereward_test/484796/inference/round_00700/prompt_02.png
+800,2,Four wolves in the park.,0.568612277507782,/home/3223837/dpok_outputs/imagereward_test/484796/inference/round_00800/prompt_02.png
+900,2,Four wolves in the park.,0.5148861408233643,/home/3223837/dpok_outputs/imagereward_test/484796/inference/round_00900/prompt_02.png
+1000,2,Four wolves in the park.,0.3599317967891693,/home/3223837/dpok_outputs/imagereward_test/484796/inference/round_01000/prompt_02.png
+100,3,A dog on the moon.,-0.9278700351715088,/home/3223837/dpok_outputs/imagereward_test/484796/inference/round_00100/prompt_03.png
+200,3,A dog on the moon.,-1.1646524667739868,/home/3223837/dpok_outputs/imagereward_test/484796/inference/round_00200/prompt_03.png
+300,3,A dog on the moon.,-1.4271761178970337,/home/3223837/dpok_outputs/imagereward_test/484796/inference/round_00300/prompt_03.png
+400,3,A dog on the moon.,-1.042418122291565,/home/3223837/dpok_outputs/imagereward_test/484796/inference/round_00400/prompt_03.png
+500,3,A dog on the moon.,-0.9298158288002014,/home/3223837/dpok_outputs/imagereward_test/484796/inference/round_00500/prompt_03.png
+600,3,A dog on the moon.,-1.1530482769012451,/home/3223837/dpok_outputs/imagereward_test/484796/inference/round_00600/prompt_03.png
+700,3,A dog on the moon.,-1.0430749654769897,/home/3223837/dpok_outputs/imagereward_test/484796/inference/round_00700/prompt_03.png
+800,3,A dog on the moon.,-1.3328498601913452,/home/3223837/dpok_outputs/imagereward_test/484796/inference/round_00800/prompt_03.png
+900,3,A dog on the moon.,-0.5992390513420105,/home/3223837/dpok_outputs/imagereward_test/484796/inference/round_00900/prompt_03.png
+1000,3,A dog on the moon.,-0.660556972026825,/home/3223837/dpok_outputs/imagereward_test/484796/inference/round_01000/prompt_03.png

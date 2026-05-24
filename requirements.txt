@@ -1,0 +1,31 @@
+# DPOK training environment (matches setup_cluster.sh)
+# Install PyTorch for your CUDA version first if needed:
+#   pip install torch==2.5.1 torchvision==0.20.1 --index-url https://download.pytorch.org/whl/cu121
+
+--extra-index-url https://download.pytorch.org/whl/cu121
+torch==2.5.1
+torchvision==0.20.1
+
+huggingface_hub==0.21.4
+diffusers==0.27.2
+transformers==4.35.2
+accelerate==0.25.0
+peft==0.7.1
+safetensors==0.4.2
+datasets==2.18.0
+open-clip-torch==2.24.0
+wandb==0.16.6
+protobuf==4.25.3
+matplotlib>=3.7.0
+Pillow==10.3.0
+numpy==1.26.4
+scipy>=1.10.0
+ftfy
+sentencepiece
+tensorboard
+
+# Human-preference reward (training)
+image-reward>=1.0
+
+# Figure generation (optional)
+# scripts/build_report_figures.py

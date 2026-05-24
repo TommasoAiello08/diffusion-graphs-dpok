@@ -1,0 +1,40 @@
+# Evaluation environment (matches setup_eval_env.sh — use separate venv)
+#   python -m venv .venv-eval && source .venv-eval/bin/activate
+#   pip install -r requirements-eval.txt
+
+--extra-index-url https://download.pytorch.org/whl/cu121
+torch==2.2.2
+torchvision==0.17.2
+
+numpy<2.0
+huggingface_hub>=0.23,<0.27
+diffusers>=0.27.0,<0.30.0
+transformers>=4.38.0,<4.45.0
+accelerate>=0.27.0,<0.35.0
+peft>=0.9.0,<0.12.0
+safetensors>=0.4.0
+tokenizers>=0.15.0,<0.20.0
+open_clip_torch>=2.20.0
+matplotlib>=3.7.0
+Pillow>=9.0
+scipy>=1.10.0
+tqdm
+ftfy
+regex
+wandb
+setuptools
+
+git+https://github.com/openai/CLIP.git
+image-reward>=1.0
+
+# t2v-metrics dependencies (VQA / DSG eval)
+fire==0.4.0
+gdown>=4.7.1
+iopath
+omegaconf
+opencv-python-headless>=4.6.0,<4.10
+scikit-learn
+sentencepiece>=0.1.99
+tiktoken>=0.7.0
+openai>=1.29.0
+t2v-metrics>=1.0,<3.0

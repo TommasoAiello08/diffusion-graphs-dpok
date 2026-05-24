@@ -1,0 +1,2486 @@
+{
+  "run_name": "DPOK on TRAINING prompts",
+  "metrics": [
+    "clip",
+    "imagereward",
+    "vqa",
+    "dsg"
+  ],
+  "elapsed_sec": 530.1,
+  "trained": {
+    "per_image": [
+      {
+        "idx": 0,
+        "file": "0000.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.2600061297416687,
+        "imagereward": -1.343031406402588,
+        "vqa": 0.4668633043766022,
+        "dsg": 0.9016612768173218,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 1,
+        "file": "0001.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.26999348402023315,
+        "imagereward": -1.1701996326446533,
+        "vqa": 0.6136800050735474,
+        "dsg": 0.9106433093547821,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 2,
+        "file": "0002.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.267947793006897,
+        "imagereward": 0.5410785675048828,
+        "vqa": 0.8985851407051086,
+        "dsg": 0.9497294425964355,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 3,
+        "file": "0003.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.3212988078594208,
+        "imagereward": 1.802775263786316,
+        "vqa": 0.9846766591072083,
+        "dsg": 0.948187917470932,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 4,
+        "file": "0004.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.2512652575969696,
+        "imagereward": -1.7401561737060547,
+        "vqa": 0.4385773837566376,
+        "dsg": 0.9305975437164307,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 5,
+        "file": "0005.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.2664186954498291,
+        "imagereward": -1.5282273292541504,
+        "vqa": 0.39467695355415344,
+        "dsg": 0.9251109063625336,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 6,
+        "file": "0006.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.26986217498779297,
+        "imagereward": -1.5282329320907593,
+        "vqa": 0.36931926012039185,
+        "dsg": 0.9276430904865265,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 7,
+        "file": "0007.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.3125600516796112,
+        "imagereward": 1.6486845016479492,
+        "vqa": 0.9820955991744995,
+        "dsg": 0.9514150619506836,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 8,
+        "file": "0008.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.332168310880661,
+        "imagereward": 0.9263646602630615,
+        "vqa": 0.976239025592804,
+        "dsg": 0.9621783792972565,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 9,
+        "file": "0009.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.2870868742465973,
+        "imagereward": -0.09532351791858673,
+        "vqa": 0.9798203706741333,
+        "dsg": 0.9207653701305389,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 10,
+        "file": "0010.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.256843626499176,
+        "imagereward": -0.9310513734817505,
+        "vqa": 0.5249083638191223,
+        "dsg": 0.9241468012332916,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 11,
+        "file": "0011.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.30707162618637085,
+        "imagereward": 1.1444681882858276,
+        "vqa": 0.9786252379417419,
+        "dsg": 0.955900102853775,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 12,
+        "file": "0012.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.2926589846611023,
+        "imagereward": 0.18839964270591736,
+        "vqa": 0.9782668352127075,
+        "dsg": 0.9439804553985596,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 13,
+        "file": "0013.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.32322967052459717,
+        "imagereward": 1.4948604106903076,
+        "vqa": 0.98293536901474,
+        "dsg": 0.9459266364574432,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 14,
+        "file": "0014.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.32187411189079285,
+        "imagereward": 1.5069103240966797,
+        "vqa": 0.9812569618225098,
+        "dsg": 0.9448757469654083,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 15,
+        "file": "0015.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.26654040813446045,
+        "imagereward": -1.4807852506637573,
+        "vqa": 0.4835682809352875,
+        "dsg": 0.9164622724056244,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 16,
+        "file": "0016.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.3119792342185974,
+        "imagereward": 1.2262150049209595,
+        "vqa": 0.982455313205719,
+        "dsg": 0.957890123128891,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 17,
+        "file": "0017.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.30834490060806274,
+        "imagereward": -0.4938259422779083,
+        "vqa": 0.9736206531524658,
+        "dsg": 0.9314233362674713,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 18,
+        "file": "0018.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.3049638271331787,
+        "imagereward": 0.5595629215240479,
+        "vqa": 0.9743339419364929,
+        "dsg": 0.9307666718959808,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 19,
+        "file": "0019.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.31819993257522583,
+        "imagereward": 1.5630605220794678,
+        "vqa": 0.9773119688034058,
+        "dsg": 0.933605432510376,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 20,
+        "file": "0020.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.238562673330307,
+        "imagereward": -1.3768525123596191,
+        "vqa": 0.6319248080253601,
+        "dsg": 0.5457189828157425,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 21,
+        "file": "0021.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.3011493682861328,
+        "imagereward": -0.019125046208500862,
+        "vqa": 0.9779085516929626,
+        "dsg": 0.9307275712490082,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 22,
+        "file": "0022.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.32243573665618896,
+        "imagereward": 1.552619218826294,
+        "vqa": 0.9800597429275513,
+        "dsg": 0.9584545493125916,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 23,
+        "file": "0023.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.2516409158706665,
+        "imagereward": -1.5625414848327637,
+        "vqa": 0.47793450951576233,
+        "dsg": 0.9153743982315063,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 24,
+        "file": "0024.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.26660752296447754,
+        "imagereward": -0.387211412191391,
+        "vqa": 0.5127488374710083,
+        "dsg": 0.9329117238521576,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 25,
+        "file": "0025.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.2836693525314331,
+        "imagereward": -0.2645689845085144,
+        "vqa": 0.9795812964439392,
+        "dsg": 0.928445428609848,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 26,
+        "file": "0026.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.33664852380752563,
+        "imagereward": 1.4068905115127563,
+        "vqa": 0.9792227149009705,
+        "dsg": 0.9634730815887451,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 27,
+        "file": "0027.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.31719502806663513,
+        "imagereward": 1.0018609762191772,
+        "vqa": 0.9771926403045654,
+        "dsg": 0.9322190284729004,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 28,
+        "file": "0028.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.2997116446495056,
+        "imagereward": 0.9573200345039368,
+        "vqa": 0.9743339419364929,
+        "dsg": 0.9491210877895355,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 29,
+        "file": "0029.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.28450706601142883,
+        "imagereward": 1.3285553455352783,
+        "vqa": 0.9765963554382324,
+        "dsg": 0.9487221837043762,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 30,
+        "file": "0030.png",
+        "prompt": "A cat and a dog.",
+        "clip": 0.25659847259521484,
+        "imagereward": 0.9358179569244385,
+        "vqa": 0.9836553335189819,
+        "dsg": 0.9806569814682007,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 31,
+        "file": "0031.png",
+        "prompt": "A cat and a dog.",
+        "clip": 0.25675511360168457,
+        "imagereward": 1.099321961402893,
+        "vqa": 0.9675780534744263,
+        "dsg": 0.9612202644348145,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 32,
+        "file": "0032.png",
+        "prompt": "A cat and a dog.",
+        "clip": 0.20768682658672333,
+        "imagereward": 0.05295638367533684,
+        "vqa": 0.35103288292884827,
+        "dsg": 0.31713157892227173,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 33,
+        "file": "0033.png",
+        "prompt": "A cat and a dog.",
+        "clip": 0.20304277539253235,
+        "imagereward": -1.2577908039093018,
+        "vqa": 0.3402327001094818,
+        "dsg": 0.32976436614990234,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 34,
+        "file": "0034.png",
+        "prompt": "A cat and a dog.",
+        "clip": 0.2493344247341156,
+        "imagereward": 1.0485925674438477,
+        "vqa": 0.9762388467788696,
+        "dsg": 0.9701794385910034,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 35,
+        "file": "0035.png",
+        "prompt": "A cat and a dog.",
+        "clip": 0.1984233409166336,
+        "imagereward": -1.1515284776687622,
+        "vqa": 0.5352606177330017,
+        "dsg": 0.6381245255470276,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 36,
+        "file": "0036.png",
+        "prompt": "A cat and a dog.",
+        "clip": 0.17135471105575562,
+        "imagereward": -0.4083215892314911,
+        "vqa": 0.1569916307926178,
+        "dsg": 0.1429423689842224,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 37,
+        "file": "0037.png",
+        "prompt": "A cat and a dog.",
+        "clip": 0.2486901879310608,
+        "imagereward": 1.4999730587005615,
+        "vqa": 0.9769541621208191,
+        "dsg": 0.9719571471214294,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 38,
+        "file": "0038.png",
+        "prompt": "A cat and a dog.",
+        "clip": 0.1967809796333313,
+        "imagereward": 0.364602267742157,
+        "vqa": 0.2162650227546692,
+        "dsg": 0.2000121772289276,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 39,
+        "file": "0039.png",
+        "prompt": "A cat and a dog.",
+        "clip": 0.2318621575832367,
+        "imagereward": 0.2523963749408722,
+        "vqa": 0.9818556904792786,
+        "dsg": 0.9736191034317017,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 40,
+        "file": "0040.png",
+        "prompt": "A cat and a dog.",
+        "clip": 0.1873340606689453,
+        "imagereward": 0.14386211335659027,
+        "vqa": 0.1569916307926178,
+        "dsg": 0.1645256131887436,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 41,
+        "file": "0041.png",
+        "prompt": "A cat and a dog.",
+        "clip": 0.24686676263809204,
+        "imagereward": 1.239463210105896,
+        "vqa": 0.973977267742157,
+        "dsg": 0.9693507552146912,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 42,
+        "file": "0042.png",
+        "prompt": "A cat and a dog.",
+        "clip": 0.2041090726852417,
+        "imagereward": -0.09057637304067612,
+        "vqa": 0.2284213900566101,
+        "dsg": 0.21967048943042755,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 43,
+        "file": "0043.png",
+        "prompt": "A cat and a dog.",
+        "clip": 0.2553582191467285,
+        "imagereward": 1.0962738990783691,
+        "vqa": 0.9724327921867371,
+        "dsg": 0.9702972173690796,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 44,
+        "file": "0044.png",
+        "prompt": "A cat and a dog.",
+        "clip": 0.24768280982971191,
+        "imagereward": 1.162028431892395,
+        "vqa": 0.9685233235359192,
+        "dsg": 0.9727872610092163,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 45,
+        "file": "0045.png",
+        "prompt": "A cat and a dog.",
+        "clip": 0.1859637200832367,
+        "imagereward": -1.1937116384506226,
+        "vqa": 0.14980246126651764,
+        "dsg": 0.16581614315509796,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 46,
+        "file": "0046.png",
+        "prompt": "A cat and a dog.",
+        "clip": 0.23486775159835815,
+        "imagereward": 1.0673673152923584,
+        "vqa": 0.973977267742157,
+        "dsg": 0.966397225856781,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 47,
+        "file": "0047.png",
+        "prompt": "A cat and a dog.",
+        "clip": 0.24592068791389465,
+        "imagereward": 1.155555248260498,
+        "vqa": 0.9846765398979187,
+        "dsg": 0.9775499701499939,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 48,
+        "file": "0048.png",
+        "prompt": "A cat and a dog.",
+        "clip": 0.21146516501903534,
+        "imagereward": 0.537377655506134,
+        "vqa": 0.977311909198761,
+        "dsg": 0.9685224890708923,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 49,
+        "file": "0049.png",
+        "prompt": "A cat and a dog.",
+        "clip": 0.18881520628929138,
+        "imagereward": -0.7364027500152588,
+        "vqa": 0.17651042342185974,
+        "dsg": 0.18498124182224274,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 50,
+        "file": "0050.png",
+        "prompt": "A cat and a dog.",
+        "clip": 0.21226933598518372,
+        "imagereward": -0.3938467502593994,
+        "vqa": 0.14519351720809937,
+        "dsg": 0.14980237185955048,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 51,
+        "file": "0051.png",
+        "prompt": "A cat and a dog.",
+        "clip": 0.18432822823524475,
+        "imagereward": -1.4777438640594482,
+        "vqa": 0.1053992211818695,
+        "dsg": 0.13854463398456573,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 52,
+        "file": "0052.png",
+        "prompt": "A cat and a dog.",
+        "clip": 0.2567691504955292,
+        "imagereward": 0.9930155873298645,
+        "vqa": 0.977669894695282,
+        "dsg": 0.9711273908615112,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 53,
+        "file": "0053.png",
+        "prompt": "A cat and a dog.",
+        "clip": 0.20687812566757202,
+        "imagereward": 1.3314528465270996,
+        "vqa": 0.9758813977241516,
+        "dsg": 0.9727879762649536,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 54,
+        "file": "0054.png",
+        "prompt": "A cat and a dog.",
+        "clip": 0.2307179868221283,
+        "imagereward": 0.8778609037399292,
+        "vqa": 0.975166916847229,
+        "dsg": 0.972788393497467,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 55,
+        "file": "0055.png",
+        "prompt": "A cat and a dog.",
+        "clip": 0.20595356822013855,
+        "imagereward": -1.0399733781814575,
+        "vqa": 0.12322414666414261,
+        "dsg": 0.14519347250461578,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 56,
+        "file": "0056.png",
+        "prompt": "A cat and a dog.",
+        "clip": 0.2333475947380066,
+        "imagereward": 1.3994481563568115,
+        "vqa": 0.9820955991744995,
+        "dsg": 0.9743330478668213,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 57,
+        "file": "0057.png",
+        "prompt": "A cat and a dog.",
+        "clip": 0.19430211186408997,
+        "imagereward": -0.9313969612121582,
+        "vqa": 0.1374664604663849,
+        "dsg": 0.14633221924304962,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 58,
+        "file": "0058.png",
+        "prompt": "A cat and a dog.",
+        "clip": 0.24556267261505127,
+        "imagereward": 1.3137775659561157,
+        "vqa": 0.9857589602470398,
+        "dsg": 0.9755234122276306,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 59,
+        "file": "0059.png",
+        "prompt": "A cat and a dog.",
+        "clip": 0.22233280539512634,
+        "imagereward": -0.9256684184074402,
+        "vqa": 0.14980246126651764,
+        "dsg": 0.12913770973682404,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 60,
+        "file": "0060.png",
+        "prompt": "Four wolves in the park.",
+        "clip": 0.25702929496765137,
+        "imagereward": 1.047407865524292,
+        "vqa": 0.7063413858413696,
+        "dsg": 0.8146913647651672,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 61,
+        "file": "0061.png",
+        "prompt": "Four wolves in the park.",
+        "clip": 0.2783338725566864,
+        "imagereward": 1.0283958911895752,
+        "vqa": 0.3073747754096985,
+        "dsg": 0.7101715058088303,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 62,
+        "file": "0062.png",
+        "prompt": "Four wolves in the park.",
+        "clip": 0.26823246479034424,
+        "imagereward": 1.4012476205825806,
+        "vqa": 0.6494425535202026,
+        "dsg": 0.8168739378452301,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 63,
+        "file": "0063.png",
+        "prompt": "Four wolves in the park.",
+        "clip": 0.276844322681427,
+        "imagereward": 1.4301146268844604,
+        "vqa": 0.8511788845062256,
+        "dsg": 0.7786602973937988,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 64,
+        "file": "0064.png",
+        "prompt": "Four wolves in the park.",
+        "clip": 0.27723318338394165,
+        "imagereward": 1.1206278800964355,
+        "vqa": 0.851178765296936,
+        "dsg": 0.8748446106910706,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 65,
+        "file": "0065.png",
+        "prompt": "Four wolves in the park.",
+        "clip": 0.27820664644241333,
+        "imagereward": 1.624924659729004,
+        "vqa": 0.8019545674324036,
+        "dsg": 0.8795241117477417,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 66,
+        "file": "0066.png",
+        "prompt": "Four wolves in the park.",
+        "clip": 0.24944442510604858,
+        "imagereward": 0.21149992942810059,
+        "vqa": 0.748965322971344,
+        "dsg": 0.872095137834549,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 67,
+        "file": "0067.png",
+        "prompt": "Four wolves in the park.",
+        "clip": 0.260860800743103,
+        "imagereward": 1.083274006843567,
+        "vqa": 0.7652302980422974,
+        "dsg": 0.849863201379776,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 68,
+        "file": "0068.png",
+        "prompt": "Four wolves in the park.",
+        "clip": 0.28091952204704285,
+        "imagereward": 0.6235098242759705,
+        "vqa": 0.8153793215751648,
+        "dsg": 0.8743988275527954,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 69,
+        "file": "0069.png",
+        "prompt": "Four wolves in the park.",
+        "clip": 0.27892473340034485,
+        "imagereward": 1.2628334760665894,
+        "vqa": 0.8019546270370483,
+        "dsg": 0.8559662401676178,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 70,
+        "file": "0070.png",
+        "prompt": "Four wolves in the park.",
+        "clip": 0.29208624362945557,
+        "imagereward": 0.7818351984024048,
+        "vqa": 0.7980483174324036,
+        "dsg": 0.8647530972957611,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 71,
+        "file": "0071.png",
+        "prompt": "Four wolves in the park.",
+        "clip": 0.25723662972450256,
+        "imagereward": 0.5404500961303711,
+        "vqa": 0.655815839767456,
+        "dsg": 0.8238667249679565,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 72,
+        "file": "0072.png",
+        "prompt": "Four wolves in the park.",
+        "clip": 0.27059054374694824,
+        "imagereward": 1.3516502380371094,
+        "vqa": 0.7742506265640259,
+        "dsg": 0.8535914123058319,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 73,
+        "file": "0073.png",
+        "prompt": "Four wolves in the park.",
+        "clip": 0.2686217427253723,
+        "imagereward": 1.354478359222412,
+        "vqa": 0.9091773629188538,
+        "dsg": 0.8757807314395905,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 74,
+        "file": "0074.png",
+        "prompt": "Four wolves in the park.",
+        "clip": 0.2909858524799347,
+        "imagereward": 1.5217384099960327,
+        "vqa": 0.684609591960907,
+        "dsg": 0.8151934444904327,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 75,
+        "file": "0075.png",
+        "prompt": "Four wolves in the park.",
+        "clip": 0.2840711772441864,
+        "imagereward": 1.5225640535354614,
+        "vqa": 0.38253405690193176,
+        "dsg": 0.7287148535251617,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 76,
+        "file": "0076.png",
+        "prompt": "Four wolves in the park.",
+        "clip": 0.26352670788764954,
+        "imagereward": 1.3016585111618042,
+        "vqa": 0.7841426134109497,
+        "dsg": 0.8474692702293396,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 77,
+        "file": "0077.png",
+        "prompt": "Four wolves in the park.",
+        "clip": 0.2827518880367279,
+        "imagereward": 0.9447754621505737,
+        "vqa": 0.8282197117805481,
+        "dsg": 0.8434808254241943,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 78,
+        "file": "0078.png",
+        "prompt": "Four wolves in the park.",
+        "clip": 0.27535784244537354,
+        "imagereward": 1.6463258266448975,
+        "vqa": 0.8437304496765137,
+        "dsg": 0.8732681572437286,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 79,
+        "file": "0079.png",
+        "prompt": "Four wolves in the park.",
+        "clip": 0.2781550884246826,
+        "imagereward": 1.1806577444076538,
+        "vqa": 0.8282197117805481,
+        "dsg": 0.8855275213718414,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 80,
+        "file": "0080.png",
+        "prompt": "Four wolves in the park.",
+        "clip": 0.2534034848213196,
+        "imagereward": 1.4379425048828125,
+        "vqa": 0.8114078044891357,
+        "dsg": 0.8879594504833221,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 81,
+        "file": "0081.png",
+        "prompt": "Four wolves in the park.",
+        "clip": 0.25431370735168457,
+        "imagereward": 1.1110931634902954,
+        "vqa": 0.706341564655304,
+        "dsg": 0.8814857304096222,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 82,
+        "file": "0082.png",
+        "prompt": "Four wolves in the park.",
+        "clip": 0.2771335244178772,
+        "imagereward": 1.571752667427063,
+        "vqa": 0.6494425535202026,
+        "dsg": 0.7652941942214966,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 83,
+        "file": "0083.png",
+        "prompt": "Four wolves in the park.",
+        "clip": 0.27547168731689453,
+        "imagereward": 1.561355710029602,
+        "vqa": 0.769727349281311,
+        "dsg": 0.8147709965705872,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 84,
+        "file": "0084.png",
+        "prompt": "Four wolves in the park.",
+        "clip": 0.24971091747283936,
+        "imagereward": 0.5391711592674255,
+        "vqa": 0.7387951612472534,
+        "dsg": 0.8488849401473999,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 85,
+        "file": "0085.png",
+        "prompt": "Four wolves in the park.",
+        "clip": 0.25464361906051636,
+        "imagereward": 1.4333643913269043,
+        "vqa": 0.7887507081031799,
+        "dsg": 0.8790476620197296,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 86,
+        "file": "0086.png",
+        "prompt": "Four wolves in the park.",
+        "clip": 0.26835060119628906,
+        "imagereward": 1.4314630031585693,
+        "vqa": 0.7933858633041382,
+        "dsg": 0.8529112935066223,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 87,
+        "file": "0087.png",
+        "prompt": "Four wolves in the park.",
+        "clip": 0.24973541498184204,
+        "imagereward": 1.2580052614212036,
+        "vqa": 0.7652303576469421,
+        "dsg": 0.8418633937835693,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 88,
+        "file": "0088.png",
+        "prompt": "Four wolves in the park.",
+        "clip": 0.26402807235717773,
+        "imagereward": 1.5121954679489136,
+        "vqa": 0.684609591960907,
+        "dsg": 0.827141523361206,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 89,
+        "file": "0089.png",
+        "prompt": "Four wolves in the park.",
+        "clip": 0.2615460753440857,
+        "imagereward": 1.6135152578353882,
+        "vqa": 0.769727349281311,
+        "dsg": 0.8302473723888397,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 90,
+        "file": "0090.png",
+        "prompt": "A dog on the moon.",
+        "clip": 0.2552535831928253,
+        "imagereward": -2.14593505859375,
+        "vqa": 0.0887550413608551,
+        "dsg": 0.11219686269760132,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 91,
+        "file": "0091.png",
+        "prompt": "A dog on the moon.",
+        "clip": 0.2867501378059387,
+        "imagereward": -1.3540732860565186,
+        "vqa": 0.21967078745365143,
+        "dsg": 0.2932986319065094,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 92,
+        "file": "0092.png",
+        "prompt": "A dog on the moon.",
+        "clip": 0.20581677556037903,
+        "imagereward": -1.261181116104126,
+        "vqa": 0.10705901682376862,
+        "dsg": 0.11575837433338165,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 93,
+        "file": "0093.png",
+        "prompt": "A dog on the moon.",
+        "clip": 0.2910504639148712,
+        "imagereward": -0.735328733921051,
+        "vqa": 0.6846091747283936,
+        "dsg": 0.7230897545814514,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 94,
+        "file": "0094.png",
+        "prompt": "A dog on the moon.",
+        "clip": 0.25007596611976624,
+        "imagereward": -2.2346179485321045,
+        "vqa": 0.5187928080558777,
+        "dsg": 0.5310948491096497,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 95,
+        "file": "0095.png",
+        "prompt": "A dog on the moon.",
+        "clip": 0.23641256988048553,
+        "imagereward": -1.5426018238067627,
+        "vqa": 0.6726804375648499,
+        "dsg": 0.5971261262893677,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 96,
+        "file": "0096.png",
+        "prompt": "A dog on the moon.",
+        "clip": 0.2897806763648987,
+        "imagereward": -0.8223611116409302,
+        "vqa": 0.7330455183982849,
+        "dsg": 0.733043372631073,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 97,
+        "file": "0097.png",
+        "prompt": "A dog on the moon.",
+        "clip": 0.22888076305389404,
+        "imagereward": -0.6145961284637451,
+        "vqa": 0.20001257956027985,
+        "dsg": 0.20475569367408752,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 98,
+        "file": "0098.png",
+        "prompt": "A dog on the moon.",
+        "clip": 0.2638922333717346,
+        "imagereward": -1.662540078163147,
+        "vqa": 0.6846094131469727,
+        "dsg": 0.6779555082321167,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 99,
+        "file": "0099.png",
+        "prompt": "A dog on the moon.",
+        "clip": 0.2780361771583557,
+        "imagereward": 1.1382874250411987,
+        "vqa": 0.7008445262908936,
+        "dsg": 0.695389449596405,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 100,
+        "file": "0100.png",
+        "prompt": "A dog on the moon.",
+        "clip": 0.28404343128204346,
+        "imagereward": 0.003897543763741851,
+        "vqa": 0.5415706038475037,
+        "dsg": 0.6077150702476501,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 101,
+        "file": "0101.png",
+        "prompt": "A dog on the moon.",
+        "clip": 0.23843571543693542,
+        "imagereward": -1.4345762729644775,
+        "vqa": 0.17377392947673798,
+        "dsg": 0.19537922739982605,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 102,
+        "file": "0102.png",
+        "prompt": "A dog on the moon.",
+        "clip": 0.24019089341163635,
+        "imagereward": -1.1719048023223877,
+        "vqa": 0.6319249868392944,
+        "dsg": 0.6136796474456787,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 103,
+        "file": "0103.png",
+        "prompt": "A dog on the moon.",
+        "clip": 0.22897294163703918,
+        "imagereward": -0.9903887510299683,
+        "vqa": 0.20961138606071472,
+        "dsg": 0.22313006222248077,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 104,
+        "file": "0104.png",
+        "prompt": "A dog on the moon.",
+        "clip": 0.19938190281391144,
+        "imagereward": -0.21077947318553925,
+        "vqa": 0.12131376564502716,
+        "dsg": 0.13117142021656036,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 105,
+        "file": "0105.png",
+        "prompt": "A dog on the moon.",
+        "clip": 0.24286971986293793,
+        "imagereward": -0.2932804524898529,
+        "vqa": 0.4168619215488434,
+        "dsg": 0.4385772943496704,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 106,
+        "file": "0106.png",
+        "prompt": "A dog on the moon.",
+        "clip": 0.21348516643047333,
+        "imagereward": -0.9783022999763489,
+        "vqa": 0.1194329708814621,
+        "dsg": 0.1332370489835739,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 107,
+        "file": "0107.png",
+        "prompt": "A dog on the moon.",
+        "clip": 0.2845132052898407,
+        "imagereward": -1.1691300868988037,
+        "vqa": 0.2691463232040405,
+        "dsg": 0.3455903232097626,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 108,
+        "file": "0108.png",
+        "prompt": "A dog on the moon.",
+        "clip": 0.30356746912002563,
+        "imagereward": 0.014707257971167564,
+        "vqa": 0.7592750191688538,
+        "dsg": 0.7742478847503662,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 109,
+        "file": "0109.png",
+        "prompt": "A dog on the moon.",
+        "clip": 0.25214168429374695,
+        "imagereward": -2.2460246086120605,
+        "vqa": 0.35935738682746887,
+        "dsg": 0.4317774176597595,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 110,
+        "file": "0110.png",
+        "prompt": "A dog on the moon.",
+        "clip": 0.2903430759906769,
+        "imagereward": -0.4471835792064667,
+        "vqa": 0.33758512139320374,
+        "dsg": 0.41523632407188416,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 111,
+        "file": "0111.png",
+        "prompt": "A dog on the moon.",
+        "clip": 0.2008226215839386,
+        "imagereward": -1.1964937448501587,
+        "vqa": 0.10376516729593277,
+        "dsg": 0.11396370828151703,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 112,
+        "file": "0112.png",
+        "prompt": "A dog on the moon.",
+        "clip": 0.29539987444877625,
+        "imagereward": 0.48046308755874634,
+        "vqa": 0.7230914831161499,
+        "dsg": 0.7330443263053894,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 113,
+        "file": "0113.png",
+        "prompt": "A dog on the moon.",
+        "clip": 0.22088444232940674,
+        "imagereward": -0.9660483598709106,
+        "vqa": 0.13854463398456573,
+        "dsg": 0.15822291374206543,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 114,
+        "file": "0114.png",
+        "prompt": "A dog on the moon.",
+        "clip": 0.20665243268013,
+        "imagereward": -1.1146246194839478,
+        "vqa": 0.14980250597000122,
+        "dsg": 0.1545577049255371,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 115,
+        "file": "0115.png",
+        "prompt": "A dog on the moon.",
+        "clip": 0.20969736576080322,
+        "imagereward": -2.164421558380127,
+        "vqa": 0.41039907932281494,
+        "dsg": 0.4596250355243683,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 116,
+        "file": "0116.png",
+        "prompt": "A dog on the moon.",
+        "clip": 0.3103194236755371,
+        "imagereward": 0.3722679913043976,
+        "vqa": 0.6494420170783997,
+        "dsg": 0.6257808804512024,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 117,
+        "file": "0117.png",
+        "prompt": "A dog on the moon.",
+        "clip": 0.3025719225406647,
+        "imagereward": 0.5420504212379456,
+        "vqa": 0.6257835626602173,
+        "dsg": 0.649440348148346,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 118,
+        "file": "0118.png",
+        "prompt": "A dog on the moon.",
+        "clip": 0.25207316875457764,
+        "imagereward": -0.9224457740783691,
+        "vqa": 0.7344787120819092,
+        "dsg": 0.738794207572937,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 119,
+        "file": "0119.png",
+        "prompt": "A dog on the moon.",
+        "clip": 0.24833917617797852,
+        "imagereward": -1.41572105884552,
+        "vqa": 0.6136799454689026,
+        "dsg": 0.6319238543510437,
+        "dsg_claims": 1
+      }
+    ],
+    "aggregate": {
+      "clip": {
+        "mean": 0.2589,
+        "std": 0.0367,
+        "median": 0.2586,
+        "min": 0.1714,
+        "max": 0.3366,
+        "n": 120
+      },
+      "imagereward": {
+        "mean": 0.19,
+        "std": 1.1649,
+        "median": 0.5383,
+        "min": -2.246,
+        "max": 1.8028,
+        "n": 120
+      },
+      "vqa": {
+        "mean": 0.6498,
+        "std": 0.3031,
+        "median": 0.7281,
+        "min": 0.0888,
+        "max": 0.9858,
+        "n": 120
+      },
+      "dsg": {
+        "mean": 0.7064,
+        "std": 0.2971,
+        "median": 0.8494,
+        "min": 0.1122,
+        "max": 0.9807,
+        "n": 120
+      }
+    }
+  },
+  "baseline": {
+    "per_image": [
+      {
+        "idx": 0,
+        "file": "0000.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.26061785221099854,
+        "imagereward": -1.358580231666565,
+        "vqa": 0.43857747316360474,
+        "dsg": 0.9071730971336365,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 1,
+        "file": "0001.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.2707614302635193,
+        "imagereward": -1.3404978513717651,
+        "vqa": 0.5832946300506592,
+        "dsg": 0.9062672853469849,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 2,
+        "file": "0002.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.2600564658641815,
+        "imagereward": -1.4049965143203735,
+        "vqa": 0.4650430977344513,
+        "dsg": 0.9113682210445404,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 3,
+        "file": "0003.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.26847025752067566,
+        "imagereward": -0.7239886522293091,
+        "vqa": 0.6494424939155579,
+        "dsg": 0.9090995490550995,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 4,
+        "file": "0004.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.25257980823516846,
+        "imagereward": -1.5772978067398071,
+        "vqa": 0.2528395354747772,
+        "dsg": 0.9276429116725922,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 5,
+        "file": "0005.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.26963287591934204,
+        "imagereward": -1.454085350036621,
+        "vqa": 0.5067751407623291,
+        "dsg": 0.921701043844223,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 6,
+        "file": "0006.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.26666638255119324,
+        "imagereward": -1.5187861919403076,
+        "vqa": 0.47236648201942444,
+        "dsg": 0.9313808083534241,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 7,
+        "file": "0007.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.3281482756137848,
+        "imagereward": 1.620995044708252,
+        "vqa": 0.9807779788970947,
+        "dsg": 0.9435422420501709,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 8,
+        "file": "0008.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.32811176776885986,
+        "imagereward": 0.7508217692375183,
+        "vqa": 0.977550745010376,
+        "dsg": 0.9711619317531586,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 9,
+        "file": "0009.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.3071577250957489,
+        "imagereward": 0.07590072602033615,
+        "vqa": 0.9792225956916809,
+        "dsg": 0.9213688671588898,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 10,
+        "file": "0010.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.24911388754844666,
+        "imagereward": -1.4614243507385254,
+        "vqa": 0.5720126032829285,
+        "dsg": 0.9270760715007782,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 11,
+        "file": "0011.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.3070272207260132,
+        "imagereward": 0.21557137370109558,
+        "vqa": 0.8620535135269165,
+        "dsg": 0.9395820498466492,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 12,
+        "file": "0012.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.29620471596717834,
+        "imagereward": 0.21863903105258942,
+        "vqa": 0.9804186820983887,
+        "dsg": 0.9319226145744324,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 13,
+        "file": "0013.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.2669718861579895,
+        "imagereward": -1.5990585088729858,
+        "vqa": 0.5479546189308167,
+        "dsg": 0.9232124984264374,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 14,
+        "file": "0014.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.32965999841690063,
+        "imagereward": 1.5083792209625244,
+        "vqa": 0.9810172319412231,
+        "dsg": 0.9496688544750214,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 15,
+        "file": "0015.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.26564303040504456,
+        "imagereward": -1.6218537092208862,
+        "vqa": 0.5249084830284119,
+        "dsg": 0.9189595282077789,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 16,
+        "file": "0016.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.3161943852901459,
+        "imagereward": 0.1546289175748825,
+        "vqa": 0.9091772437095642,
+        "dsg": 0.9336961209774017,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 17,
+        "file": "0017.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.3261277675628662,
+        "imagereward": 1.39486825466156,
+        "vqa": 0.9824554920196533,
+        "dsg": 0.9701682031154633,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 18,
+        "file": "0018.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.3180676996707916,
+        "imagereward": 0.6083385348320007,
+        "vqa": 0.9779086709022522,
+        "dsg": 0.9534646272659302,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 19,
+        "file": "0019.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.2728043496608734,
+        "imagereward": -1.3884811401367188,
+        "vqa": 0.5352611541748047,
+        "dsg": 0.9310970604419708,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 20,
+        "file": "0020.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.26394277811050415,
+        "imagereward": -1.588114619255066,
+        "vqa": 0.47236648201942444,
+        "dsg": 0.9293367266654968,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 21,
+        "file": "0021.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.2648950517177582,
+        "imagereward": -1.2062132358551025,
+        "vqa": 0.5415706634521484,
+        "dsg": 0.9346631467342377,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 22,
+        "file": "0022.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.3003008961677551,
+        "imagereward": 1.2080062627792358,
+        "vqa": 0.98293536901474,
+        "dsg": 0.9697085618972778,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 23,
+        "file": "0023.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.251036673784256,
+        "imagereward": -1.569161057472229,
+        "vqa": 0.4385773837566376,
+        "dsg": 0.9129968881607056,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 24,
+        "file": "0024.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.271638423204422,
+        "imagereward": -1.2348136901855469,
+        "vqa": 0.5067753195762634,
+        "dsg": 0.931611180305481,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 25,
+        "file": "0025.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.27497023344039917,
+        "imagereward": -0.5859856009483337,
+        "vqa": 0.9831753373146057,
+        "dsg": 0.9307911098003387,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 26,
+        "file": "0026.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.3338773846626282,
+        "imagereward": 1.4272750616073608,
+        "vqa": 0.9782668948173523,
+        "dsg": 0.9614355862140656,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 27,
+        "file": "0027.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.28351205587387085,
+        "imagereward": -1.4248617887496948,
+        "vqa": 0.7230917811393738,
+        "dsg": 0.9107338786125183,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 28,
+        "file": "0028.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.32265669107437134,
+        "imagereward": 1.540364146232605,
+        "vqa": 0.9826953411102295,
+        "dsg": 0.9657658636569977,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 29,
+        "file": "0029.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.31326884031295776,
+        "imagereward": 0.852533757686615,
+        "vqa": 0.9775506258010864,
+        "dsg": 0.9538710117340088,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 30,
+        "file": "0030.png",
+        "prompt": "A cat and a dog.",
+        "clip": 0.25305888056755066,
+        "imagereward": 0.6234602928161621,
+        "vqa": 0.961220920085907,
+        "dsg": 0.9612197875976562,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 31,
+        "file": "0031.png",
+        "prompt": "A cat and a dog.",
+        "clip": 0.21922028064727783,
+        "imagereward": 0.9762327075004578,
+        "vqa": 0.9795812368392944,
+        "dsg": 0.9663970470428467,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 32,
+        "file": "0032.png",
+        "prompt": "A cat and a dog.",
+        "clip": 0.2146269530057907,
+        "imagereward": -0.23512430489063263,
+        "vqa": 0.9065176844596863,
+        "dsg": 0.9307370185852051,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 33,
+        "file": "0033.png",
+        "prompt": "A cat and a dog.",
+        "clip": 0.2091304361820221,
+        "imagereward": -0.9736822247505188,
+        "vqa": 0.32976484298706055,
+        "dsg": 0.30978503823280334,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 34,
+        "file": "0034.png",
+        "prompt": "A cat and a dog.",
+        "clip": 0.23172231018543243,
+        "imagereward": 0.9664672017097473,
+        "vqa": 0.9788641333580017,
+        "dsg": 0.9746899008750916,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 35,
+        "file": "0035.png",
+        "prompt": "A cat and a dog.",
+        "clip": 0.19126832485198975,
+        "imagereward": -1.2079663276672363,
+        "vqa": 0.2548225224018097,
+        "dsg": 0.24698209762573242,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 36,
+        "file": "0036.png",
+        "prompt": "A cat and a dog.",
+        "clip": 0.21497276425361633,
+        "imagereward": 0.659197211265564,
+        "vqa": 0.9563052654266357,
+        "dsg": 0.9417081475257874,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 37,
+        "file": "0037.png",
+        "prompt": "A cat and a dog.",
+        "clip": 0.24647477269172668,
+        "imagereward": 1.416417121887207,
+        "vqa": 0.9792226552963257,
+        "dsg": 0.9746896624565125,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 38,
+        "file": "0038.png",
+        "prompt": "A cat and a dog.",
+        "clip": 0.20325928926467896,
+        "imagereward": 0.018999416381120682,
+        "vqa": 0.1792900711297989,
+        "dsg": 0.20001228153705597,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 39,
+        "file": "0039.png",
+        "prompt": "A cat and a dog.",
+        "clip": 0.202205628156662,
+        "imagereward": -0.11997836083173752,
+        "vqa": 0.32212579250335693,
+        "dsg": 0.34023234248161316,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 40,
+        "file": "0040.png",
+        "prompt": "A cat and a dog.",
+        "clip": 0.1715172529220581,
+        "imagereward": 0.32097601890563965,
+        "vqa": 0.15335491299629211,
+        "dsg": 0.16452565789222717,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 41,
+        "file": "0041.png",
+        "prompt": "A cat and a dog.",
+        "clip": 0.2390412986278534,
+        "imagereward": 1.5118811130523682,
+        "vqa": 0.9755240678787231,
+        "dsg": 0.9673410058021545,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 42,
+        "file": "0042.png",
+        "prompt": "A cat and a dog.",
+        "clip": 0.20639851689338684,
+        "imagereward": 0.1394951492547989,
+        "vqa": 0.18354180455207825,
+        "dsg": 0.1724213808774948,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 43,
+        "file": "0043.png",
+        "prompt": "A cat and a dog.",
+        "clip": 0.262440025806427,
+        "imagereward": 0.9856096506118774,
+        "vqa": 0.9633352160453796,
+        "dsg": 0.9621582627296448,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 44,
+        "file": "0044.png",
+        "prompt": "A cat and a dog.",
+        "clip": 0.24617281556129456,
+        "imagereward": 1.1538653373718262,
+        "vqa": 0.9727889895439148,
+        "dsg": 0.9719564318656921,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 45,
+        "file": "0045.png",
+        "prompt": "A cat and a dog.",
+        "clip": 0.1878558099269867,
+        "imagereward": -1.4059077501296997,
+        "vqa": 0.12713570892810822,
+        "dsg": 0.15097731351852417,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 46,
+        "file": "0046.png",
+        "prompt": "A cat and a dog.",
+        "clip": 0.2060202956199646,
+        "imagereward": -0.9625732898712158,
+        "vqa": 0.14980246126651764,
+        "dsg": 0.15335485339164734,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 47,
+        "file": "0047.png",
+        "prompt": "A cat and a dog.",
+        "clip": 0.24582301080226898,
+        "imagereward": 0.954002320766449,
+        "vqa": 0.9855784773826599,
+        "dsg": 0.9795806407928467,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 48,
+        "file": "0048.png",
+        "prompt": "A cat and a dog.",
+        "clip": 0.19855383038520813,
+        "imagereward": -0.9879602789878845,
+        "vqa": 0.16974839568138123,
+        "dsg": 0.15822270512580872,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 49,
+        "file": "0049.png",
+        "prompt": "A cat and a dog.",
+        "clip": 0.18559683859348297,
+        "imagereward": -0.8337799906730652,
+        "vqa": 0.17513678967952728,
+        "dsg": 0.1835417002439499,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 50,
+        "file": "0050.png",
+        "prompt": "A cat and a dog.",
+        "clip": 0.21230097115039825,
+        "imagereward": -0.5724807381629944,
+        "vqa": 0.14183011651039124,
+        "dsg": 0.14294244349002838,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 51,
+        "file": "0051.png",
+        "prompt": "A cat and a dog.",
+        "clip": 0.18298479914665222,
+        "imagereward": -1.929477572441101,
+        "vqa": 0.09596706181764603,
+        "dsg": 0.1311713606119156,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 52,
+        "file": "0052.png",
+        "prompt": "A cat and a dog.",
+        "clip": 0.2431655377149582,
+        "imagereward": 1.0431233644485474,
+        "vqa": 0.9779086112976074,
+        "dsg": 0.9693505764007568,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 53,
+        "file": "0053.png",
+        "prompt": "A cat and a dog.",
+        "clip": 0.16735516488552094,
+        "imagereward": -0.9913332462310791,
+        "vqa": 0.16071456670761108,
+        "dsg": 0.20797991752624512,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 54,
+        "file": "0054.png",
+        "prompt": "A cat and a dog.",
+        "clip": 0.20424704253673553,
+        "imagereward": 0.11466597765684128,
+        "vqa": 0.20475569367408752,
+        "dsg": 0.17651031911373138,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 55,
+        "file": "0055.png",
+        "prompt": "A cat and a dog.",
+        "clip": 0.2611355483531952,
+        "imagereward": 0.6820387840270996,
+        "vqa": 0.9549052715301514,
+        "dsg": 0.9663963913917542,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 56,
+        "file": "0056.png",
+        "prompt": "A cat and a dog.",
+        "clip": 0.23524965345859528,
+        "imagereward": 1.3499926328659058,
+        "vqa": 0.973977267742157,
+        "dsg": 0.9673409461975098,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 57,
+        "file": "0057.png",
+        "prompt": "A cat and a dog.",
+        "clip": 0.1918099969625473,
+        "imagereward": -1.5415900945663452,
+        "vqa": 0.15946389734745026,
+        "dsg": 0.15576983988285065,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 58,
+        "file": "0058.png",
+        "prompt": "A cat and a dog.",
+        "clip": 0.25462430715560913,
+        "imagereward": 1.228861689567566,
+        "vqa": 0.9857589602470398,
+        "dsg": 0.978265643119812,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 59,
+        "file": "0059.png",
+        "prompt": "A cat and a dog.",
+        "clip": 0.21669486165046692,
+        "imagereward": -1.017001748085022,
+        "vqa": 0.1104574054479599,
+        "dsg": 0.11045736074447632,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 60,
+        "file": "0060.png",
+        "prompt": "Four wolves in the park.",
+        "clip": 0.25871747732162476,
+        "imagereward": 1.330763816833496,
+        "vqa": 0.7652302980422974,
+        "dsg": 0.8463779985904694,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 61,
+        "file": "0061.png",
+        "prompt": "Four wolves in the park.",
+        "clip": 0.27921169996261597,
+        "imagereward": 1.0376213788986206,
+        "vqa": 0.2865048050880432,
+        "dsg": 0.703829437494278,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 62,
+        "file": "0062.png",
+        "prompt": "Four wolves in the park.",
+        "clip": 0.27347180247306824,
+        "imagereward": 1.3912162780761719,
+        "vqa": 0.7548394203186035,
+        "dsg": 0.8429936170578003,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 63,
+        "file": "0063.png",
+        "prompt": "Four wolves in the park.",
+        "clip": 0.2794764041900635,
+        "imagereward": 1.3640146255493164,
+        "vqa": 0.8193705081939697,
+        "dsg": 0.7992834448814392,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 64,
+        "file": "0064.png",
+        "prompt": "Four wolves in the park.",
+        "clip": 0.26690828800201416,
+        "imagereward": 1.1086997985839844,
+        "vqa": 0.8816352486610413,
+        "dsg": 0.8939016461372375,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 65,
+        "file": "0065.png",
+        "prompt": "Four wolves in the park.",
+        "clip": 0.27868449687957764,
+        "imagereward": 1.6366652250289917,
+        "vqa": 0.7841426134109497,
+        "dsg": 0.8709777295589447,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 66,
+        "file": "0066.png",
+        "prompt": "Four wolves in the park.",
+        "clip": 0.2505797743797302,
+        "imagereward": 0.20557022094726562,
+        "vqa": 0.7174648642539978,
+        "dsg": 0.8692188262939453,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 67,
+        "file": "0067.png",
+        "prompt": "Four wolves in the park.",
+        "clip": 0.25868475437164307,
+        "imagereward": 1.0696933269500732,
+        "vqa": 0.7230919003486633,
+        "dsg": 0.8259024918079376,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 68,
+        "file": "0068.png",
+        "prompt": "Four wolves in the park.",
+        "clip": 0.27175599336624146,
+        "imagereward": 0.811367928981781,
+        "vqa": 0.7887507081031799,
+        "dsg": 0.8277575373649597,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 69,
+        "file": "0069.png",
+        "prompt": "Four wolves in the park.",
+        "clip": 0.2810613512992859,
+        "imagereward": 1.2046287059783936,
+        "vqa": 0.8019545674324036,
+        "dsg": 0.8241872489452362,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 70,
+        "file": "0070.png",
+        "prompt": "Four wolves in the park.",
+        "clip": 0.27808988094329834,
+        "imagereward": 0.8999821543693542,
+        "vqa": 0.8722153306007385,
+        "dsg": 0.8937221467494965,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 71,
+        "file": "0071.png",
+        "prompt": "Four wolves in the park.",
+        "clip": 0.2570323646068573,
+        "imagereward": 0.716508150100708,
+        "vqa": 0.6726806163787842,
+        "dsg": 0.8272541761398315,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 72,
+        "file": "0072.png",
+        "prompt": "Four wolves in the park.",
+        "clip": 0.2706257700920105,
+        "imagereward": 1.3327670097351074,
+        "vqa": 0.7887507081031799,
+        "dsg": 0.8526346683502197,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 73,
+        "file": "0073.png",
+        "prompt": "Four wolves in the park.",
+        "clip": 0.2681350111961365,
+        "imagereward": 1.069618582725525,
+        "vqa": 0.9087334871292114,
+        "dsg": 0.8853481411933899,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 74,
+        "file": "0074.png",
+        "prompt": "Four wolves in the park.",
+        "clip": 0.2868530750274658,
+        "imagereward": 1.4530967473983765,
+        "vqa": 0.6953906416893005,
+        "dsg": 0.8137463927268982,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 75,
+        "file": "0075.png",
+        "prompt": "Four wolves in the park.",
+        "clip": 0.2850743234157562,
+        "imagereward": 1.569496750831604,
+        "vqa": 0.5544137358665466,
+        "dsg": 0.7519856095314026,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 76,
+        "file": "0076.png",
+        "prompt": "Four wolves in the park.",
+        "clip": 0.2616017460823059,
+        "imagereward": 1.2604899406433105,
+        "vqa": 0.6953906416893005,
+        "dsg": 0.8368154168128967,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 77,
+        "file": "0077.png",
+        "prompt": "Four wolves in the park.",
+        "clip": 0.2797160744667053,
+        "imagereward": 1.1188395023345947,
+        "vqa": 0.32465243339538574,
+        "dsg": 0.710886999964714,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 78,
+        "file": "0078.png",
+        "prompt": "Four wolves in the park.",
+        "clip": 0.27780449390411377,
+        "imagereward": 1.5303311347961426,
+        "vqa": 0.8322736024856567,
+        "dsg": 0.858089804649353,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 79,
+        "file": "0079.png",
+        "prompt": "Four wolves in the park.",
+        "clip": 0.27424922585487366,
+        "imagereward": 1.293584942817688,
+        "vqa": 0.7887507081031799,
+        "dsg": 0.8612924218177795,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 80,
+        "file": "0080.png",
+        "prompt": "Four wolves in the park.",
+        "clip": 0.25334298610687256,
+        "imagereward": 1.3697357177734375,
+        "vqa": 0.8066673278808594,
+        "dsg": 0.8837039172649384,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 81,
+        "file": "0081.png",
+        "prompt": "Four wolves in the park.",
+        "clip": 0.2598273754119873,
+        "imagereward": 1.0897774696350098,
+        "vqa": 0.7118814587593079,
+        "dsg": 0.8888866901397705,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 82,
+        "file": "0082.png",
+        "prompt": "Four wolves in the park.",
+        "clip": 0.2734662890434265,
+        "imagereward": 1.553911566734314,
+        "vqa": 0.7592752575874329,
+        "dsg": 0.8044792413711548,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 83,
+        "file": "0083.png",
+        "prompt": "Four wolves in the park.",
+        "clip": 0.276480495929718,
+        "imagereward": 1.5153566598892212,
+        "vqa": 0.689979076385498,
+        "dsg": 0.782941609621048,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 84,
+        "file": "0084.png",
+        "prompt": "Four wolves in the park.",
+        "clip": 0.25082600116729736,
+        "imagereward": 0.511898934841156,
+        "vqa": 0.7489652037620544,
+        "dsg": 0.8587847352027893,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 85,
+        "file": "0085.png",
+        "prompt": "Four wolves in the park.",
+        "clip": 0.24521353840827942,
+        "imagereward": 1.4372155666351318,
+        "vqa": 0.7887506484985352,
+        "dsg": 0.876592755317688,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 86,
+        "file": "0086.png",
+        "prompt": "Four wolves in the park.",
+        "clip": 0.2694288194179535,
+        "imagereward": 1.474543809890747,
+        "vqa": 0.8233810067176819,
+        "dsg": 0.8587864637374878,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 87,
+        "file": "0087.png",
+        "prompt": "Four wolves in the park.",
+        "clip": 0.2521408200263977,
+        "imagereward": 0.9227198958396912,
+        "vqa": 0.7697272896766663,
+        "dsg": 0.8455685377120972,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 88,
+        "file": "0088.png",
+        "prompt": "Four wolves in the park.",
+        "clip": 0.2614278495311737,
+        "imagereward": 0.9747807383537292,
+        "vqa": 0.6609594821929932,
+        "dsg": 0.8368154168128967,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 89,
+        "file": "0089.png",
+        "prompt": "Four wolves in the park.",
+        "clip": 0.26320964097976685,
+        "imagereward": 1.5892066955566406,
+        "vqa": 0.7592753171920776,
+        "dsg": 0.8255527019500732,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 90,
+        "file": "0090.png",
+        "prompt": "A dog on the moon.",
+        "clip": 0.26455405354499817,
+        "imagereward": -2.02744722366333,
+        "vqa": 0.18643222749233246,
+        "dsg": 0.25283947587013245,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 91,
+        "file": "0091.png",
+        "prompt": "A dog on the moon.",
+        "clip": 0.22370555996894836,
+        "imagereward": -1.7921953201293945,
+        "vqa": 0.3795571029186249,
+        "dsg": 0.3946767747402191,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 92,
+        "file": "0092.png",
+        "prompt": "A dog on the moon.",
+        "clip": 0.20773431658744812,
+        "imagereward": -1.2539945840835571,
+        "vqa": 0.16324551403522491,
+        "dsg": 0.19691161811351776,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 93,
+        "file": "0093.png",
+        "prompt": "A dog on the moon.",
+        "clip": 0.26729878783226013,
+        "imagereward": -0.4903949499130249,
+        "vqa": 0.7980479001998901,
+        "dsg": 0.8153772950172424,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 94,
+        "file": "0094.png",
+        "prompt": "A dog on the moon.",
+        "clip": 0.23320437967777252,
+        "imagereward": -1.9197132587432861,
+        "vqa": 0.3870432376861572,
+        "dsg": 0.4217754602432251,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 95,
+        "file": "0095.png",
+        "prompt": "A dog on the moon.",
+        "clip": 0.272705614566803,
+        "imagereward": 0.18419741094112396,
+        "vqa": 0.5901702642440796,
+        "dsg": 0.6431300044059753,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 96,
+        "file": "0096.png",
+        "prompt": "A dog on the moon.",
+        "clip": 0.28856736421585083,
+        "imagereward": -1.1076143980026245,
+        "vqa": 0.6726804375648499,
+        "dsg": 0.6953889727592468,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 97,
+        "file": "0097.png",
+        "prompt": "A dog on the moon.",
+        "clip": 0.24022696912288666,
+        "imagereward": -1.029048204421997,
+        "vqa": 0.20961137115955353,
+        "dsg": 0.243153378367424,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 98,
+        "file": "0098.png",
+        "prompt": "A dog on the moon.",
+        "clip": 0.3041781783103943,
+        "imagereward": -1.251222014427185,
+        "vqa": 0.6558156609535217,
+        "dsg": 0.7174620032310486,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 99,
+        "file": "0099.png",
+        "prompt": "A dog on the moon.",
+        "clip": 0.22452449798583984,
+        "imagereward": -0.39977648854255676,
+        "vqa": 0.7652302980422974,
+        "dsg": 0.7548388838768005,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 100,
+        "file": "0100.png",
+        "prompt": "A dog on the moon.",
+        "clip": 0.29993730783462524,
+        "imagereward": 0.46198520064353943,
+        "vqa": 0.40561771392822266,
+        "dsg": 0.4892676770687103,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 101,
+        "file": "0101.png",
+        "prompt": "A dog on the moon.",
+        "clip": 0.2348233461380005,
+        "imagereward": -1.1935797929763794,
+        "vqa": 0.16197513043880463,
+        "dsg": 0.17242154479026794,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 102,
+        "file": "0102.png",
+        "prompt": "A dog on the moon.",
+        "clip": 0.23785126209259033,
+        "imagereward": -1.1119964122772217,
+        "vqa": 0.7387951016426086,
+        "dsg": 0.7344781756401062,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 103,
+        "file": "0103.png",
+        "prompt": "A dog on the moon.",
+        "clip": 0.21731433272361755,
+        "imagereward": -0.6353075504302979,
+        "vqa": 0.15216153860092163,
+        "dsg": 0.16197508573532104,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 104,
+        "file": "0104.png",
+        "prompt": "A dog on the moon.",
+        "clip": 0.2067326009273529,
+        "imagereward": -1.2193405628204346,
+        "vqa": 0.1251646876335144,
+        "dsg": 0.14294251799583435,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 105,
+        "file": "0105.png",
+        "prompt": "A dog on the moon.",
+        "clip": 0.22822622954845428,
+        "imagereward": -0.15703317523002625,
+        "vqa": 0.16711677610874176,
+        "dsg": 0.18211348354816437,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 106,
+        "file": "0106.png",
+        "prompt": "A dog on the moon.",
+        "clip": 0.20605584979057312,
+        "imagereward": -1.1829602718353271,
+        "vqa": 0.10057264566421509,
+        "dsg": 0.11396370828151703,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 107,
+        "file": "0107.png",
+        "prompt": "A dog on the moon.",
+        "clip": 0.27574124932289124,
+        "imagereward": -1.974656581878662,
+        "vqa": 0.22313015162944794,
+        "dsg": 0.30260899662971497,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 108,
+        "file": "0108.png",
+        "prompt": "A dog on the moon.",
+        "clip": 0.30417537689208984,
+        "imagereward": -0.7245782613754272,
+        "vqa": 0.5067750811576843,
+        "dsg": 0.5249067544937134,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 109,
+        "file": "0109.png",
+        "prompt": "A dog on the moon.",
+        "clip": 0.2818344831466675,
+        "imagereward": -2.0808866024017334,
+        "vqa": 0.2712571918964386,
+        "dsg": 0.3402324318885803,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 110,
+        "file": "0110.png",
+        "prompt": "A dog on the moon.",
+        "clip": 0.2876775860786438,
+        "imagereward": -0.3339725136756897,
+        "vqa": 0.36501654982566833,
+        "dsg": 0.43857696652412415,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 111,
+        "file": "0111.png",
+        "prompt": "A dog on the moon.",
+        "clip": 0.20309913158416748,
+        "imagereward": -1.3631362915039062,
+        "vqa": 0.1710798293352127,
+        "dsg": 0.18354180455207825,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 112,
+        "file": "0112.png",
+        "prompt": "A dog on the moon.",
+        "clip": 0.2915610074996948,
+        "imagereward": 0.5031288862228394,
+        "vqa": 0.71746426820755,
+        "dsg": 0.7287614941596985,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 113,
+        "file": "0113.png",
+        "prompt": "A dog on the moon.",
+        "clip": 0.23257048428058624,
+        "imagereward": -0.7447502613067627,
+        "vqa": 0.19085334241390228,
+        "dsg": 0.18936805427074432,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 114,
+        "file": "0114.png",
+        "prompt": "A dog on the moon.",
+        "clip": 0.20519642531871796,
+        "imagereward": -1.1296864748001099,
+        "vqa": 0.12131376564502716,
+        "dsg": 0.12322414666414261,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 115,
+        "file": "0115.png",
+        "prompt": "A dog on the moon.",
+        "clip": 0.19791869819164276,
+        "imagereward": -1.401322364807129,
+        "vqa": 0.22842155396938324,
+        "dsg": 0.2820628881454468,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 116,
+        "file": "0116.png",
+        "prompt": "A dog on the moon.",
+        "clip": 0.3125404715538025,
+        "imagereward": 0.26446327567100525,
+        "vqa": 0.5127487778663635,
+        "dsg": 0.5479528903961182,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 117,
+        "file": "0117.png",
+        "prompt": "A dog on the moon.",
+        "clip": 0.29404398798942566,
+        "imagereward": 0.8340991735458374,
+        "vqa": 0.8816348314285278,
+        "dsg": 0.8872472047805786,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 118,
+        "file": "0118.png",
+        "prompt": "A dog on the moon.",
+        "clip": 0.29623568058013916,
+        "imagereward": 1.07389235496521,
+        "vqa": 0.7788002490997314,
+        "dsg": 0.8019528985023499,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 119,
+        "file": "0119.png",
+        "prompt": "A dog on the moon.",
+        "clip": 0.24633283913135529,
+        "imagereward": -2.036594867706299,
+        "vqa": 0.7742501497268677,
+        "dsg": 0.778798520565033,
+        "dsg_claims": 1
+      }
+    ],
+    "aggregate": {
+      "clip": {
+        "mean": 0.2565,
+        "std": 0.0375,
+        "median": 0.2615,
+        "min": 0.1674,
+        "max": 0.3339,
+        "n": 120
+      },
+      "imagereward": {
+        "mean": 0.0041,
+        "std": 1.1828,
+        "median": 0.1949,
+        "min": -2.0809,
+        "max": 1.6367,
+        "n": 120
+      },
+      "vqa": {
+        "mean": 0.6051,
+        "std": 0.3026,
+        "median": 0.6927,
+        "min": 0.096,
+        "max": 0.9858,
+        "n": 120
+      },
+      "dsg": {
+        "mean": 0.6906,
+        "std": 0.3081,
+        "median": 0.8443,
+        "min": 0.1105,
+        "max": 0.9796,
+        "n": 120
+      }
+    }
+  }
+}

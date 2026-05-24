@@ -1,0 +1,2486 @@
+{
+  "run_name": "DPOK on HELD-OUT prompts",
+  "metrics": [
+    "clip",
+    "imagereward",
+    "vqa",
+    "dsg"
+  ],
+  "elapsed_sec": 391.3,
+  "trained": {
+    "per_image": [
+      {
+        "idx": 0,
+        "file": "0000.png",
+        "prompt": "A purple colored elephant.",
+        "clip": 0.3038298487663269,
+        "imagereward": 0.08383724838495255,
+        "vqa": 0.9788641929626465,
+        "dsg": 0.951378345489502,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 1,
+        "file": "0001.png",
+        "prompt": "A purple colored elephant.",
+        "clip": 0.31981074810028076,
+        "imagereward": 1.6751883029937744,
+        "vqa": 0.9743339419364929,
+        "dsg": 0.948694497346878,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 2,
+        "file": "0002.png",
+        "prompt": "A purple colored elephant.",
+        "clip": 0.3172757029533386,
+        "imagereward": 0.5877497792243958,
+        "vqa": 0.9788641333580017,
+        "dsg": 0.9511374533176422,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 3,
+        "file": "0003.png",
+        "prompt": "A purple colored elephant.",
+        "clip": 0.30347388982772827,
+        "imagereward": 0.6488764882087708,
+        "vqa": 0.9687601327896118,
+        "dsg": 0.9395977854728699,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 4,
+        "file": "0004.png",
+        "prompt": "A purple colored elephant.",
+        "clip": 0.32703495025634766,
+        "imagereward": 0.7585232257843018,
+        "vqa": 0.9769541621208191,
+        "dsg": 0.9448373019695282,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 5,
+        "file": "0005.png",
+        "prompt": "A purple colored elephant.",
+        "clip": 0.31474769115448,
+        "imagereward": 0.25062045454978943,
+        "vqa": 0.9307377338409424,
+        "dsg": 0.8741758763790131,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 6,
+        "file": "0006.png",
+        "prompt": "A purple colored elephant.",
+        "clip": 0.30014780163764954,
+        "imagereward": 0.6917521953582764,
+        "vqa": 0.9762388467788696,
+        "dsg": 0.9379114806652069,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 7,
+        "file": "0007.png",
+        "prompt": "A purple colored elephant.",
+        "clip": 0.291495680809021,
+        "imagereward": 0.13458386063575745,
+        "vqa": 0.9779086112976074,
+        "dsg": 0.9408869743347168,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 8,
+        "file": "0008.png",
+        "prompt": "A purple colored elephant.",
+        "clip": 0.3372151851654053,
+        "imagereward": 0.8574293851852417,
+        "vqa": 0.9779085516929626,
+        "dsg": 0.9635794162750244,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 9,
+        "file": "0009.png",
+        "prompt": "A purple colored elephant.",
+        "clip": 0.31684809923171997,
+        "imagereward": 0.6286736726760864,
+        "vqa": 0.9795814156532288,
+        "dsg": 0.9492371082305908,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 10,
+        "file": "0010.png",
+        "prompt": "A purple colored elephant.",
+        "clip": 0.29971879720687866,
+        "imagereward": 0.3562028110027313,
+        "vqa": 0.9782668352127075,
+        "dsg": 0.9531656205654144,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 11,
+        "file": "0011.png",
+        "prompt": "A purple colored elephant.",
+        "clip": 0.3343659043312073,
+        "imagereward": 1.2964695692062378,
+        "vqa": 0.9719581007957458,
+        "dsg": 0.9629702270030975,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 12,
+        "file": "0012.png",
+        "prompt": "A purple colored elephant.",
+        "clip": 0.32795655727386475,
+        "imagereward": -0.3022274971008301,
+        "vqa": 0.981616199016571,
+        "dsg": 0.9364591836929321,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 13,
+        "file": "0013.png",
+        "prompt": "A purple colored elephant.",
+        "clip": 0.3368605971336365,
+        "imagereward": 0.48421359062194824,
+        "vqa": 0.9788641333580017,
+        "dsg": 0.9727445542812347,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 14,
+        "file": "0014.png",
+        "prompt": "A purple colored elephant.",
+        "clip": 0.3107481598854065,
+        "imagereward": 0.766722559928894,
+        "vqa": 0.9810172319412231,
+        "dsg": 0.9462080597877502,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 15,
+        "file": "0015.png",
+        "prompt": "A purple colored elephant.",
+        "clip": 0.2865288555622101,
+        "imagereward": -0.1098223552107811,
+        "vqa": 0.9731453061103821,
+        "dsg": 0.9514948427677155,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 16,
+        "file": "0016.png",
+        "prompt": "A purple colored elephant.",
+        "clip": 0.31289970874786377,
+        "imagereward": 0.8297422528266907,
+        "vqa": 0.9798204302787781,
+        "dsg": 0.963787317276001,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 17,
+        "file": "0017.png",
+        "prompt": "A purple colored elephant.",
+        "clip": 0.3206154704093933,
+        "imagereward": 1.3686343431472778,
+        "vqa": 0.9801793098449707,
+        "dsg": 0.9460838437080383,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 18,
+        "file": "0018.png",
+        "prompt": "A purple colored elephant.",
+        "clip": 0.2990022301673889,
+        "imagereward": 0.6350497007369995,
+        "vqa": 0.9818559288978577,
+        "dsg": 0.9564681351184845,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 19,
+        "file": "0019.png",
+        "prompt": "A purple colored elephant.",
+        "clip": 0.26311251521110535,
+        "imagereward": -0.5053126811981201,
+        "vqa": 0.950950562953949,
+        "dsg": 0.9266820847988129,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 20,
+        "file": "0020.png",
+        "prompt": "A purple colored elephant.",
+        "clip": 0.29085400700569153,
+        "imagereward": 0.28075823187828064,
+        "vqa": 0.9668695330619812,
+        "dsg": 0.9525084793567657,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 21,
+        "file": "0021.png",
+        "prompt": "A purple colored elephant.",
+        "clip": 0.28835123777389526,
+        "imagereward": 0.7993032336235046,
+        "vqa": 0.9792226552963257,
+        "dsg": 0.9395647644996643,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 22,
+        "file": "0022.png",
+        "prompt": "A purple colored elephant.",
+        "clip": 0.2775368094444275,
+        "imagereward": 0.06343979388475418,
+        "vqa": 0.8193701505661011,
+        "dsg": 0.8322146534919739,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 23,
+        "file": "0023.png",
+        "prompt": "A purple colored elephant.",
+        "clip": 0.3238278925418854,
+        "imagereward": 1.0883464813232422,
+        "vqa": 0.9748098254203796,
+        "dsg": 0.9543108344078064,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 24,
+        "file": "0024.png",
+        "prompt": "A purple colored elephant.",
+        "clip": 0.32370615005493164,
+        "imagereward": 0.8282366394996643,
+        "vqa": 0.9810172319412231,
+        "dsg": 0.9544462561607361,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 25,
+        "file": "0025.png",
+        "prompt": "A purple colored elephant.",
+        "clip": 0.30827200412750244,
+        "imagereward": 1.0817419290542603,
+        "vqa": 0.9746907949447632,
+        "dsg": 0.9526877999305725,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 26,
+        "file": "0026.png",
+        "prompt": "A purple colored elephant.",
+        "clip": 0.34396886825561523,
+        "imagereward": 0.908305823802948,
+        "vqa": 0.9779086112976074,
+        "dsg": 0.9634838104248047,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 27,
+        "file": "0027.png",
+        "prompt": "A purple colored elephant.",
+        "clip": 0.33082932233810425,
+        "imagereward": 0.6127640008926392,
+        "vqa": 0.9804186820983887,
+        "dsg": 0.94566810131073,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 28,
+        "file": "0028.png",
+        "prompt": "A purple colored elephant.",
+        "clip": 0.3097350001335144,
+        "imagereward": 0.19351138174533844,
+        "vqa": 0.9798206090927124,
+        "dsg": 0.9402220249176025,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 29,
+        "file": "0029.png",
+        "prompt": "A purple colored elephant.",
+        "clip": 0.32424840331077576,
+        "imagereward": 0.2813561260700226,
+        "vqa": 0.9804186820983887,
+        "dsg": 0.9474659860134125,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 30,
+        "file": "0030.png",
+        "prompt": "A horse and a sheep.",
+        "clip": 0.30328425765037537,
+        "imagereward": 1.4662123918533325,
+        "vqa": 0.9782668352127075,
+        "dsg": 0.9711272120475769,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 31,
+        "file": "0031.png",
+        "prompt": "A horse and a sheep.",
+        "clip": 0.2689567506313324,
+        "imagereward": 1.3783249855041504,
+        "vqa": 0.9537404775619507,
+        "dsg": 0.9400993585586548,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 32,
+        "file": "0032.png",
+        "prompt": "A horse and a sheep.",
+        "clip": 0.3078124523162842,
+        "imagereward": 0.7408405542373657,
+        "vqa": 0.9885304570198059,
+        "dsg": 0.9786244034767151,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 33,
+        "file": "0033.png",
+        "prompt": "A horse and a sheep.",
+        "clip": 0.24666523933410645,
+        "imagereward": -1.393234133720398,
+        "vqa": 0.2320186048746109,
+        "dsg": 0.2842750549316406,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 34,
+        "file": "0034.png",
+        "prompt": "A horse and a sheep.",
+        "clip": 0.23172509670257568,
+        "imagereward": -1.2808712720870972,
+        "vqa": 0.5653484463691711,
+        "dsg": 0.6136794686317444,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 35,
+        "file": "0035.png",
+        "prompt": "A horse and a sheep.",
+        "clip": 0.2658423185348511,
+        "imagereward": 0.9403150677680969,
+        "vqa": 0.9779086112976074,
+        "dsg": 0.9727879166603088,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 36,
+        "file": "0036.png",
+        "prompt": "A horse and a sheep.",
+        "clip": 0.294384628534317,
+        "imagereward": 1.3062448501586914,
+        "vqa": 0.9891945123672485,
+        "dsg": 0.9859992861747742,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 37,
+        "file": "0037.png",
+        "prompt": "A horse and a sheep.",
+        "clip": 0.27790766954421997,
+        "imagereward": 0.7932641506195068,
+        "vqa": 0.9887115955352783,
+        "dsg": 0.9818552732467651,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 38,
+        "file": "0038.png",
+        "prompt": "A horse and a sheep.",
+        "clip": 0.3017980456352234,
+        "imagereward": 1.5069332122802734,
+        "vqa": 0.9736206531524658,
+        "dsg": 0.9719574451446533,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 39,
+        "file": "0039.png",
+        "prompt": "A horse and a sheep.",
+        "clip": 0.2685847878456116,
+        "imagereward": 1.2668474912643433,
+        "vqa": 0.913627564907074,
+        "dsg": 0.9225921034812927,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 40,
+        "file": "0040.png",
+        "prompt": "A horse and a sheep.",
+        "clip": 0.2608243227005005,
+        "imagereward": 0.199083611369133,
+        "vqa": 0.9449330568313599,
+        "dsg": 0.9465482234954834,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 41,
+        "file": "0041.png",
+        "prompt": "A horse and a sheep.",
+        "clip": 0.3164772391319275,
+        "imagereward": 0.8929039239883423,
+        "vqa": 0.9883494973182678,
+        "dsg": 0.9798197150230408,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 42,
+        "file": "0042.png",
+        "prompt": "A horse and a sheep.",
+        "clip": 0.2343863695859909,
+        "imagereward": -1.445294976234436,
+        "vqa": 0.4317777752876282,
+        "dsg": 0.5008702278137207,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 43,
+        "file": "0043.png",
+        "prompt": "A horse and a sheep.",
+        "clip": 0.2500595450401306,
+        "imagereward": 0.8164961338043213,
+        "vqa": 0.9307377338409424,
+        "dsg": 0.9366632103919983,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 44,
+        "file": "0044.png",
+        "prompt": "A horse and a sheep.",
+        "clip": 0.27299344539642334,
+        "imagereward": 1.8027403354644775,
+        "vqa": 0.9841358065605164,
+        "dsg": 0.9779077172279358,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 45,
+        "file": "0045.png",
+        "prompt": "A horse and a sheep.",
+        "clip": 0.24768441915512085,
+        "imagereward": 1.585274577140808,
+        "vqa": 0.9449330568313599,
+        "dsg": 0.938494861125946,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 46,
+        "file": "0046.png",
+        "prompt": "A horse and a sheep.",
+        "clip": 0.27266407012939453,
+        "imagereward": 1.5525563955307007,
+        "vqa": 0.9916728734970093,
+        "dsg": 0.9836541414260864,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 47,
+        "file": "0047.png",
+        "prompt": "A horse and a sheep.",
+        "clip": 0.2414664626121521,
+        "imagereward": 0.5866482257843018,
+        "vqa": 0.42674747109413147,
+        "dsg": 0.36501607298851013,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 48,
+        "file": "0048.png",
+        "prompt": "A horse and a sheep.",
+        "clip": 0.25161299109458923,
+        "imagereward": 1.5043610334396362,
+        "vqa": 0.34023261070251465,
+        "dsg": 0.2691456377506256,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 49,
+        "file": "0049.png",
+        "prompt": "A horse and a sheep.",
+        "clip": 0.29071277379989624,
+        "imagereward": 1.4130980968475342,
+        "vqa": 0.9850974678993225,
+        "dsg": 0.9789831042289734,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 50,
+        "file": "0050.png",
+        "prompt": "A horse and a sheep.",
+        "clip": 0.2878277003765106,
+        "imagereward": 1.2097419500350952,
+        "vqa": 0.9574733972549438,
+        "dsg": 0.9612199664115906,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 51,
+        "file": "0051.png",
+        "prompt": "A horse and a sheep.",
+        "clip": 0.24380484223365784,
+        "imagereward": -1.417527437210083,
+        "vqa": 0.2842751145362854,
+        "dsg": 0.3196188509464264,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 52,
+        "file": "0052.png",
+        "prompt": "A horse and a sheep.",
+        "clip": 0.21747316420078278,
+        "imagereward": -0.05189483240246773,
+        "vqa": 0.6953901052474976,
+        "dsg": 0.7344770431518555,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 53,
+        "file": "0053.png",
+        "prompt": "A horse and a sheep.",
+        "clip": 0.2850397527217865,
+        "imagereward": 0.31499120593070984,
+        "vqa": 0.8274109959602356,
+        "dsg": 0.8688130974769592,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 54,
+        "file": "0054.png",
+        "prompt": "A horse and a sheep.",
+        "clip": 0.20594900846481323,
+        "imagereward": -1.3276499509811401,
+        "vqa": 0.11575840413570404,
+        "dsg": 0.15946385264396667,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 55,
+        "file": "0055.png",
+        "prompt": "A horse and a sheep.",
+        "clip": 0.28278180956840515,
+        "imagereward": 1.5360621213912964,
+        "vqa": 0.981616199016571,
+        "dsg": 0.9685222506523132,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 56,
+        "file": "0056.png",
+        "prompt": "A horse and a sheep.",
+        "clip": 0.2961408495903015,
+        "imagereward": 1.226749062538147,
+        "vqa": 0.9801792502403259,
+        "dsg": 0.9789827466011047,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 57,
+        "file": "0057.png",
+        "prompt": "A horse and a sheep.",
+        "clip": 0.27938419580459595,
+        "imagereward": 1.1814708709716797,
+        "vqa": 0.9804186820983887,
+        "dsg": 0.9736193418502808,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 58,
+        "file": "0058.png",
+        "prompt": "A horse and a sheep.",
+        "clip": 0.24486298859119415,
+        "imagereward": 0.6669429540634155,
+        "vqa": 0.6381261944770813,
+        "dsg": 0.6257830858230591,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 59,
+        "file": "0059.png",
+        "prompt": "A horse and a sheep.",
+        "clip": 0.28844180703163147,
+        "imagereward": 1.2664368152618408,
+        "vqa": 0.9855784773826599,
+        "dsg": 0.9751657843589783,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 60,
+        "file": "0060.png",
+        "prompt": "Five birds in the sky.",
+        "clip": 0.2312496304512024,
+        "imagereward": -1.1288652420043945,
+        "vqa": 0.4892684817314148,
+        "dsg": 0.7131917327642441,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 61,
+        "file": "0061.png",
+        "prompt": "Five birds in the sky.",
+        "clip": 0.269231915473938,
+        "imagereward": 0.6352145671844482,
+        "vqa": 0.5901705026626587,
+        "dsg": 0.7194180637598038,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 62,
+        "file": "0062.png",
+        "prompt": "Five birds in the sky.",
+        "clip": 0.2648535370826721,
+        "imagereward": 0.058253973722457886,
+        "vqa": 0.6953907608985901,
+        "dsg": 0.7933636009693146,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 63,
+        "file": "0063.png",
+        "prompt": "Five birds in the sky.",
+        "clip": 0.26101258397102356,
+        "imagereward": 0.6377833485603333,
+        "vqa": 0.5415709018707275,
+        "dsg": 0.6787179261445999,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 64,
+        "file": "0064.png",
+        "prompt": "Five birds in the sky.",
+        "clip": 0.24918365478515625,
+        "imagereward": 0.18287010490894318,
+        "vqa": 0.17789487540721893,
+        "dsg": 0.5936770588159561,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 65,
+        "file": "0065.png",
+        "prompt": "Five birds in the sky.",
+        "clip": 0.271289587020874,
+        "imagereward": 0.8682327270507812,
+        "vqa": 0.6381264925003052,
+        "dsg": 0.7034664750099182,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 66,
+        "file": "0066.png",
+        "prompt": "Five birds in the sky.",
+        "clip": 0.2516767680644989,
+        "imagereward": 0.974823534488678,
+        "vqa": 0.5479547381401062,
+        "dsg": 0.6917935311794281,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 67,
+        "file": "0067.png",
+        "prompt": "Five birds in the sky.",
+        "clip": 0.2338516116142273,
+        "imagereward": -1.8539620637893677,
+        "vqa": 0.5901705026626587,
+        "dsg": 0.7622579038143158,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 68,
+        "file": "0068.png",
+        "prompt": "Five birds in the sky.",
+        "clip": 0.21789543330669403,
+        "imagereward": -0.48028549551963806,
+        "vqa": 0.2079801857471466,
+        "dsg": 0.6409197002649307,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 69,
+        "file": "0069.png",
+        "prompt": "Five birds in the sky.",
+        "clip": 0.2651790380477905,
+        "imagereward": 0.7464019656181335,
+        "vqa": 0.6381263732910156,
+        "dsg": 0.704481303691864,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 70,
+        "file": "0070.png",
+        "prompt": "Five birds in the sky.",
+        "clip": 0.24697819352149963,
+        "imagereward": 0.27729278802871704,
+        "vqa": 0.6494424343109131,
+        "dsg": 0.8252040147781372,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 71,
+        "file": "0071.png",
+        "prompt": "Five birds in the sky.",
+        "clip": 0.23919424414634705,
+        "imagereward": -0.119614377617836,
+        "vqa": 0.4723665714263916,
+        "dsg": 0.7121980041265488,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 72,
+        "file": "0072.png",
+        "prompt": "Five birds in the sky.",
+        "clip": 0.26277798414230347,
+        "imagereward": -0.3481600880622864,
+        "vqa": 0.5901704430580139,
+        "dsg": 0.7832947075366974,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 73,
+        "file": "0073.png",
+        "prompt": "Five birds in the sky.",
+        "clip": 0.26484909653663635,
+        "imagereward": 0.6694539785385132,
+        "vqa": 0.5067753195762634,
+        "dsg": 0.67300184071064,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 74,
+        "file": "0074.png",
+        "prompt": "Five birds in the sky.",
+        "clip": 0.24147213995456696,
+        "imagereward": -1.0010360479354858,
+        "vqa": 0.7063414454460144,
+        "dsg": 0.8023565411567688,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 75,
+        "file": "0075.png",
+        "prompt": "Five birds in the sky.",
+        "clip": 0.24786487221717834,
+        "imagereward": -0.6209418177604675,
+        "vqa": 0.5479547381401062,
+        "dsg": 0.7906679809093475,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 76,
+        "file": "0076.png",
+        "prompt": "Five birds in the sky.",
+        "clip": 0.2525602877140045,
+        "imagereward": 0.6431148052215576,
+        "vqa": 0.6726807951927185,
+        "dsg": 0.7701162695884705,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 77,
+        "file": "0077.png",
+        "prompt": "Five birds in the sky.",
+        "clip": 0.26225370168685913,
+        "imagereward": 0.36573711037635803,
+        "vqa": 0.6431313157081604,
+        "dsg": 0.7739017903804779,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 78,
+        "file": "0078.png",
+        "prompt": "Five birds in the sky.",
+        "clip": 0.2474517524242401,
+        "imagereward": 0.166655033826828,
+        "vqa": 0.6197025179862976,
+        "dsg": 0.7793475985527039,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 79,
+        "file": "0079.png",
+        "prompt": "Five birds in the sky.",
+        "clip": 0.25449517369270325,
+        "imagereward": 0.8945094347000122,
+        "vqa": 0.60771644115448,
+        "dsg": 0.7041462659835815,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 80,
+        "file": "0080.png",
+        "prompt": "Five birds in the sky.",
+        "clip": 0.22132918238639832,
+        "imagereward": 0.23807410895824432,
+        "vqa": 0.7548395395278931,
+        "dsg": 0.7865163087844849,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 81,
+        "file": "0081.png",
+        "prompt": "Five birds in the sky.",
+        "clip": 0.25588488578796387,
+        "imagereward": -0.4746348559856415,
+        "vqa": 0.6558159589767456,
+        "dsg": 0.7721359729766846,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 82,
+        "file": "0082.png",
+        "prompt": "Five birds in the sky.",
+        "clip": 0.26531311869621277,
+        "imagereward": 0.08793821185827255,
+        "vqa": 0.5653486847877502,
+        "dsg": 0.760476291179657,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 83,
+        "file": "0083.png",
+        "prompt": "Five birds in the sky.",
+        "clip": 0.23938897252082825,
+        "imagereward": 0.10799966007471085,
+        "vqa": 0.6494426131248474,
+        "dsg": 0.7639471888542175,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 84,
+        "file": "0084.png",
+        "prompt": "Five birds in the sky.",
+        "clip": 0.2359161078929901,
+        "imagereward": -0.40050357580184937,
+        "vqa": 0.6319249868392944,
+        "dsg": 0.7568953335285187,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 85,
+        "file": "0085.png",
+        "prompt": "Five birds in the sky.",
+        "clip": 0.24959242343902588,
+        "imagereward": 0.5557237267494202,
+        "vqa": 0.5901705026626587,
+        "dsg": 0.6897968053817749,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 86,
+        "file": "0086.png",
+        "prompt": "Five birds in the sky.",
+        "clip": 0.2610985338687897,
+        "imagereward": 0.7231118679046631,
+        "vqa": 0.5127490162849426,
+        "dsg": 0.6853727102279663,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 87,
+        "file": "0087.png",
+        "prompt": "Five birds in the sky.",
+        "clip": 0.2343374490737915,
+        "imagereward": -0.653527557849884,
+        "vqa": 0.7118813395500183,
+        "dsg": 0.7721218764781952,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 88,
+        "file": "0088.png",
+        "prompt": "Five birds in the sky.",
+        "clip": 0.2620381712913513,
+        "imagereward": -0.2197444587945938,
+        "vqa": 0.40089231729507446,
+        "dsg": 0.683343306183815,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 89,
+        "file": "0089.png",
+        "prompt": "Five birds in the sky.",
+        "clip": 0.27684321999549866,
+        "imagereward": -1.2110118865966797,
+        "vqa": 0.5901704430580139,
+        "dsg": 0.7888456284999847,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 90,
+        "file": "0090.png",
+        "prompt": "A penguin on the beach.",
+        "clip": 0.2677139341831207,
+        "imagereward": 1.1432063579559326,
+        "vqa": 0.973977267742157,
+        "dsg": 0.9659252166748047,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 91,
+        "file": "0091.png",
+        "prompt": "A penguin on the beach.",
+        "clip": 0.28345444798469543,
+        "imagereward": 1.1038711071014404,
+        "vqa": 0.9855183959007263,
+        "dsg": 0.9816157817840576,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 92,
+        "file": "0092.png",
+        "prompt": "A penguin on the beach.",
+        "clip": 0.27508896589279175,
+        "imagereward": 1.5057084560394287,
+        "vqa": 0.9711278676986694,
+        "dsg": 0.9680494070053101,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 93,
+        "file": "0093.png",
+        "prompt": "A penguin on the beach.",
+        "clip": 0.2753654718399048,
+        "imagereward": 1.2511569261550903,
+        "vqa": 0.9855784773826599,
+        "dsg": 0.9816151261329651,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 94,
+        "file": "0094.png",
+        "prompt": "A penguin on the beach.",
+        "clip": 0.2698379158973694,
+        "imagereward": 1.7320492267608643,
+        "vqa": 0.8842216730117798,
+        "dsg": 0.7387936115264893,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 95,
+        "file": "0095.png",
+        "prompt": "A penguin on the beach.",
+        "clip": 0.2778920531272888,
+        "imagereward": 0.9322179555892944,
+        "vqa": 0.9668696522712708,
+        "dsg": 0.9621596336364746,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 96,
+        "file": "0096.png",
+        "prompt": "A penguin on the beach.",
+        "clip": 0.28342774510383606,
+        "imagereward": 1.0612157583236694,
+        "vqa": 0.9697064161300659,
+        "dsg": 0.9638049602508545,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 97,
+        "file": "0097.png",
+        "prompt": "A penguin on the beach.",
+        "clip": 0.2897198796272278,
+        "imagereward": 1.6210670471191406,
+        "vqa": 0.9638056755065918,
+        "dsg": 0.9638047218322754,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 98,
+        "file": "0098.png",
+        "prompt": "A penguin on the beach.",
+        "clip": 0.2737976014614105,
+        "imagereward": 1.1055538654327393,
+        "vqa": 0.9746907949447632,
+        "dsg": 0.9654536247253418,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 99,
+        "file": "0099.png",
+        "prompt": "A penguin on the beach.",
+        "clip": 0.26720383763313293,
+        "imagereward": 1.4337621927261353,
+        "vqa": 0.9792227149009705,
+        "dsg": 0.9743333458900452,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 100,
+        "file": "0100.png",
+        "prompt": "A penguin on the beach.",
+        "clip": 0.30094143748283386,
+        "imagereward": 1.4253829717636108,
+        "vqa": 0.9846165180206299,
+        "dsg": 0.9795806407928467,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 101,
+        "file": "0101.png",
+        "prompt": "A penguin on the beach.",
+        "clip": 0.2967357635498047,
+        "imagereward": 1.2756900787353516,
+        "vqa": 0.982455313205719,
+        "dsg": 0.9810162782669067,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 102,
+        "file": "0102.png",
+        "prompt": "A penguin on the beach.",
+        "clip": 0.28699731826782227,
+        "imagereward": 1.5939884185791016,
+        "vqa": 0.9593454599380493,
+        "dsg": 0.9509498476982117,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 103,
+        "file": "0103.png",
+        "prompt": "A penguin on the beach.",
+        "clip": 0.23860454559326172,
+        "imagereward": 0.38916411995887756,
+        "vqa": 0.9472432136535645,
+        "dsg": 0.9465488195419312,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 104,
+        "file": "0104.png",
+        "prompt": "A penguin on the beach.",
+        "clip": 0.27034056186676025,
+        "imagereward": 1.2647701501846313,
+        "vqa": 0.9682869911193848,
+        "dsg": 0.9621596932411194,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 105,
+        "file": "0105.png",
+        "prompt": "A penguin on the beach.",
+        "clip": 0.26155799627304077,
+        "imagereward": 1.4226199388504028,
+        "vqa": 0.9668696522712708,
+        "dsg": 0.9570055603981018,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 106,
+        "file": "0106.png",
+        "prompt": "A penguin on the beach.",
+        "clip": 0.29943472146987915,
+        "imagereward": 0.8924909234046936,
+        "vqa": 0.9870232939720154,
+        "dsg": 0.9859987497329712,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 107,
+        "file": "0107.png",
+        "prompt": "A penguin on the beach.",
+        "clip": 0.28476962447166443,
+        "imagereward": 1.6398652791976929,
+        "vqa": 0.9758813977241516,
+        "dsg": 0.9714829325675964,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 108,
+        "file": "0108.png",
+        "prompt": "A penguin on the beach.",
+        "clip": 0.2715875506401062,
+        "imagereward": 1.192517638206482,
+        "vqa": 0.9795812964439392,
+        "dsg": 0.9701793789863586,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 109,
+        "file": "0109.png",
+        "prompt": "A penguin on the beach.",
+        "clip": 0.2795092463493347,
+        "imagereward": 1.3829693794250488,
+        "vqa": 0.9750478267669678,
+        "dsg": 0.9678136706352234,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 110,
+        "file": "0110.png",
+        "prompt": "A penguin on the beach.",
+        "clip": 0.24954965710639954,
+        "imagereward": 1.4456616640090942,
+        "vqa": 0.9605172276496887,
+        "dsg": 0.9509496688842773,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 111,
+        "file": "0111.png",
+        "prompt": "A penguin on the beach.",
+        "clip": 0.2630038559436798,
+        "imagereward": 0.7788352370262146,
+        "vqa": 0.9678143262863159,
+        "dsg": 0.966869056224823,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 112,
+        "file": "0112.png",
+        "prompt": "A penguin on the beach.",
+        "clip": 0.3197413682937622,
+        "imagereward": 1.4564709663391113,
+        "vqa": 0.9853378534317017,
+        "dsg": 0.9816154837608337,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 113,
+        "file": "0113.png",
+        "prompt": "A penguin on the beach.",
+        "clip": 0.27126872539520264,
+        "imagereward": 1.579236626625061,
+        "vqa": 0.9775505661964417,
+        "dsg": 0.9736200571060181,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 114,
+        "file": "0114.png",
+        "prompt": "A penguin on the beach.",
+        "clip": 0.2814158797264099,
+        "imagereward": 1.2684208154678345,
+        "vqa": 0.9831751585006714,
+        "dsg": 0.9804179072380066,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 115,
+        "file": "0115.png",
+        "prompt": "A penguin on the beach.",
+        "clip": 0.27108123898506165,
+        "imagereward": 1.1547297239303589,
+        "vqa": 0.9563053846359253,
+        "dsg": 0.9433191418647766,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 116,
+        "file": "0116.png",
+        "prompt": "A penguin on the beach.",
+        "clip": 0.2729889154434204,
+        "imagereward": 1.2767866849899292,
+        "vqa": 0.9325575828552246,
+        "dsg": 0.8396201133728027,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 117,
+        "file": "0117.png",
+        "prompt": "A penguin on the beach.",
+        "clip": 0.2757909297943115,
+        "imagereward": 0.9495977759361267,
+        "vqa": 0.9711279273033142,
+        "dsg": 0.9649826288223267,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 118,
+        "file": "0118.png",
+        "prompt": "A penguin on the beach.",
+        "clip": 0.28242069482803345,
+        "imagereward": 1.3530246019363403,
+        "vqa": 0.9804186820983887,
+        "dsg": 0.9723132848739624,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 119,
+        "file": "0119.png",
+        "prompt": "A penguin on the beach.",
+        "clip": 0.2717468738555908,
+        "imagereward": 1.561855673789978,
+        "vqa": 0.9727889895439148,
+        "dsg": 0.9693508744239807,
+        "dsg_claims": 1
+      }
+    ],
+    "aggregate": {
+      "clip": {
+        "mean": 0.2769,
+        "std": 0.0294,
+        "median": 0.2734,
+        "min": 0.2059,
+        "max": 0.344,
+        "n": 120
+      },
+      "imagereward": {
+        "mean": 0.6336,
+        "std": 0.8105,
+        "median": 0.786,
+        "min": -1.854,
+        "max": 1.8027,
+        "n": 120
+      },
+      "vqa": {
+        "mean": 0.8278,
+        "std": 0.2221,
+        "median": 0.9681,
+        "min": 0.1158,
+        "max": 0.9917,
+        "n": 120
+      },
+      "dsg": {
+        "mean": 0.8594,
+        "std": 0.1664,
+        "median": 0.9464,
+        "min": 0.1595,
+        "max": 0.986,
+        "n": 120
+      }
+    }
+  },
+  "baseline": {
+    "per_image": [
+      {
+        "idx": 0,
+        "file": "0000.png",
+        "prompt": "A purple colored elephant.",
+        "clip": 0.29446691274642944,
+        "imagereward": 0.2547387182712555,
+        "vqa": 0.9810174703598022,
+        "dsg": 0.9567156434059143,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 1,
+        "file": "0001.png",
+        "prompt": "A purple colored elephant.",
+        "clip": 0.3201752305030823,
+        "imagereward": 1.5413196086883545,
+        "vqa": 0.9769541621208191,
+        "dsg": 0.9548494517803192,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 2,
+        "file": "0002.png",
+        "prompt": "A purple colored elephant.",
+        "clip": 0.30357059836387634,
+        "imagereward": 0.7093798518180847,
+        "vqa": 0.9807778000831604,
+        "dsg": 0.9638139307498932,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 3,
+        "file": "0003.png",
+        "prompt": "A purple colored elephant.",
+        "clip": 0.3380476236343384,
+        "imagereward": 1.1728564500808716,
+        "vqa": 0.9826952219009399,
+        "dsg": 0.9641740620136261,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 4,
+        "file": "0004.png",
+        "prompt": "A purple colored elephant.",
+        "clip": 0.3206864595413208,
+        "imagereward": 0.7750021815299988,
+        "vqa": 0.9758813977241516,
+        "dsg": 0.9611730575561523,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 5,
+        "file": "0005.png",
+        "prompt": "A purple colored elephant.",
+        "clip": 0.31042319536209106,
+        "imagereward": 0.06995276361703873,
+        "vqa": 0.9549055695533752,
+        "dsg": 0.9370910823345184,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 6,
+        "file": "0006.png",
+        "prompt": "A purple colored elephant.",
+        "clip": 0.2978047728538513,
+        "imagereward": 0.7199158072471619,
+        "vqa": 0.9727889895439148,
+        "dsg": 0.9357596337795258,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 7,
+        "file": "0007.png",
+        "prompt": "A purple colored elephant.",
+        "clip": 0.2835675776004791,
+        "imagereward": 0.2452293336391449,
+        "vqa": 0.977669894695282,
+        "dsg": 0.9395648241043091,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 8,
+        "file": "0008.png",
+        "prompt": "A purple colored elephant.",
+        "clip": 0.33091670274734497,
+        "imagereward": 0.678867757320404,
+        "vqa": 0.977311909198761,
+        "dsg": 0.956329733133316,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 9,
+        "file": "0009.png",
+        "prompt": "A purple colored elephant.",
+        "clip": 0.30827319622039795,
+        "imagereward": 0.5956019759178162,
+        "vqa": 0.9826954007148743,
+        "dsg": 0.9518049657344818,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 10,
+        "file": "0010.png",
+        "prompt": "A purple colored elephant.",
+        "clip": 0.25655490159988403,
+        "imagereward": 0.8804639577865601,
+        "vqa": 0.9727889895439148,
+        "dsg": 0.9513242244720459,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 11,
+        "file": "0011.png",
+        "prompt": "A purple colored elephant.",
+        "clip": 0.33489397168159485,
+        "imagereward": 1.4604108333587646,
+        "vqa": 0.9765964150428772,
+        "dsg": 0.9646593332290649,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 12,
+        "file": "0012.png",
+        "prompt": "A purple colored elephant.",
+        "clip": 0.32253241539001465,
+        "imagereward": -0.5302159190177917,
+        "vqa": 0.9807778000831604,
+        "dsg": 0.9472140073776245,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 13,
+        "file": "0013.png",
+        "prompt": "A purple colored elephant.",
+        "clip": 0.33879849314689636,
+        "imagereward": 0.6386879086494446,
+        "vqa": 0.9810172319412231,
+        "dsg": 0.9708597362041473,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 14,
+        "file": "0014.png",
+        "prompt": "A purple colored elephant.",
+        "clip": 0.30141204595565796,
+        "imagereward": 0.8380218744277954,
+        "vqa": 0.9773120284080505,
+        "dsg": 0.9567161500453949,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 15,
+        "file": "0015.png",
+        "prompt": "A purple colored elephant.",
+        "clip": 0.27849191427230835,
+        "imagereward": 0.233761265873909,
+        "vqa": 0.9748098254203796,
+        "dsg": 0.9498291313648224,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 16,
+        "file": "0016.png",
+        "prompt": "A purple colored elephant.",
+        "clip": 0.3132428824901581,
+        "imagereward": 0.8762706518173218,
+        "vqa": 0.9792226552963257,
+        "dsg": 0.9621678590774536,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 17,
+        "file": "0017.png",
+        "prompt": "A purple colored elephant.",
+        "clip": 0.31779590249061584,
+        "imagereward": 1.4050300121307373,
+        "vqa": 0.9795812964439392,
+        "dsg": 0.9490522146224976,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 18,
+        "file": "0018.png",
+        "prompt": "A purple colored elephant.",
+        "clip": 0.3130563199520111,
+        "imagereward": 0.5292443037033081,
+        "vqa": 0.9807778000831604,
+        "dsg": 0.958765834569931,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 19,
+        "file": "0019.png",
+        "prompt": "A purple colored elephant.",
+        "clip": 0.28555941581726074,
+        "imagereward": 0.09029897302389145,
+        "vqa": 0.9779086112976074,
+        "dsg": 0.9474659860134125,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 20,
+        "file": "0020.png",
+        "prompt": "A purple colored elephant.",
+        "clip": 0.29272857308387756,
+        "imagereward": 0.5416634678840637,
+        "vqa": 0.9680505990982056,
+        "dsg": 0.9499523043632507,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 21,
+        "file": "0021.png",
+        "prompt": "A purple colored elephant.",
+        "clip": 0.2874617278575897,
+        "imagereward": 0.8684166073799133,
+        "vqa": 0.9765964150428772,
+        "dsg": 0.9443556666374207,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 22,
+        "file": "0022.png",
+        "prompt": "A purple colored elephant.",
+        "clip": 0.27777913212776184,
+        "imagereward": 0.029598576948046684,
+        "vqa": 0.7697271704673767,
+        "dsg": 0.8252944946289062,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 23,
+        "file": "0023.png",
+        "prompt": "A purple colored elephant.",
+        "clip": 0.32252007722854614,
+        "imagereward": 1.12960946559906,
+        "vqa": 0.9786251187324524,
+        "dsg": 0.9554988741874695,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 24,
+        "file": "0024.png",
+        "prompt": "A purple colored elephant.",
+        "clip": 0.31366217136383057,
+        "imagereward": 0.6760125160217285,
+        "vqa": 0.9779086112976074,
+        "dsg": 0.9479795098304749,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 25,
+        "file": "0025.png",
+        "prompt": "A purple colored elephant.",
+        "clip": 0.30579373240470886,
+        "imagereward": 0.722598135471344,
+        "vqa": 0.9746907949447632,
+        "dsg": 0.9486623406410217,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 26,
+        "file": "0026.png",
+        "prompt": "A purple colored elephant.",
+        "clip": 0.3421626687049866,
+        "imagereward": 0.7773697376251221,
+        "vqa": 0.9792226552963257,
+        "dsg": 0.9673996567726135,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 27,
+        "file": "0027.png",
+        "prompt": "A purple colored elephant.",
+        "clip": 0.3374375104904175,
+        "imagereward": 0.6514943838119507,
+        "vqa": 0.9798206090927124,
+        "dsg": 0.9600557088851929,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 28,
+        "file": "0028.png",
+        "prompt": "A purple colored elephant.",
+        "clip": 0.2993413209915161,
+        "imagereward": 0.08485763520002365,
+        "vqa": 0.9836555123329163,
+        "dsg": 0.9372906684875488,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 29,
+        "file": "0029.png",
+        "prompt": "A purple colored elephant.",
+        "clip": 0.327378511428833,
+        "imagereward": 0.37573733925819397,
+        "vqa": 0.9831752777099609,
+        "dsg": 0.9479293823242188,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 30,
+        "file": "0030.png",
+        "prompt": "A horse and a sheep.",
+        "clip": 0.30018556118011475,
+        "imagereward": 1.496277928352356,
+        "vqa": 0.9593454599380493,
+        "dsg": 0.9612204432487488,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 31,
+        "file": "0031.png",
+        "prompt": "A horse and a sheep.",
+        "clip": 0.27761876583099365,
+        "imagereward": 1.3989858627319336,
+        "vqa": 0.975166916847229,
+        "dsg": 0.9685222506523132,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 32,
+        "file": "0032.png",
+        "prompt": "A horse and a sheep.",
+        "clip": 0.31115275621414185,
+        "imagereward": 1.1038366556167603,
+        "vqa": 0.9836553335189819,
+        "dsg": 0.9739766120910645,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 33,
+        "file": "0033.png",
+        "prompt": "A horse and a sheep.",
+        "clip": 0.24582792818546295,
+        "imagereward": -1.4361352920532227,
+        "vqa": 0.3840312063694,
+        "dsg": 0.42674720287323,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 34,
+        "file": "0034.png",
+        "prompt": "A horse and a sheep.",
+        "clip": 0.25957685708999634,
+        "imagereward": 0.27616947889328003,
+        "vqa": 0.9348371028900146,
+        "dsg": 0.9433194398880005,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 35,
+        "file": "0035.png",
+        "prompt": "A horse and a sheep.",
+        "clip": 0.2664528489112854,
+        "imagereward": 0.9794691801071167,
+        "vqa": 0.9820955991744995,
+        "dsg": 0.9736195206642151,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 36,
+        "file": "0036.png",
+        "prompt": "A horse and a sheep.",
+        "clip": 0.2913607060909271,
+        "imagereward": 1.1222636699676514,
+        "vqa": 0.9822156429290771,
+        "dsg": 0.9782664179801941,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 37,
+        "file": "0037.png",
+        "prompt": "A horse and a sheep.",
+        "clip": 0.2785716652870178,
+        "imagereward": 0.6910338997840881,
+        "vqa": 0.9855784773826599,
+        "dsg": 0.9786244034767151,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 38,
+        "file": "0038.png",
+        "prompt": "A horse and a sheep.",
+        "clip": 0.30162662267684937,
+        "imagereward": 1.4930448532104492,
+        "vqa": 0.9795812964439392,
+        "dsg": 0.9758806228637695,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 39,
+        "file": "0039.png",
+        "prompt": "A horse and a sheep.",
+        "clip": 0.2805379033088684,
+        "imagereward": 1.2019751071929932,
+        "vqa": 0.9907653331756592,
+        "dsg": 0.984675943851471,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 40,
+        "file": "0040.png",
+        "prompt": "A horse and a sheep.",
+        "clip": 0.25953924655914307,
+        "imagereward": -0.471719890832901,
+        "vqa": 0.9633352160453796,
+        "dsg": 0.9537392854690552,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 41,
+        "file": "0041.png",
+        "prompt": "A horse and a sheep.",
+        "clip": 0.31442880630493164,
+        "imagereward": 1.2275371551513672,
+        "vqa": 0.9855784773826599,
+        "dsg": 0.9765957593917847,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 42,
+        "file": "0042.png",
+        "prompt": "A horse and a sheep.",
+        "clip": 0.2791363000869751,
+        "imagereward": 0.8605585098266602,
+        "vqa": 0.9905839562416077,
+        "dsg": 0.9866002798080444,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 43,
+        "file": "0043.png",
+        "prompt": "A horse and a sheep.",
+        "clip": 0.20190520584583282,
+        "imagereward": 0.030778035521507263,
+        "vqa": 0.2431533932685852,
+        "dsg": 0.2932989001274109,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 44,
+        "file": "0044.png",
+        "prompt": "A horse and a sheep.",
+        "clip": 0.2607191503047943,
+        "imagereward": 1.8023251295089722,
+        "vqa": 0.9786251187324524,
+        "dsg": 0.974452018737793,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 45,
+        "file": "0045.png",
+        "prompt": "A horse and a sheep.",
+        "clip": 0.23943735659122467,
+        "imagereward": 1.5403019189834595,
+        "vqa": 0.918547511100769,
+        "dsg": 0.9163066148757935,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 46,
+        "file": "0046.png",
+        "prompt": "A horse and a sheep.",
+        "clip": 0.262133926153183,
+        "imagereward": 1.5134471654891968,
+        "vqa": 0.9911282658576965,
+        "dsg": 0.9782652854919434,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 47,
+        "file": "0047.png",
+        "prompt": "A horse and a sheep.",
+        "clip": 0.2505341172218323,
+        "imagereward": 0.6508477926254272,
+        "vqa": 0.8241852521896362,
+        "dsg": 0.8282183408737183,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 48,
+        "file": "0048.png",
+        "prompt": "A horse and a sheep.",
+        "clip": 0.2593856453895569,
+        "imagereward": 1.554813265800476,
+        "vqa": 0.9714834690093994,
+        "dsg": 0.9612192511558533,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 49,
+        "file": "0049.png",
+        "prompt": "A horse and a sheep.",
+        "clip": 0.29447588324546814,
+        "imagereward": 1.20651113986969,
+        "vqa": 0.9886510968208313,
+        "dsg": 0.9810161590576172,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 50,
+        "file": "0050.png",
+        "prompt": "A horse and a sheep.",
+        "clip": 0.284463495016098,
+        "imagereward": 1.1950794458389282,
+        "vqa": 0.9711279273033142,
+        "dsg": 0.9675771594047546,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 51,
+        "file": "0051.png",
+        "prompt": "A horse and a sheep.",
+        "clip": 0.2755398154258728,
+        "imagereward": 1.213895320892334,
+        "vqa": 0.9878067374229431,
+        "dsg": 0.9792219400405884,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 52,
+        "file": "0052.png",
+        "prompt": "A horse and a sheep.",
+        "clip": 0.24982419610023499,
+        "imagereward": 0.9379664659500122,
+        "vqa": 0.9509501457214355,
+        "dsg": 0.9366629123687744,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 53,
+        "file": "0053.png",
+        "prompt": "A horse and a sheep.",
+        "clip": 0.2809845507144928,
+        "imagereward": -0.8422199487686157,
+        "vqa": 0.9654544591903687,
+        "dsg": 0.9523434042930603,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 54,
+        "file": "0054.png",
+        "prompt": "A horse and a sheep.",
+        "clip": 0.20301471650600433,
+        "imagereward": -1.4028480052947998,
+        "vqa": 0.11575840413570404,
+        "dsg": 0.16071456670761108,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 55,
+        "file": "0055.png",
+        "prompt": "A horse and a sheep.",
+        "clip": 0.2742673456668854,
+        "imagereward": 1.5683960914611816,
+        "vqa": 0.9779086112976074,
+        "dsg": 0.969350278377533,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 56,
+        "file": "0056.png",
+        "prompt": "A horse and a sheep.",
+        "clip": 0.29407185316085815,
+        "imagereward": 1.4424889087677002,
+        "vqa": 0.9868425130844116,
+        "dsg": 0.9855777621269226,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 57,
+        "file": "0057.png",
+        "prompt": "A horse and a sheep.",
+        "clip": 0.2840465009212494,
+        "imagereward": 0.6352906823158264,
+        "vqa": 0.960048258304596,
+        "dsg": 0.9509492516517639,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 58,
+        "file": "0058.png",
+        "prompt": "A horse and a sheep.",
+        "clip": 0.2503840923309326,
+        "imagereward": 0.9191513657569885,
+        "vqa": 0.9087334871292114,
+        "dsg": 0.8872485160827637,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 59,
+        "file": "0059.png",
+        "prompt": "A horse and a sheep.",
+        "clip": 0.281215101480484,
+        "imagereward": 1.0966821908950806,
+        "vqa": 0.9838955402374268,
+        "dsg": 0.976595401763916,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 60,
+        "file": "0060.png",
+        "prompt": "Five birds in the sky.",
+        "clip": 0.24141289293766022,
+        "imagereward": -0.6762120127677917,
+        "vqa": 0.6558158993721008,
+        "dsg": 0.7714719176292419,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 61,
+        "file": "0061.png",
+        "prompt": "Five birds in the sky.",
+        "clip": 0.2675955891609192,
+        "imagereward": 0.5621734857559204,
+        "vqa": 0.5720128417015076,
+        "dsg": 0.7142178863286972,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 62,
+        "file": "0062.png",
+        "prompt": "Five birds in the sky.",
+        "clip": 0.2623714208602905,
+        "imagereward": 0.03302515298128128,
+        "vqa": 0.6846097707748413,
+        "dsg": 0.802640289068222,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 63,
+        "file": "0063.png",
+        "prompt": "Five birds in the sky.",
+        "clip": 0.26132646203041077,
+        "imagereward": 0.5688080787658691,
+        "vqa": 0.44897809624671936,
+        "dsg": 0.6519592702388763,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 64,
+        "file": "0064.png",
+        "prompt": "Five birds in the sky.",
+        "clip": 0.24930793046951294,
+        "imagereward": 0.2505483031272888,
+        "vqa": 0.18643222749233246,
+        "dsg": 0.5974172726273537,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 65,
+        "file": "0065.png",
+        "prompt": "Five birds in the sky.",
+        "clip": 0.27599871158599854,
+        "imagereward": 0.813187301158905,
+        "vqa": 0.5787556171417236,
+        "dsg": 0.6730095148086548,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 66,
+        "file": "0066.png",
+        "prompt": "Five birds in the sky.",
+        "clip": 0.24715210497379303,
+        "imagereward": 0.019463464617729187,
+        "vqa": 0.21291227638721466,
+        "dsg": 0.6687224805355072,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 67,
+        "file": "0067.png",
+        "prompt": "Five birds in the sky.",
+        "clip": 0.2344774305820465,
+        "imagereward": -1.8122488260269165,
+        "vqa": 0.5609490275382996,
+        "dsg": 0.7251345664262772,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 68,
+        "file": "0068.png",
+        "prompt": "Five birds in the sky.",
+        "clip": 0.21385927498340607,
+        "imagereward": -0.6883561611175537,
+        "vqa": 0.1724216341972351,
+        "dsg": 0.6220802217721939,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 69,
+        "file": "0069.png",
+        "prompt": "Five birds in the sky.",
+        "clip": 0.2625464200973511,
+        "imagereward": 0.6033167839050293,
+        "vqa": 0.7118813395500183,
+        "dsg": 0.7506394684314728,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 70,
+        "file": "0070.png",
+        "prompt": "Five birds in the sky.",
+        "clip": 0.2561780512332916,
+        "imagereward": 0.27395954728126526,
+        "vqa": 0.5787553191184998,
+        "dsg": 0.8220205307006836,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 71,
+        "file": "0071.png",
+        "prompt": "Five birds in the sky.",
+        "clip": 0.2449464648962021,
+        "imagereward": 0.1510225236415863,
+        "vqa": 0.6726807951927185,
+        "dsg": 0.7707484364509583,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 72,
+        "file": "0072.png",
+        "prompt": "Five birds in the sky.",
+        "clip": 0.2613143026828766,
+        "imagereward": -0.3731917440891266,
+        "vqa": 0.5609490871429443,
+        "dsg": 0.7745617032051086,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 73,
+        "file": "0073.png",
+        "prompt": "Five birds in the sky.",
+        "clip": 0.27090296149253845,
+        "imagereward": 0.6929910182952881,
+        "vqa": 0.6018105745315552,
+        "dsg": 0.7116042822599411,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 74,
+        "file": "0074.png",
+        "prompt": "Five birds in the sky.",
+        "clip": 0.23330609500408173,
+        "imagereward": -0.7725209593772888,
+        "vqa": 0.6197023987770081,
+        "dsg": 0.7171194553375244,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 75,
+        "file": "0075.png",
+        "prompt": "Five birds in the sky.",
+        "clip": 0.24842241406440735,
+        "imagereward": -0.6762705445289612,
+        "vqa": 0.5544138550758362,
+        "dsg": 0.7888456583023071,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 76,
+        "file": "0076.png",
+        "prompt": "Five birds in the sky.",
+        "clip": 0.25491371750831604,
+        "imagereward": 0.7672649025917053,
+        "vqa": 0.4103991687297821,
+        "dsg": 0.6696911752223969,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 77,
+        "file": "0077.png",
+        "prompt": "Five birds in the sky.",
+        "clip": 0.26158607006073,
+        "imagereward": 0.3946334421634674,
+        "vqa": 0.6953907608985901,
+        "dsg": 0.7941272258758545,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 78,
+        "file": "0078.png",
+        "prompt": "Five birds in the sky.",
+        "clip": 0.2625761032104492,
+        "imagereward": 0.3444274961948395,
+        "vqa": 0.6494426131248474,
+        "dsg": 0.7925526201725006,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 79,
+        "file": "0079.png",
+        "prompt": "Five birds in the sky.",
+        "clip": 0.2550220489501953,
+        "imagereward": 1.022612452507019,
+        "vqa": 0.7652304768562317,
+        "dsg": 0.7928287088871002,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 80,
+        "file": "0080.png",
+        "prompt": "Five birds in the sky.",
+        "clip": 0.21949151158332825,
+        "imagereward": -0.15654799342155457,
+        "vqa": 0.6674458384513855,
+        "dsg": 0.7606604695320129,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 81,
+        "file": "0081.png",
+        "prompt": "Five birds in the sky.",
+        "clip": 0.2506556212902069,
+        "imagereward": -0.4938090443611145,
+        "vqa": 0.6726807951927185,
+        "dsg": 0.77630615234375,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 82,
+        "file": "0082.png",
+        "prompt": "Five birds in the sky.",
+        "clip": 0.26911452412605286,
+        "imagereward": 0.13945987820625305,
+        "vqa": 0.5609491467475891,
+        "dsg": 0.7757053971290588,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 83,
+        "file": "0083.png",
+        "prompt": "Five birds in the sky.",
+        "clip": 0.245420902967453,
+        "imagereward": 0.0654854103922844,
+        "vqa": 0.6609594821929932,
+        "dsg": 0.7726441621780396,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 84,
+        "file": "0084.png",
+        "prompt": "Five birds in the sky.",
+        "clip": 0.25007909536361694,
+        "imagereward": -0.15850812196731567,
+        "vqa": 0.6953906416893005,
+        "dsg": 0.7796382904052734,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 85,
+        "file": "0085.png",
+        "prompt": "Five birds in the sky.",
+        "clip": 0.24858376383781433,
+        "imagereward": 0.5632481575012207,
+        "vqa": 0.6674458980560303,
+        "dsg": 0.7211430221796036,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 86,
+        "file": "0086.png",
+        "prompt": "Five birds in the sky.",
+        "clip": 0.2664782404899597,
+        "imagereward": 0.8169460296630859,
+        "vqa": 0.44374728202819824,
+        "dsg": 0.6555246859788895,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 87,
+        "file": "0087.png",
+        "prompt": "Five birds in the sky.",
+        "clip": 0.24764931201934814,
+        "imagereward": -1.0833197832107544,
+        "vqa": 0.5310959219932556,
+        "dsg": 0.7295352667570114,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 88,
+        "file": "0088.png",
+        "prompt": "Five birds in the sky.",
+        "clip": 0.2635810673236847,
+        "imagereward": -0.15210168063640594,
+        "vqa": 0.4317779839038849,
+        "dsg": 0.6742073893547058,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 89,
+        "file": "0089.png",
+        "prompt": "Five birds in the sky.",
+        "clip": 0.2700239419937134,
+        "imagereward": -1.5371100902557373,
+        "vqa": 0.572012722492218,
+        "dsg": 0.7581535279750824,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 90,
+        "file": "0090.png",
+        "prompt": "A penguin on the beach.",
+        "clip": 0.2702871561050415,
+        "imagereward": 1.161594033241272,
+        "vqa": 0.9723141193389893,
+        "dsg": 0.9633346796035767,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 91,
+        "file": "0091.png",
+        "prompt": "A penguin on the beach.",
+        "clip": 0.2771596908569336,
+        "imagereward": 1.0581947565078735,
+        "vqa": 0.9867823719978333,
+        "dsg": 0.9812562465667725,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 92,
+        "file": "0092.png",
+        "prompt": "A penguin on the beach.",
+        "clip": 0.2773512601852417,
+        "imagereward": 1.498999834060669,
+        "vqa": 0.9723141193389893,
+        "dsg": 0.964982271194458,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 93,
+        "file": "0093.png",
+        "prompt": "A penguin on the beach.",
+        "clip": 0.27278655767440796,
+        "imagereward": 1.2326310873031616,
+        "vqa": 0.984376072883606,
+        "dsg": 0.980776846408844,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 94,
+        "file": "0094.png",
+        "prompt": "A penguin on the beach.",
+        "clip": 0.27192413806915283,
+        "imagereward": 1.635339379310608,
+        "vqa": 0.9398713111877441,
+        "dsg": 0.8959550857543945,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 95,
+        "file": "0095.png",
+        "prompt": "A penguin on the beach.",
+        "clip": 0.26637670397758484,
+        "imagereward": 0.9826790690422058,
+        "vqa": 0.965925931930542,
+        "dsg": 0.9645114541053772,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 96,
+        "file": "0096.png",
+        "prompt": "A penguin on the beach.",
+        "clip": 0.27116382122039795,
+        "imagereward": 0.9083148241043091,
+        "vqa": 0.9731453061103821,
+        "dsg": 0.965925395488739,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 97,
+        "file": "0097.png",
+        "prompt": "A penguin on the beach.",
+        "clip": 0.29038646817207336,
+        "imagereward": 1.5931299924850464,
+        "vqa": 0.9621599316596985,
+        "dsg": 0.9537392854690552,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 98,
+        "file": "0098.png",
+        "prompt": "A penguin on the beach.",
+        "clip": 0.27083858847618103,
+        "imagereward": 1.1963251829147339,
+        "vqa": 0.973977267742157,
+        "dsg": 0.9645110964775085,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 99,
+        "file": "0099.png",
+        "prompt": "A penguin on the beach.",
+        "clip": 0.27466684579849243,
+        "imagereward": 1.4381585121154785,
+        "vqa": 0.9838957190513611,
+        "dsg": 0.9762383103370667,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 100,
+        "file": "0100.png",
+        "prompt": "A penguin on the beach.",
+        "clip": 0.2972685396671295,
+        "imagereward": 1.4026720523834229,
+        "vqa": 0.9826952219009399,
+        "dsg": 0.9788634777069092,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 101,
+        "file": "0101.png",
+        "prompt": "A penguin on the beach.",
+        "clip": 0.294391930103302,
+        "imagereward": 1.2562036514282227,
+        "vqa": 0.9841358065605164,
+        "dsg": 0.9824543595314026,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 102,
+        "file": "0102.png",
+        "prompt": "A penguin on the beach.",
+        "clip": 0.2814285159111023,
+        "imagereward": 1.545657992362976,
+        "vqa": 0.9663977026939392,
+        "dsg": 0.9633344411849976,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 103,
+        "file": "0103.png",
+        "prompt": "A penguin on the beach.",
+        "clip": 0.24688483774662018,
+        "imagereward": 0.6166574358940125,
+        "vqa": 0.9616904258728027,
+        "dsg": 0.959344744682312,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 104,
+        "file": "0104.png",
+        "prompt": "A penguin on the beach.",
+        "clip": 0.27261897921562195,
+        "imagereward": 0.8146898150444031,
+        "vqa": 0.9692330956459045,
+        "dsg": 0.9616896510124207,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 105,
+        "file": "0105.png",
+        "prompt": "A penguin on the beach.",
+        "clip": 0.27633780241012573,
+        "imagereward": 1.0261584520339966,
+        "vqa": 0.965925931930542,
+        "dsg": 0.9588764309883118,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 106,
+        "file": "0106.png",
+        "prompt": "A penguin on the beach.",
+        "clip": 0.317288875579834,
+        "imagereward": 0.7495278120040894,
+        "vqa": 0.9638059735298157,
+        "dsg": 0.9698243141174316,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 107,
+        "file": "0107.png",
+        "prompt": "A penguin on the beach.",
+        "clip": 0.2832895815372467,
+        "imagereward": 1.6470668315887451,
+        "vqa": 0.961220920085907,
+        "dsg": 0.9600469470024109,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 108,
+        "file": "0108.png",
+        "prompt": "A penguin on the beach.",
+        "clip": 0.2752147316932678,
+        "imagereward": 1.334818720817566,
+        "vqa": 0.9786252379417419,
+        "dsg": 0.972313642501831,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 109,
+        "file": "0109.png",
+        "prompt": "A penguin on the beach.",
+        "clip": 0.264716237783432,
+        "imagereward": 1.2775204181671143,
+        "vqa": 0.9723141193389893,
+        "dsg": 0.9663969278335571,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 110,
+        "file": "0110.png",
+        "prompt": "A penguin on the beach.",
+        "clip": 0.2489594966173172,
+        "imagereward": 1.4399787187576294,
+        "vqa": 0.960986316204071,
+        "dsg": 0.9449326992034912,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 111,
+        "file": "0111.png",
+        "prompt": "A penguin on the beach.",
+        "clip": 0.2624671459197998,
+        "imagereward": 0.7590509057044983,
+        "vqa": 0.9758814573287964,
+        "dsg": 0.9719576239585876,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 112,
+        "file": "0112.png",
+        "prompt": "A penguin on the beach.",
+        "clip": 0.30833715200424194,
+        "imagereward": 1.2354223728179932,
+        "vqa": 0.9879273772239685,
+        "dsg": 0.9893747568130493,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 113,
+        "file": "0113.png",
+        "prompt": "A penguin on the beach.",
+        "clip": 0.2711627781391144,
+        "imagereward": 1.5485363006591797,
+        "vqa": 0.9754049777984619,
+        "dsg": 0.9719576239585876,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 114,
+        "file": "0114.png",
+        "prompt": "A penguin on the beach.",
+        "clip": 0.28225699067115784,
+        "imagereward": 1.2929049730300903,
+        "vqa": 0.9806580543518066,
+        "dsg": 0.9762381911277771,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 115,
+        "file": "0115.png",
+        "prompt": "A penguin on the beach.",
+        "clip": 0.27100080251693726,
+        "imagereward": 1.0828406810760498,
+        "vqa": 0.9570060968399048,
+        "dsg": 0.9479364156723022,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 116,
+        "file": "0116.png",
+        "prompt": "A penguin on the beach.",
+        "clip": 0.26253369450569153,
+        "imagereward": 1.15659499168396,
+        "vqa": 0.950950562953949,
+        "dsg": 0.9065167903900146,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 117,
+        "file": "0117.png",
+        "prompt": "A penguin on the beach.",
+        "clip": 0.2760888934135437,
+        "imagereward": 0.7678184509277344,
+        "vqa": 0.9710094332695007,
+        "dsg": 0.9633345007896423,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 118,
+        "file": "0118.png",
+        "prompt": "A penguin on the beach.",
+        "clip": 0.2834513187408447,
+        "imagereward": 1.4702967405319214,
+        "vqa": 0.9838955402374268,
+        "dsg": 0.9788634777069092,
+        "dsg_claims": 1
+      },
+      {
+        "idx": 119,
+        "file": "0119.png",
+        "prompt": "A penguin on the beach.",
+        "clip": 0.2699352204799652,
+        "imagereward": 1.5699450969696045,
+        "vqa": 0.9600483775138855,
+        "dsg": 0.9581747055053711,
+        "dsg_claims": 1
+      }
+    ],
+    "aggregate": {
+      "clip": {
+        "mean": 0.2773,
+        "std": 0.0282,
+        "median": 0.2749,
+        "min": 0.2019,
+        "max": 0.3422,
+        "n": 120
+      },
+      "imagereward": {
+        "mean": 0.6688,
+        "std": 0.7555,
+        "median": 0.7762,
+        "min": -1.8122,
+        "max": 1.8023,
+        "n": 120
+      },
+      "vqa": {
+        "mean": 0.8488,
+        "std": 0.2168,
+        "median": 0.9713,
+        "min": 0.1158,
+        "max": 0.9911,
+        "n": 120
+      },
+      "dsg": {
+        "mean": 0.8846,
+        "std": 0.141,
+        "median": 0.953,
+        "min": 0.1607,
+        "max": 0.9894,
+        "n": 120
+      }
+    }
+  }
+}

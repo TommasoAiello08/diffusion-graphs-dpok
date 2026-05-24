@@ -1,0 +1,686 @@
+{
+  "run_name": "DPOK single-prompt (paper Sec 5.2)",
+  "metrics": [
+    "clip",
+    "imagereward",
+    "vqa",
+    "dsg"
+  ],
+  "elapsed_sec": 199.6,
+  "trained": {
+    "per_image": [
+      {
+        "idx": 0,
+        "file": "0000.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.3208388686180115,
+        "imagereward": 1.6192145347595215,
+        "vqa": 0.9826954007148743,
+        "dsg": 0.9473154246807098,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 1,
+        "file": "0001.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.3162637948989868,
+        "imagereward": 1.5085651874542236,
+        "vqa": 0.9806580543518066,
+        "dsg": 0.9547772407531738,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 2,
+        "file": "0002.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.32676374912261963,
+        "imagereward": 1.6477460861206055,
+        "vqa": 0.9779086112976074,
+        "dsg": 0.9432094097137451,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 3,
+        "file": "0003.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.31665390729904175,
+        "imagereward": 1.7605297565460205,
+        "vqa": 0.9866018295288086,
+        "dsg": 0.9654625654220581,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 4,
+        "file": "0004.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.3012899160385132,
+        "imagereward": 1.423137903213501,
+        "vqa": 0.9706538915634155,
+        "dsg": 0.9325278103351593,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 5,
+        "file": "0005.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.28959921002388,
+        "imagereward": 0.2245786190032959,
+        "vqa": 0.878197968006134,
+        "dsg": 0.9223355054855347,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 6,
+        "file": "0006.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.31654125452041626,
+        "imagereward": 1.8308981657028198,
+        "vqa": 0.9812569618225098,
+        "dsg": 0.9592995047569275,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 7,
+        "file": "0007.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.3193536400794983,
+        "imagereward": 1.6380152702331543,
+        "vqa": 0.9824554920196533,
+        "dsg": 0.9648288786411285,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 8,
+        "file": "0008.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.3309383988380432,
+        "imagereward": 0.6728854179382324,
+        "vqa": 0.9834152460098267,
+        "dsg": 0.9639077186584473,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 9,
+        "file": "0009.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.3072281777858734,
+        "imagereward": 0.40166884660720825,
+        "vqa": 0.9792226552963257,
+        "dsg": 0.9355117380619049,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 10,
+        "file": "0010.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.314883291721344,
+        "imagereward": 1.7506937980651855,
+        "vqa": 0.9829351902008057,
+        "dsg": 0.9649630486965179,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 11,
+        "file": "0011.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.33144035935401917,
+        "imagereward": 1.3853487968444824,
+        "vqa": 0.9841359853744507,
+        "dsg": 0.9399217367172241,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 12,
+        "file": "0012.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.29204046726226807,
+        "imagereward": 0.4973798990249634,
+        "vqa": 0.9775505661964417,
+        "dsg": 0.9394454956054688,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 13,
+        "file": "0013.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.32711708545684814,
+        "imagereward": 1.7473779916763306,
+        "vqa": 0.9816163778305054,
+        "dsg": 0.9495191276073456,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 14,
+        "file": "0014.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.3190302550792694,
+        "imagereward": 1.5831422805786133,
+        "vqa": 0.97922283411026,
+        "dsg": 0.9437991082668304,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 15,
+        "file": "0015.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.30879974365234375,
+        "imagereward": 1.788577675819397,
+        "vqa": 0.9804186820983887,
+        "dsg": 0.962801069021225,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 16,
+        "file": "0016.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.3171485662460327,
+        "imagereward": 1.7835137844085693,
+        "vqa": 0.9831753373146057,
+        "dsg": 0.9642291069030762,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 17,
+        "file": "0017.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.30720025300979614,
+        "imagereward": 1.4435681104660034,
+        "vqa": 0.9824554324150085,
+        "dsg": 0.9690598547458649,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 18,
+        "file": "0018.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.32045483589172363,
+        "imagereward": 0.9221331477165222,
+        "vqa": 0.9824554324150085,
+        "dsg": 0.9616624116897583,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 19,
+        "file": "0019.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.32423725724220276,
+        "imagereward": 1.8419140577316284,
+        "vqa": 0.9823355078697205,
+        "dsg": 0.9482699632644653,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 20,
+        "file": "0020.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.3243403434753418,
+        "imagereward": 1.6204971075057983,
+        "vqa": 0.9843763113021851,
+        "dsg": 0.9621612429618835,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 21,
+        "file": "0021.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.30858945846557617,
+        "imagereward": 1.5311352014541626,
+        "vqa": 0.9786252379417419,
+        "dsg": 0.9363760650157928,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 22,
+        "file": "0022.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.3180857300758362,
+        "imagereward": 1.7558175325393677,
+        "vqa": 0.9806580543518066,
+        "dsg": 0.9449664056301117,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 23,
+        "file": "0023.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.33166080713272095,
+        "imagereward": 0.9592316150665283,
+        "vqa": 0.9765964150428772,
+        "dsg": 0.9086163938045502,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 24,
+        "file": "0024.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.3049387037754059,
+        "imagereward": 1.6483207941055298,
+        "vqa": 0.980179488658905,
+        "dsg": 0.9393256604671478,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 25,
+        "file": "0025.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.31539440155029297,
+        "imagereward": 1.6439166069030762,
+        "vqa": 0.9807778000831604,
+        "dsg": 0.954299807548523,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 26,
+        "file": "0026.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.33258774876594543,
+        "imagereward": 1.6997915506362915,
+        "vqa": 0.9818559288978577,
+        "dsg": 0.9644791185855865,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 27,
+        "file": "0027.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.30473631620407104,
+        "imagereward": -0.06693033128976822,
+        "vqa": 0.9731453657150269,
+        "dsg": 0.9395159780979156,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 28,
+        "file": "0028.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.3182246685028076,
+        "imagereward": 1.2509355545043945,
+        "vqa": 0.9812569618225098,
+        "dsg": 0.9661465287208557,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 29,
+        "file": "0029.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.26940464973449707,
+        "imagereward": 1.472999095916748,
+        "vqa": 0.9782668352127075,
+        "dsg": 0.9506892561912537,
+        "dsg_claims": 2
+      }
+    ],
+    "aggregate": {
+      "clip": {
+        "mean": 0.3145,
+        "std": 0.0136,
+        "median": 0.3169,
+        "min": 0.2694,
+        "max": 0.3326,
+        "n": 30
+      },
+      "imagereward": {
+        "mean": 1.3662,
+        "std": 0.5151,
+        "median": 1.6012,
+        "min": -0.0669,
+        "max": 1.8419,
+        "n": 30
+      },
+      "vqa": {
+        "mean": 0.9772,
+        "std": 0.0187,
+        "median": 0.981,
+        "min": 0.8782,
+        "max": 0.9866,
+        "n": 30
+      },
+      "dsg": {
+        "mean": 0.95,
+        "std": 0.0144,
+        "median": 0.9501,
+        "min": 0.9086,
+        "max": 0.9691,
+        "n": 30
+      }
+    }
+  },
+  "baseline": {
+    "per_image": [
+      {
+        "idx": 0,
+        "file": "0000.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.26061785221099854,
+        "imagereward": -1.358580231666565,
+        "vqa": 0.43857747316360474,
+        "dsg": 0.9071730971336365,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 1,
+        "file": "0001.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.2707614302635193,
+        "imagereward": -1.3404978513717651,
+        "vqa": 0.5832946300506592,
+        "dsg": 0.9062672853469849,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 2,
+        "file": "0002.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.2600564658641815,
+        "imagereward": -1.4049965143203735,
+        "vqa": 0.4650430977344513,
+        "dsg": 0.9113682210445404,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 3,
+        "file": "0003.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.26847025752067566,
+        "imagereward": -0.7239886522293091,
+        "vqa": 0.6494424939155579,
+        "dsg": 0.9090995490550995,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 4,
+        "file": "0004.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.25257980823516846,
+        "imagereward": -1.5772978067398071,
+        "vqa": 0.2528395354747772,
+        "dsg": 0.9276429116725922,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 5,
+        "file": "0005.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.26963287591934204,
+        "imagereward": -1.454085350036621,
+        "vqa": 0.5067751407623291,
+        "dsg": 0.921701043844223,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 6,
+        "file": "0006.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.26666638255119324,
+        "imagereward": -1.5187861919403076,
+        "vqa": 0.47236648201942444,
+        "dsg": 0.9313808083534241,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 7,
+        "file": "0007.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.3281482756137848,
+        "imagereward": 1.620995044708252,
+        "vqa": 0.9807779788970947,
+        "dsg": 0.9435422420501709,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 8,
+        "file": "0008.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.32811176776885986,
+        "imagereward": 0.7508217692375183,
+        "vqa": 0.977550745010376,
+        "dsg": 0.9711619317531586,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 9,
+        "file": "0009.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.3071577250957489,
+        "imagereward": 0.07590072602033615,
+        "vqa": 0.9792225956916809,
+        "dsg": 0.9213688671588898,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 10,
+        "file": "0010.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.24911388754844666,
+        "imagereward": -1.4614243507385254,
+        "vqa": 0.5720126032829285,
+        "dsg": 0.9270760715007782,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 11,
+        "file": "0011.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.3070272207260132,
+        "imagereward": 0.21557137370109558,
+        "vqa": 0.8620535135269165,
+        "dsg": 0.9395820498466492,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 12,
+        "file": "0012.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.29620471596717834,
+        "imagereward": 0.21863903105258942,
+        "vqa": 0.9804186820983887,
+        "dsg": 0.9319226145744324,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 13,
+        "file": "0013.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.2669718861579895,
+        "imagereward": -1.5990585088729858,
+        "vqa": 0.5479546189308167,
+        "dsg": 0.9232124984264374,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 14,
+        "file": "0014.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.32965999841690063,
+        "imagereward": 1.5083792209625244,
+        "vqa": 0.9810172319412231,
+        "dsg": 0.9496688544750214,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 15,
+        "file": "0015.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.26564303040504456,
+        "imagereward": -1.6218537092208862,
+        "vqa": 0.5249084830284119,
+        "dsg": 0.9189595282077789,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 16,
+        "file": "0016.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.3161943852901459,
+        "imagereward": 0.1546289175748825,
+        "vqa": 0.9091772437095642,
+        "dsg": 0.9336961209774017,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 17,
+        "file": "0017.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.3261277675628662,
+        "imagereward": 1.39486825466156,
+        "vqa": 0.9824554920196533,
+        "dsg": 0.9701682031154633,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 18,
+        "file": "0018.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.3180676996707916,
+        "imagereward": 0.6083385348320007,
+        "vqa": 0.9779086709022522,
+        "dsg": 0.9534646272659302,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 19,
+        "file": "0019.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.2728043496608734,
+        "imagereward": -1.3884811401367188,
+        "vqa": 0.5352611541748047,
+        "dsg": 0.9310970604419708,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 20,
+        "file": "0020.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.26394277811050415,
+        "imagereward": -1.588114619255066,
+        "vqa": 0.47236648201942444,
+        "dsg": 0.9293367266654968,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 21,
+        "file": "0021.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.2648950517177582,
+        "imagereward": -1.2062132358551025,
+        "vqa": 0.5415706634521484,
+        "dsg": 0.9346631467342377,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 22,
+        "file": "0022.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.3003008961677551,
+        "imagereward": 1.2080062627792358,
+        "vqa": 0.98293536901474,
+        "dsg": 0.9697085618972778,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 23,
+        "file": "0023.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.251036673784256,
+        "imagereward": -1.569161057472229,
+        "vqa": 0.4385773837566376,
+        "dsg": 0.9129968881607056,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 24,
+        "file": "0024.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.271638423204422,
+        "imagereward": -1.2348136901855469,
+        "vqa": 0.5067753195762634,
+        "dsg": 0.931611180305481,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 25,
+        "file": "0025.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.27497023344039917,
+        "imagereward": -0.5859856009483337,
+        "vqa": 0.9831753373146057,
+        "dsg": 0.9307911098003387,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 26,
+        "file": "0026.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.3338773846626282,
+        "imagereward": 1.4272750616073608,
+        "vqa": 0.9782668948173523,
+        "dsg": 0.9614355862140656,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 27,
+        "file": "0027.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.28351205587387085,
+        "imagereward": -1.4248617887496948,
+        "vqa": 0.7230917811393738,
+        "dsg": 0.9107338786125183,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 28,
+        "file": "0028.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.32265669107437134,
+        "imagereward": 1.540364146232605,
+        "vqa": 0.9826953411102295,
+        "dsg": 0.9657658636569977,
+        "dsg_claims": 2
+      },
+      {
+        "idx": 29,
+        "file": "0029.png",
+        "prompt": "A green colored rabbit.",
+        "clip": 0.31326884031295776,
+        "imagereward": 0.852533757686615,
+        "vqa": 0.9775506258010864,
+        "dsg": 0.9538710117340088,
+        "dsg_claims": 2
+      }
+    ],
+    "aggregate": {
+      "clip": {
+        "mean": 0.288,
+        "std": 0.0276,
+        "median": 0.2739,
+        "min": 0.2491,
+        "max": 0.3339,
+        "n": 30
+      },
+      "imagereward": {
+        "mean": -0.3827,
+        "std": 1.1937,
+        "median": -0.9651,
+        "min": -1.6219,
+        "max": 1.621,
+        "n": 30
+      },
+      "vqa": {
+        "mean": 0.7255,
+        "std": 0.2382,
+        "median": 0.6863,
+        "min": 0.2528,
+        "max": 0.9832,
+        "n": 30
+      },
+      "dsg": {
+        "mean": 0.9343,
+        "std": 0.0194,
+        "median": 0.9312,
+        "min": 0.9063,
+        "max": 0.9712,
+        "n": 30
+      }
+    }
+  }
+}

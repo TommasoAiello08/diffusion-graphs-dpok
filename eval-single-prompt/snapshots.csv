@@ -1,0 +1,16 @@
+round,prompt_idx,prompt_text,ir_score,img_path
+100,0,A green colored rabbit.,-1.6617790460586548,/home/3223837/dpok_outputs/imagereward_single/484798/inference/round_00100/prompt_00.png
+200,0,A green colored rabbit.,-1.5948946475982666,/home/3223837/dpok_outputs/imagereward_single/484798/inference/round_00200/prompt_00.png
+300,0,A green colored rabbit.,-1.6151306629180908,/home/3223837/dpok_outputs/imagereward_single/484798/inference/round_00300/prompt_00.png
+400,0,A green colored rabbit.,-0.6105272769927979,/home/3223837/dpok_outputs/imagereward_single/484798/inference/round_00400/prompt_00.png
+500,0,A green colored rabbit.,1.094891905784607,/home/3223837/dpok_outputs/imagereward_single/484798/inference/round_00500/prompt_00.png
+600,0,A green colored rabbit.,1.5169733762741089,/home/3223837/dpok_outputs/imagereward_single/484798/inference/round_00600/prompt_00.png
+700,0,A green colored rabbit.,1.3264826536178589,/home/3223837/dpok_outputs/imagereward_single/484798/inference/round_00700/prompt_00.png
+800,0,A green colored rabbit.,1.4583852291107178,/home/3223837/dpok_outputs/imagereward_single/484798/inference/round_00800/prompt_00.png
+900,0,A green colored rabbit.,1.4257749319076538,/home/3223837/dpok_outputs/imagereward_single/484798/inference/round_00900/prompt_00.png
+1000,0,A green colored rabbit.,1.5852962732315063,/home/3223837/dpok_outputs/imagereward_single/484798/inference/round_01000/prompt_00.png
+1100,0,A green colored rabbit.,1.2576308250427246,/home/3223837/dpok_outputs/imagereward_single/484798/inference/round_01100/prompt_00.png
+1200,0,A green colored rabbit.,1.5037875175476074,/home/3223837/dpok_outputs/imagereward_single/484798/inference/round_01200/prompt_00.png
+1300,0,A green colored rabbit.,1.3048417568206787,/home/3223837/dpok_outputs/imagereward_single/484798/inference/round_01300/prompt_00.png
+1400,0,A green colored rabbit.,1.4926954507827759,/home/3223837/dpok_outputs/imagereward_single/484798/inference/round_01400/prompt_00.png
+1500,0,A green colored rabbit.,1.66835618019104,/home/3223837/dpok_outputs/imagereward_single/484798/inference/round_01500/prompt_00.png

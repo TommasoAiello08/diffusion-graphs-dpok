@@ -1,0 +1,15 @@
+# Conda environment for DPOK training (GPU recommended)
+#   conda env create -f environment.yml
+#   conda activate dpok-diffusion-graphs
+
+name: dpok-diffusion-graphs
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - -r requirements.txt

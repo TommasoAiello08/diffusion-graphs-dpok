@@ -1,0 +1,26 @@
+{
+  "image_id": "2334676",
+  "coco_image_id": "269866",
+  "file_name": "val2017/000000269866.jpg",
+  "pan_seg_file_name": "panoptic_val2017/000000269866.png",
+  "graph_relations": [
+    "00. microwave (0) --on--> counter (1)",
+    "01. microwave (0) --in front of--> wall-other-merged (3)",
+    "02. counter (1) --attached to--> microwave (0)",
+    "03. counter (1) --attached to--> wall-other-merged (3)",
+    "04. shelf (2) --over--> microwave (0)",
+    "05. shelf (2) --on--> wall-other-merged (3)"
+  ],
+  "generated_prompts": {
+    "object_prompt": "A photo containing microwave, counter, shelf, wall-other-merged.",
+    "relation_prompt": "A scene where microwave on counter, microwave in front of wall-other-merged, counter attached to microwave, counter attached to wall-other-merged, shelf over microwave, shelf on wall-other-merged.",
+    "scene_prompt": "A scene where microwave on counter, microwave in front of wall-other-merged, counter attached to microwave, counter attached to wall-other-merged, shelf over microwave, shelf on wall-other-merged."
+  },
+  "coco_captions": [
+    "A microwave oven with a tray on the bottom",
+    "A microwave oven sitting on a granite countertop.",
+    "the microwave is closed the clock on it is at 10:14",
+    "a microwave oven sits on top of a granite counter ",
+    "Chrome colored toaster oven with time on 10.14"
+  ]
+}
