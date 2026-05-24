@@ -65,7 +65,7 @@ cd "$WORK"
 # training and eval see the exact same prompt set, and so the run is
 # reproducible across submissions.
 COCO_JSON="$WORK/OpenPSG/data/coco/annotations/captions_train2017.json"
-TRAIN_PROMPTS="$WORK/prompts_coco104.json"
+TRAIN_PROMPTS="$WORK/data/prompts/prompts_coco104.json"
 OUT=/home/3223837/dpok_outputs
 SAVE_ROOT="$OUT/imagereward_multi"
 SAVE_DIR="$SAVE_ROOT/$JOB"

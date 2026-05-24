@@ -88,7 +88,7 @@ cd "$WORK"
 # compute budget — bisect later if successful.
 
 
-TRAIN_PROMPTS="$WORK/prompts_single.json"
+TRAIN_PROMPTS="$WORK/data/prompts/prompts_single.json"
 OUT=/home/3223837/dpok_outputs
 SAVE_ROOT="$OUT/imagereward_single"
 SAVE_DIR="$SAVE_ROOT/$JOB"

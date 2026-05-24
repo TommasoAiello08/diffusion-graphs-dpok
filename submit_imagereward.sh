@@ -59,8 +59,8 @@ export TRANSFORMERS_OFFLINE=0
 WORK=/home/3223837/simple-hier-clip-reward
 cd "$WORK"
 
-TRAIN_PROMPTS="$WORK/prompts_paper.json"
-HOLDOUT_PROMPTS="$WORK/prompts_holdout.json"
+TRAIN_PROMPTS="$WORK/data/prompts/prompts_paper.json"
+HOLDOUT_PROMPTS="$WORK/data/prompts/prompts_holdout.json"
 OUT=/home/3223837/dpok_outputs
 SAVE_ROOT="$OUT/imagereward_test"
 SAVE_DIR="$SAVE_ROOT/$JOB"
