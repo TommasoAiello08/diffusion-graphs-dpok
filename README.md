@@ -1,58 +1,78 @@
 # Diffusion Graphs — DPOK + Structured Rewards
 
-Fine-tuning **Stable Diffusion 1.5** with **DPOK** (Diffusion Policy Optimization with KL regularization) using **ImageReward** as the training signal, plus research code for **hierarchical scene-graph rewards** and rich offline evaluation (CLIPScore, VQA, DSG).
+Fine-tuning **Stable Diffusion 1.5** with **DPOK** (Diffusion Policy Optimization with KL regularization) using **ImageReward** as the training signal, plus research code for **hierarchical scene-graph rewards** and multi-metric evaluation.
 
 Based on [DPOK (Fan et al., NeurIPS 2023)](https://arxiv.org/abs/2305.16381).
+
+---
+
+## Grading checklist (how to navigate this repo)
+
+This repository is organized to match the course requirements:
+
+| Requirement | Where to look |
+|-------------|---------------|
+| **Readable, documented code** | Module docstrings at the top of `dpok_imagereward.py`, `eval_report.py`, `dpok_eval_metrics.py`, `dpok_scene_reward.py`; function docstrings throughout; research code in `src/` |
+| **Clear folder structure** | `src/`, `scripts/`, `notebooks/`, `data/`, `figures/`, `eval-*/` — each folder has a README |
+| **Reproducible environment** | `requirements.txt`, `requirements-eval.txt`, `environment.yml`, `setup_cluster.sh` |
+| **Install + run experiments** | Sections below: [Installation](#installation), [Experiments](#experiments) |
+| **Version control** | Git history on `main` with descriptive commit messages |
+
+---
 
 ## Repository layout
 
 ```
-├── dpok_imagereward.py      # Main DPOK + ImageReward training (production)
+├── dpok_imagereward.py      # Main DPOK + ImageReward training
 ├── eval_report.py           # Generate images + multi-metric evaluation report
 ├── dpok_eval_metrics.py     # CLIP / ImageReward / VQA / DSG scorers
 ├── dpok_scene_reward.py     # COCO/PSG/GQA loaders + hierarchical rewards
 ├── dpok_sg_reward.py        # BLIP scene-graph reward (future DPOK variant)
 ├── perturb_graph.py         # Scene-graph perturbations for sensitivity tests
-├── prompts_*.json           # Paper / holdout / single-prompt lists
-├── submit_imagereward*.sh    # SLURM jobs (Bocconi HPC — adapt paths)
-├── setup_cluster.sh         # Full HPC training env bootstrap
-├── setup_eval_env.sh        # Separate eval env + VQA model cache
-├── scripts/
-│   ├── build_report_figures.py   # Build figures/ from local CSVs
-│   ├── pull_figures_from_hpc.sh  # scp PNGs from cluster
-│   └── smoke_test_imports.py
-├── src/                     # Earlier research: hierarchical CLIP, FK steering
-├── notebooks/               # Scene-graph demos (sg_demo_real.ipynb)
+├── data/
+│   └── prompts/             # JSON prompt lists (paper, holdout, single)
+├── scripts/                 # smoke tests, figure builder, HPC pull
+├── notebooks/               # Scene-graph demos
 ├── data_analysis/           # OpenPSG / GQA exploration notebooks
-├── eval-single-prompt/      # Pulled eval tables (job 484798)
-├── eval-four-prompts/       # Pulled eval tables + logs (job 484796)
+├── src/                     # Earlier research: hierarchical CLIP, FK steering
+├── eval-single-prompt/      # Pulled eval results (job 484798)
+├── eval-four-prompts/       # Pulled eval results (job 484796)
 ├── figures/                 # Report figures (PNG)
-├── additional/              # HANDOFF, PROJECT_DOCS, meeting notes
+├── additional/              # PROJECT_DOCS, meeting notes
 └── report.txt               # Full project report
 ```
+
+See also: [`data/README.md`](data/README.md), [`scripts/README.md`](scripts/README.md), [`notebooks/README.md`](notebooks/README.md).
+
+---
 
 ## Requirements
 
 | Resource | Notes |
 |----------|--------|
-| **GPU** | Required for training and eval (≥24 GB VRAM recommended; 80 GB for fp32 + large batches) |
-| **Disk** | ~15 GB Hugging Face caches (SD1.5, CLIP, ImageReward); +23 GB if using VQA eval |
+| **GPU** | Required for training and full eval (≥24 GB VRAM recommended) |
+| **Disk** | ~15 GB Hugging Face caches (SD1.5, CLIP, ImageReward); +23 GB for VQA eval |
 | **Python** | 3.10 |
 | **CUDA** | 12.x (wheels tested with cu121) |
 
-**Not shipped in this repo (download at runtime):**
+**Downloaded at runtime (not in repo):**
 
 - `runwayml/stable-diffusion-v1-5` (Hugging Face)
 - `ImageReward-v1.0` weights (via `image-reward` package)
-- COCO / PSG / GQA datasets (optional; use `prompts_*.json` for paper reproduction)
+- COCO / PSG / GQA datasets (optional — use `data/prompts/*.json` for paper reproduction)
+
+---
 
 ## Installation
 
-### Option A — pip (local or VM)
+### Option A — pip (recommended)
 
 ```bash
+git clone https://github.com/TommasoAiello08/diffusion-graphs-dpok.git
+cd diffusion-graphs-dpok
+
 python3 -m venv .venv
-source .venv/bin/activate   # Windows: .venv\Scripts\activate
+source .venv/bin/activate          # Windows: .venv\Scripts\activate
 pip install -U pip setuptools wheel
 pip install -r requirements.txt
 python scripts/smoke_test_imports.py
@@ -66,9 +86,9 @@ conda activate dpok-diffusion-graphs
 python scripts/smoke_test_imports.py
 ```
 
-### Eval environment (separate venv recommended)
+### Eval environment (optional, separate venv)
 
-VQA/DSG metrics conflict with the training pin set — use a second environment:
+VQA/DSG metrics use a different dependency set:
 
 ```bash
 python3 -m venv .venv-eval
@@ -76,16 +96,25 @@ source .venv-eval/bin/activate
 pip install -r requirements-eval.txt
 ```
 
-On Bocconi HPC, use `bash setup_eval_env.sh` (also caches the VQA model).
+---
 
-## Quick start — training (single prompt)
+## Experiments
+
+All experiments below use prompt files under `data/prompts/`. Model weights are fetched automatically on first run.
+
+### 1. Smoke test (verify setup, no training)
+
+```bash
+python scripts/smoke_test_imports.py
+```
+
+### 2. Single-prompt training (paper Sec 5.2 diagnostic)
 
 ```bash
 export HF_HOME=~/.cache/huggingface
-export TRANSFORMERS_CACHE=$HF_HOME/transformers
 
 python -u dpok_imagereward.py \
-  --prompts_file prompts_single.json \
+  --prompts_file data/prompts/prompts_single.json \
   --total_samples 500 \
   --sample_batch 4 \
   --grad_steps 5 \
@@ -104,73 +133,70 @@ python -u dpok_imagereward.py \
   --wandb_project dpok-smoke
 ```
 
-**Paper-style 4 prompts:**
+### 3. Four-prompt training (paper Sec 5.2)
 
 ```bash
 python -u dpok_imagereward.py \
-  --prompts_file prompts_paper.json \
+  --prompts_file data/prompts/prompts_paper.json \
   --total_samples 10000 \
   --save_dir ./dpok_outputs/paper4
 ```
 
-**COCO captions** (needs a captions JSON path):
-
-```bash
-python -u dpok_imagereward.py \
-  --coco /path/to/captions_train2017.json \
-  --max_prompts 104 \
-  --total_samples 20000 \
-  --save_dir ./dpok_outputs/coco104
-```
-
-## Evaluation
-
-After training, run (needs GPU + eval deps):
+### 4. Evaluation (after training)
 
 ```bash
 python -u eval_report.py \
   --lora_path ./dpok_outputs/smoke_run/lora_unet_final \
-  --prompts_file prompts_single.json \
+  --prompts_file data/prompts/prompts_single.json \
   --seeds_per_prompt 10 \
   --save_dir ./dpok_outputs/smoke_run/eval \
-  --metrics clip,imagereward,vqa,dsg \
+  --metrics clip,imagereward \
   --run_name "smoke eval"
 ```
 
-CLIP-only (fast, no `t2v-metrics`):
+CLIP-only eval is fast; add `vqa,dsg` for full metrics (needs `requirements-eval.txt`).
+
+### 5. Regenerate report figures (no GPU)
 
 ```bash
-python -u eval_report.py \
-  --lora_path ./dpok_outputs/smoke_run/lora_unet_final \
-  --prompts_file prompts_paper.json \
-  --metrics clip,imagereward \
-  --save_dir ./eval_out
+python scripts/build_report_figures.py
 ```
 
-## HPC (Bocconi)
+### 6. Pre-computed results (no GPU needed)
 
-1. Clone repo on login node.
-2. `bash setup_cluster.sh` — creates conda env `dpok`, caches SD1.5.
-3. `bash setup_eval_env.sh` — creates `dpok-eval`, submits VQA cache job.
-4. Edit `submit_imagereward*.sh` — set `WORK`, account, paths.
-5. `sbatch submit_imagereward_single.sh` (or `_sh` / `_multi.sh`).
-6. Pull results: `bash scripts/pull_figures_from_hpc.sh`
+Open the bundled eval folders to inspect completed runs:
 
-## Figures and report
+- `eval-single-prompt/report.txt` — single-prompt train vs baseline
+- `eval-four-prompts/train_prompts/report.txt` — 4-prompt training eval
+- `eval-four-prompts/holdout_prompts/report.txt` — holdout generalization
+- `figures/` — plots for the written report (`report.txt`)
 
-- Full write-up: [`report.txt`](report.txt)
-- Regenerate plots: `python scripts/build_report_figures.py` (see [`figures/README.md`](figures/README.md))
-
-## Research code (`src/`)
-
-Not imported by `dpok_imagereward.py`. Examples:
+### 7. HPC (Bocconi cluster)
 
 ```bash
-cd src && python example_t2i.py          # plain SD1.5
-python simple_hier_clip_reward.py        # hierarchical CLIP reward demo
+bash setup_cluster.sh              # training env + SD1.5 cache
+bash setup_eval_env.sh             # eval env + VQA cache
+sbatch submit_imagereward_single.sh   # 1-prompt job
+sbatch submit_imagereward.sh          # 4-prompt + holdout eval
 ```
 
-Requires `PYTHONPATH=src` or running from `src/`.
+Edit account/paths inside the `submit_*.sh` scripts before running on a different cluster.
+
+---
+
+## Main modules (documentation map)
+
+| Module | Role |
+|--------|------|
+| `dpok_imagereward.py` | Online DPOK loop: sample trajectories → ImageReward → IS-weighted policy + KL loss → LoRA update |
+| `eval_report.py` | Load SD1.5 + LoRA, generate images, score with CLIP/ImageReward/VQA/DSG, write reports |
+| `dpok_eval_metrics.py` | Metric scorers and standalone eval on pre-generated image folders |
+| `dpok_scene_reward.py` | Dataset loaders (COCO/PSG/GQA) and CLIP-based hierarchical rewards |
+| `src/simple_hier_clip_reward.py` | Earlier hierarchical CLIP reward prototype |
+
+Full write-up: [`report.txt`](report.txt). Technical notes: [`additional/PROJECT_DOCS.md`](additional/PROJECT_DOCS.md).
+
+---
 
 ## Citation
 
@@ -185,4 +211,4 @@ Requires `PYTHONPATH=src` or running from `src/`.
 
 ## License
 
-Code is provided for academic / course use. Stable Diffusion and ImageReward have their own licenses — comply with Hugging Face and ImageReward terms when downloading weights.
+MIT — see [`LICENSE`](LICENSE). Stable Diffusion and ImageReward have their own licenses; comply with Hugging Face and ImageReward terms when downloading weights.
